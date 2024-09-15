@@ -5,174 +5,114 @@
 		"0" : 	
 		{
 			"Case" : 0,
-			"Evidence" : ["Evidence_Stage0_Main_0_B0","Evidence_Stage0_Main_0_A6"],
-			"Illust" : "0",
-			"Ending" : "A0_0"
+			"Evidence" : ["Evidence_Stage0_Main_0_B0","Evidence_Stage0_Main_0_A6", "Evidence_Stage0_Main_0_A10"],
+			"Index" : "A0_0"
 		},
 		"1" : 
 		{
 			"Case" : 1,
-			"Evidence" : ["Evidence_Stage0_Main_0_B2","Evidence_Stage0_Main_0_A6"],
-			"Illust" : "0",
-			"Ending" : "A0_0"
+			"Evidence" : ["Evidence_Stage0_Main_0_B2","Evidence_Stage0_Main_0_A6", "Evidence_Stage0_Main_0_A10"],
+			"Index" : "A0_0"
 		},
 		"2" : 
 		{
 			"Case" : 2,
-			"Evidence" : ["Evidence_Stage0_Main_0_B1","Evidence_Stage0_Main_0_A6"],
-			"Illust" : "0",
-			"Ending" : "A0_0"
+			"Evidence" : ["Evidence_Stage0_Main_0_B1","Evidence_Stage0_Main_0_A6", "Evidence_Stage0_Main_0_A10"],
+			"Index" : "A0_0"
 		},
 		"3" : 	
 		{
 			"Case" : 0,
 			"Evidence" : ["Evidence_Stage0_Main_0_B0","Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "A0_1"
+			"Index" : "A0_1"
 		},
 		"4" : 
 		{
 			"Case" : 1,
 			"Evidence" : ["Evidence_Stage0_Main_0_B2","Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "A0_1"
+			"Index" : "A0_1"
 		},
 		"5" : 
 		{
 			"Case" : 2,
 			"Evidence" : ["Evidence_Stage0_Main_0_B1","Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "A0_1"
+			"Index" : "A0_1"
 		},
 		"6" : 	
 		{
 			"Case" : 0,
 			"Evidence" : ["Evidence_Stage0_Main_0_B0"],
-			"Illust" : "1",
-			"Ending" : "A0_2"
+			"Index" : "A0_2"
 		},
 		"7" : 
 		{
 			"Case" : 1,
 			"Evidence" : ["Evidence_Stage0_Main_0_B2"],
-			"Illust" : "1",
-			"Ending" : "A0_2"
+			"Index" : "A0_2"
 		},
 		"8" : 
 		{
 			"Case" : 2,
 			"Evidence" : ["Evidence_Stage0_Main_0_B1"],
-			"Illust" : "1",
-			"Ending" : "A0_2"
+			"Index" : "A0_2"
 		},
 		"9" : 	
 		{
 			"Case" : 0,
 			"Evidence" : ["Evidence_Stage0_Main_0_00","Evidence_Stage0_Main_0_07"],
-			"Illust" : "2",
-			"Ending" : "A0_3"
+			"Index" : "A0_3"
 		},
 		"10" : 
 		{
 			"Case" : 1,
 			"Evidence" : ["Evidence_Stage0_Main_0_02","Evidence_Stage0_Main_0_07"],
-			"Illust" : "2",
-			"Ending" : "A0_3"
+			"Index" : "A0_3"
 		},
 		"11" : 
 		{
 			"Case" : 2,
 			"Evidence" : ["Evidence_Stage0_Main_0_01","Evidence_Stage0_Main_0_07"],
-			"Illust" : "2",
-			"Ending" : "A0_3"
+			"Index" : "A0_3"
 		}
 	},
 	"A1" : 
 	{
 		"0" : 	
 		{
-			"Case" : 0,
-			"Evidence" : ["Evidence_Stage0_Main_1_B0","Evidence_Stage0_Main_1_A8"],
-			"Illust" : "0",
-			"Ending" : "A1_0"
+			"Case" : 4,
+			"Evidence" : ["Evidence_Stage0_Main_1_A33","Evidence_Stage0_Main_1_A34"],
+			"Index" : "A1_0"
 		},
 		"1" : 
 		{
-			"Case" : 1,
-			"Evidence" : ["Evidence_Stage0_Main_1_B2","Evidence_Stage0_Main_1_A8"],
-			"Illust" : "0",
-			"Ending" : "A1_0"
+			"Case" : 4,
+			"Evidence" : ["Evidence_Stage0_Main_1_A33","Evidence_Stage0_Main_1_A36"],
+			"Index" : "A1_1"
 		},
 		"2" : 
 		{
-			"Case" : 2,
-			"Evidence" : ["Evidence_Stage0_Main_1_B1","Evidence_Stage0_Main_1_A8"],
-			"Illust" : "0",
-			"Ending" : "A1_0"
-		},
-		"3" : 	
-		{
-			"Case" : 0,
-			"Evidence" : ["Evidence_Stage0_Main_1_B0","Evidence_Stage0_Main_1_A10"],
-			"Illust" : "1",
-			"Ending" : "A1_1"
-		},
-		"4" : 
-		{
-			"Case" : 1,
-			"Evidence" : ["Evidence_Stage0_Main_1_B2","Evidence_Stage0_Main_1_A10"],
-			"Illust" : "1",
-			"Ending" : "A1_1"
-		},
-		"5" : 
-		{
-			"Case" : 2,
-			"Evidence" : ["Evidence_Stage0_Main_1_B1","Evidence_Stage0_Main_1_A10"],
-			"Illust" : "1",
-			"Ending" : "A1_1"
-		},
-		"6" : 	
-		{
-			"Case" : 0,
-			"Evidence" : ["Evidence_Stage0_Main_1_B0"],
-			"Illust" : "1",
-			"Ending" : "A1_2"
-		},
-		"7" : 
-		{
-			"Case" : 1,
-			"Evidence" : ["Evidence_Stage0_Main_1_B2"],
-			"Illust" : "1",
-			"Ending" : "A1_2"
-		},
-		"8" : 
-		{
-			"Case" : 2,
-			"Evidence" : ["Evidence_Stage0_Main_1_B1"],
-			"Illust" : "1",
-			"Ending" : "A1_2"
-		},
-		"9" : 	
-		{
-			"Case" : 0,
-			"Evidence" : ["Evidence_Stage0_Main_1_00","Evidence_Stage0_Main_1_09"],
-			"Illust" : "2",
-			"Ending" : "A1_3"
-		},
-		"10" : 
-		{
-			"Case" : 1,
-			"Evidence" : ["Evidence_Stage0_Main_1_02","Evidence_Stage0_Main_1_09"],
-			"Illust" : "2",
-			"Ending" : "A1_3"
-		},
-		"11" : 
-		{
-			"Case" : 2,
-			"Evidence" : ["Evidence_Stage0_Main_1_01","Evidence_Stage0_Main_1_09"],
-			"Illust" : "2",
-			"Ending" : "A1_3"
+			"Case" : 4,
+			"Evidence" : [ ],
+			"Index" : "A1_2"
 		}
+	},	
+	"D9" : 
+	{
+		"0" : 	
+		{
+			"Case" : 4,
+			"Evidence" : [],
+			"Index" : "D9_0"
+		},
+	},	
+	"D13" : 
+	{
+		"0" : 	
+		{
+			"Case" : 4,
+			"Evidence" : [],
+			"Index" : "D13_0"
+		},
 	},	
 	"C0" : 
 	{
@@ -180,15 +120,13 @@
 		{
 			"Case" : 3,
 			"Evidence" : ["Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "C0_0"
+			"Index" : "C0_0"
 		},
 		"1" :
 		{
 			"Case" : 3,
 			"Evidence" : ["Evidence_Stage0_Main_1_A10"],
-			"Illust" : "1",
-			"Ending" : "C0_0"
+			"Index" : "C0_0"
 		}
 	},	
 	"C1" : 
@@ -197,15 +135,13 @@
 		{
 			"Case" : 3,
 			"Evidence" : ["Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "C1_0"
+			"Index" : "C1_0"
 		},
 		"1" :
 		{
 			"Case" : 3,
 			"Evidence" : ["Evidence_Stage0_Main_1_A10"],
-			"Illust" : "1",
-			"Ending" : "C1_0"
+			"Index" : "C1_0"
 		}
 	},
 	"C2" : 
@@ -214,15 +150,13 @@
 		{
 			"Case" : 3,
 			"Evidence" : ["Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "C2_0"
+			"Index" : "C2_0"
 		},
 		"1" :
 		{
 			"Case" : 3,
 			"Evidence" : ["Evidence_Stage0_Main_1_A10"],
-			"Illust" : "1",
-			"Ending" : "C2_0"
+			"Index" : "C2_0"
 		}
 	},
 	"D1" : 
@@ -231,64 +165,55 @@
 		{
 			"Case" : 0,
 			"Evidence" : ["Evidence_Stage0_Main_0_B0","Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "D1_0"
+			"Index" : "D1_0"
 		},
 		"1" : 
 		{
 			"Case" : 1,
 			"Evidence" : ["Evidence_Stage0_Main_0_B2","Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "D1_0"
+			"Index" : "D1_0"
 		},
 		"2" : 
 		{
 			"Case" : 2,
 			"Evidence" : ["Evidence_Stage0_Main_0_B1","Evidence_Stage0_Main_0_A10"],
-			"Illust" : "1",
-			"Ending" : "D1_0"
+			"Index" : "D1_0"
 		},
 		"3" : 	
 		{
 			"Case" : 0,
 			"Evidence" : ["Evidence_Stage0_Main_0_B0"],
-			"Illust" : "1",
-			"Ending" : "D1_1"
+			"Index" : "D1_1"
 		},
 		"4" : 
 		{
 			"Case" : 1,
 			"Evidence" : ["Evidence_Stage0_Main_0_B2"],
-			"Illust" : "1",
-			"Ending" : "D1_1"
+			"Index" : "D1_1"
 		},
 		"5" : 
 		{
 			"Case" : 2,
 			"Evidence" : ["Evidence_Stage0_Main_0_B1"],
-			"Illust" : "1",
-			"Ending" : "D1_1"
+			"Index" : "D1_1"
 		},
 		"6" : 	
 		{
 			"Case" : 0,
 			"Evidence" : ["Evidence_Stage0_Main_0_00","Evidence_Stage0_Main_0_07"],
-			"Illust" : "2",
-			"Ending" : "D1_2"
+			"Index" : "D1_2"
 		},
 		"7" : 
 		{
 			"Case" : 1,
 			"Evidence" : ["Evidence_Stage0_Main_0_02","Evidence_Stage0_Main_0_07"],
-			"Illust" : "2",
-			"Ending" : "D1_2"
+			"Index" : "D1_2"
 		},
 		"8" : 
 		{
 			"Case" : 2,
 			"Evidence" : ["Evidence_Stage0_Main_0_01","Evidence_Stage0_Main_0_07"],
-			"Illust" : "2",
-			"Ending" : "D1_2"
+			"Index" : "D1_2"
 		}
 	}
 }

@@ -1,0 +1,46 @@
+{
+	"0": {
+		"Index": "0",
+		"Type": "Complish",
+		"Temp": "S00",
+		"Temp2": "80"
+	},
+	"1": {
+		"Index": "1",
+		"Type": "Complish",
+		"Temp": "S00_C0",
+		"Temp2": "80"
+	},
+	"2": {
+		"Index": "2",
+		"Type": "Complish",
+		"Temp": "World",
+		"Temp2": "80"
+	},
+	"3": {
+		"Index": "3",
+		"Type": "Complish",
+		"Temp": "S00",
+		"Temp2": "80"
+	},
+	"4": {
+		"Index": "4",
+		"Type": "Pay",
+		"Temp": "1000"
+	},
+	"5": {
+		"Index": "5",
+		"Type": "Unlock",
+		"Temp": "S00"
+	},
+	"6": {
+		"Index": "6",
+		"Type": "Clear",
+		"Temp": "S00"
+	},
+	"7": {
+		"Index": "7",
+		"Type": "Clear",
+		"Temp": "S00_C0"
+	}
+}

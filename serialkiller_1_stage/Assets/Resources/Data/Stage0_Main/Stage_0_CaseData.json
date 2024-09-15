@@ -24,6 +24,13 @@
 				"VictimName" : "Name_Stage0_Main_C2",
 				"Date" : 3,
 				"NewsDate" : 0
+			},
+			"4" : 
+			{
+				"CaseLocation" : 0,	
+				"VictimName" : "Name_Stage0_Main_C0",
+				"Date" : 0,
+				"NewsDate" : 0
 			}	
 		},
 		"Order" : 
@@ -39,9 +46,9 @@
 	{
 		"Case" : 
 		{
-			"0" : 
+			"3" : 
 			{
-				"CaseLocation" : 0,	
+				"CaseLocation" : 3,	
 				"VictimName" : "Name_Stage0_Main_C0",
 				"Date" : 0,
 				"NewsDate" : 0	

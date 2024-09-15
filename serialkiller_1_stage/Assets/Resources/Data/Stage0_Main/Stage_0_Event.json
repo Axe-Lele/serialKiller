@@ -1,129 +1,290 @@
-﻿{
+{
 	"Start": {
-		"0": ["AddNpcEvent-D0_0"],
-		"1": []
+		"0": ["Dialog-N0_00",  "ChangeNpcState-T1_Missing", "AddArea-Home_2" , "UnlockDT-0009" "UnlockDT-0001", "UnlockDT-0002" , "UnlockDT-0003" , "AddSelection-D53_00"  ],
+		"1": [ "SystemMessage-030" ]
 	},
 
 	"Case": {
 		"0": {
-			"0": [ "AddNews-0", "AddSearch-Extra_0" ],
-			"1": [ "AddNews-2", "AddArea-Case_1", "ChangeNpcState-C2_Dead" ],
-			"2": [ "AddNews-1", "AddArea-Case_2", "ChangeNpcState-C1_Dead", "AddArea-Extra_1", "AddSearch-Extra_1" ]
-
+			"0": [ "AddNews-2" , "UnlockDT-0009" ],
+			"1": [],
+			"2": [],
+			"4": []
 		},
 		"1": {
-			"0": [ "AddNews-0", "AddSearch-Extra_0" ],
-			"1": [ "AddNews-2", "AddArea-Case_1", "ChangeNpcState-C2_Dead" ],
-			"2": [ "AddNews-1", "AddArea-Case_2", "ChangeNpcState-C1_Dead", "AddArea-Extra_1", "AddSearch-Extra_1" ]
+			"0": ["AddSearch-Extra_0"],
+			"1": ["AddSelection-D0_04", "AddNews-2", "ChangeNpcState-C2_Dead"],
+			"2": ["AddNews-1", "ChangeNpcState-C1_Dead", "AddArea-Extra_1", "AddSearch-Extra_1"]
+		}
+	},
+	"GetItem": {
+		"0": {
+			"00": [ ],
+			"01": [ ],
+			"02": [ "SystemMessage-035" ],
+			"A2": [],
+			"A5": ["SystemMessage-009", "AddEvidence-A3"],
+			"A6": [],
+			"A9": ["Dialog-N0_05"],
+			"A10": ["Case-Side_0"],
+			"A14": [],
+			"A22": [ "SystemMessage-033" ],
+			"A30": ["RemoveEvidence-A11"],
+			"A31": ["RemoveEvidence-A11"],
+			"A39": [],
+			"A98": [  ]
+		},
+		"1": {
+			"10": ["AddCase-3"],
+			"A2": ["AddArea-Company_3"],
+			"A5": ["SystemMessage-009", "AddEvidence-A3"],
+			"A6": ["AddEvidence-A7"],
+			"A9": [],
+			"A10": ["Case-Side_0"],
+			"A14": [],
+			"A17": [ "RemoveSelection-D19_01", "RemoveSelection-D19_02","AddSelection-D19_03"],
+			"A18": [ "SystemMessage-032" ]
 		}
 	},
 
-	"GetItem": {
-		"0": {
-			"A2": [ "AddArea-Company_3" ],
-			"A5": [ "SystemMessage-009", "AddEvidence-A3" ],
-			"A6": [ "AddEvidence-A7" ],
-			"A9": [ "AddEvidence-A7" ],
-			"A10": [ "Case-Side_0" ],
-			"A14": [ "SystemMessage-010" ]
-		},
-		"1": {
-			"A2": [ "AddArea-Company_3" ],
-			"A5": [ "SystemMessage-009", "AddEvidence-A3" ],
-			"A6": [ "AddEvidence-A7" ],
-			"A9": [ "AddEvidence-A7" ],
-			"A10": [ "Case-Side_0" ],
-			"A14": [ "SystemMessage-010" ]
-		}
+	"Warrant": {
+		"A0_0": ["ShowEnding-A0_0", "UnlockDT-0000", "UnlockDT-0001", "UnlockDT-0002", "UnlockDT-0005"],
+		"A0_1": ["ShowEnding-A0_1", "UnlockDT-0000", "UnlockDT-0001", "UnlockDT-0005"],
+		"A0_2": ["ShowEnding-A0_2", "UnlockDT-0000", "UnlockDT-0005"],
+		"A0_3": ["ShowEnding-A0_3"],
+		"A1_0": ["ShowEnding-A2_0", "UnlockDT-0000"],
+		"A1_1": [ "SystemMessage-037" ],
+		"A1_2": [ "SystemMessage-037" ],
+		"A1_3": [ "Dialog-D13_50" ],
+		"C0_0": ["ShowEnding-C0_0"],
+		"C1_0": ["ShowEnding-C1_0"],
+		"C2_0": ["ShowEnding-C1_0"],
+		"D1_0": ["ShowEnding-D1_0"],
+		"D1_1": ["ShowEnding-D1_1"],
+		"D1_2": ["ShowEnding-D1_2"],
+		"D9_0": ["Dialog-D13_52"],
+		"D13_0": ["Dialog-D13_51"],
+		"Bad": ["Dialog-D13_50"]
 	},
 
 	"Analysis": {
 		"0": {
-			"00": [ "Dialog-N0_A0" ]
+			"A14": []
 		},
 		"1": {
-			"00": [ "Dialog-N0_A1" ]
+			"00": []
 		}
 	},
 
 	"CasePlace": {
 		"0": {
-			"0": [ "Dialog-N1_00", "AddEvidence-00" ],
-			"1": [ "AddEvidence-01" ],
-			"2": [ "AddEvidence-02" ]
+			"0": [],
+			"1": [],
+			"2": []
 		},
 		"1": {
-			"0": [ "Dialog-N1_00", "AddEvidence-00" ],
-			"1": [ "AddEvidence-01" ],
-			"2": [ "AddEvidence-02" ]
+			"0": [],
+			"1": [],
+			"2": []
 		}
 	},
 
 	"SystemMessage": {
-		"001": [ "Dialog-N0_01" ],
-		"002": [ "Dialog-N0_02" ],
+		"001": ["Dialog-N0_01"],
+		"002": ["Dialog-N0_02"],
 		"003": [],
-		"004": [ "Dialog-N0_03" ],
+		"004": ["Dialog-N0_03"],
 		"005": [],
 		"006": [],
-		"007": [ "Dialog-N0_04" ],
+		"007": ["Dialog-N0_04"],
 		"008": [],
-		"009": [ "Dialog-N0_06" ],
-		"010": [ "Dialog-N0_07" ]
+		"009": ["Dialog-N0_06"],
+		"010": ["Dialog-N0_07"],
+		"011": ["RemoveSelection-D4_03", "RemoveSelection-D4_11", "AddSelection-D4_04", "SwapEvidence-A0_0", "AddSelection-D14_03", "ShowCompulsion-N0_001"],
+		"012": ["ShowCompulsion-D14_001"],
+		"013": ["Dialog-N0_21"],
+		"014": ["ShowCompulsion-D13_001"],
+		"015": ["Dialog-D13_10"],
+		"016": ["ShowCompulsion-D3_S0", "AddArea-Company_2"],
+		"017": ["ShowCompulsion-D3_S0", "AddArea-Company_2", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D9_23"],
+		"018": ["RemoveSelection-A1_18", "RemoveSelection-A1_19", "AddSelection-A1_21", "AddSelection-A1_22", "AddSelection-A1_50"],
+		"019": ["AddSelection-D8_31"],
+		"020": ["AddSelection-D6_31", "RemoveSelection-D6_33", "RemoveSelection-D8_31"],
+		"021": ["AddSelection-D8_33", "RemoveSelection-D8_31"],
+		"022": ["AddSelection-D8_00", "AddSelection-D6_00" , "AddArea-Company_4", "AddEvidence-A27" ] ,
+		"023": ["AddSelection-A1_32", "RemoveSelection-A1_03"],
+		"024": ["AddSelection-D6_33"],
+		"025": ["AddSelection-D9_37", "AddArea-Company_0", "AddSelection-D4_00", "AddSelection-D5_00", "AddArea-Home_0", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_3", "AddArea-Extra_2", "AddSelection-C0_00", "AddSelection-D2_00", "AddSelection-A0_60", "AddSelection-C2_00", "RemoveSelection-D9_60", "RemoveSelection-D9_61", "RemoveSelection-D9_62", "RemoveSelection-D9_63"],
+		"026": ["Dialog-D9_64" , "AddSelection-D13_00" ],
+		"027": ["AddSelection-D2_04"],
+		"028": ["AddArea-Company_3", "AddArea-Company_0", "AddSelection-A1_60", "RemoveSelection-A1_20", "AddSelection-D4_00", "AddSelection-D5_00"],
+		"029": ["AddArea-Company_3", "AddSearch-Home_0", "AddSearch-Home_1", "AddArea-Extra_3", "AddArea-Extra_2", "AddSelection-A1_60", "RemoveSelection-A1_20", "AddSelection-A0_60", "AddSelection-C0_00", "AddSelection-C2_00", "AddSelection-D2_00"],
+		"030": ["Dialog-C1_20" , "AddArea-Extra_1" , "AddSelection-C1_21" ],
+		"031": ["ShowCompulsion-C1_S0" ],
+		"032": ["Dialog-D21_00" ],
+		"033": ["ShowCompulsion-D11_S0" ],
+		"034": ["Dialog-D9_56" ],
+		"035": ["Dialog-D10_10" ],
+		"036": ["ShowCompulsion-D9_S0" ],
+		"037": ["Dialog-D13_20" ],
+		"038": ["ShowCompulsion-D12_S0" ],
+		"039": ["Dialog-D13_21" ],
+		"040": ["AddNpcEvent-A1_0" , "AddSelection-A1_37" , "AddArea-Company_1"],
+		"041": ["Dialog-A0_11" ],
+		"042": ["Dialog-D9_72" ],
+		"044": ["AddArea-Extra_0" , "AddSelection-D26_01"],
+		"045": ["Dialog-D4_07" , "AddEvidence-A60"],
+		"046": [ "RemoveSelection-D6_06" , "RemoveEvidence-A60", "AddEvidence-A64" , "AddSelection-D6_13"],
+		"047": [ "SwapEvidence-A28_0" , "SwapEvidence-A27_1" , "SwapEvidence-A52_0" , "SwapEvidence-A51_1" , "RemoveSelection-A1_73" ],
+		"048": [ "SwapEvidence-A27_0" , "SwapEvidence-A51_0"  , "RemoveSelection-A1_03", "RemoveSelection-A1_73"  ],
+		"049": ["RemoveEvidence-A32" , "AddEvidence-A33", "RemoveSelection-A1_03"],
+		"050": ["RemoveEvidence-A54" , "AddEvidence-A55" , "RemoveSelection-A1_03"],
+		"051": ["RemoveEvidence-A29" , "AddEvidence-A32"],
+		"052": ["RemoveEvidence-A53" , "AddEvidence-A54" ],
+		"053": [ "AddNpcEvent-D6_0" ],
+		"054": ["AddEvidence-A63"],
+		"055": [ "Dialog-D4_13"],
+		"056": ["Dialog-D05_04" ],
+		"057": ["SwapEvidence-A60"],
+		"058": ["ShowCompulsion-D5_S0"],
+		"059": ["Dialog-D06_10" , "RemoveEvidence-A65", "RemoveEvidence-A66", "AddEvidence-67" ],
+		"098": [],
+		"099": []
 	},
-
 	"Search": {
 		"0": {
 			"Home_0": [],
 			"Home_1": [],
 			"Home_2": [],
-			"Home_3": [ "AddEvidence-A6" ],
+			"Home_3": [],
 			"Home_4": [],
-			"Company_0": [ "AddEvidence-A6" ],
-			"Company_1": [ "AddSearch-Company_0" ],
-			"Company_2": [ "AddArea-Extra_1", "AddEvidence-A11" ],
-			"Company_3": [ "AddEvidence-A9" ],
-			"Company_4": [ "AddEvidence-A7" ],
-			"Extra_0": [ "AddEvidence-A6" ],
-			"Extra_1": [ "AddEvidence-A10" ],
-			"Extra_2": [ "AddEvidence-A5" ],
-			"Case_0": [ "ChangeNpcState-D0_Dead" ]
+			"Company_0": ["SwapEvidence-A0_0"],
+			"Company_2": ["AddArea-Extra_1"],
+			"Company_3": [],
+			"Company_4": [],
+			"Extra_0": [],
+			"Extra_1": [],
+			"Extra_2": [],
+			"Case_0": []
 		},
 		"1": {
 			"Home_0": [],
 			"Home_1": [],
 			"Home_2": [],
-			"Home_3": [ "AddEvidence-A6" ],
+			"Home_3": [],
 			"Home_4": [],
-			"Company_0": [ "SystemMessage-006", "AddEvidence-A2" ],
-			"Company_1": [ "AddSearch-Company_0" ],
-			"Company_2": [ "AddArea-Extra_1", "AddEvidence-A11" ],
-			"Company_3": [ "AddEvidence-A9" ],
-			"Company_4": [ "AddEvidence-A7" ],
-			"Extra_0": [ "AddEvidence-A5" ],
-			"Extra_1": [ "AddEvidence-A10" ],
-			"Extra_2": [ "AddEvidence-A5" ],
-			"Case_0": [ "AddCase-1" ]
+			"Company_0": ["SystemMessage-006"],
+			"Company_2": ["AddArea-Extra_1"],
+			"Company_3": [],
+			"Company_4": [],
+			"Extra_0": [],
+			"Extra_1": [],
+			"Extra_2": [],
+			"Extra_4": []
 		}
 	},
 
 	"EndDialog": {
-		"D0": {
+		"N0": {
 			"0": {
-				"01": [ "SystemMessage-002" ],
-				"02": [ "Dialog-N0_08" ]
+				"00": [],
+				"01": []
 			},
 			"1": {
-				"01": [ "SystemMessage-002" ],
-				"02": [ "Dialog-N0_08" ]
+				"01": ["SystemMessage-002"],
+				"02": ["Dialog-N0_08"]
+			}
+		},
+		"D0": {
+			"0": {
+				"01": ["SystemMessage-002"],
+				"02": ["Dialog-N0_08"]
+			},
+			"1": {
+				"01": ["SystemMessage-002"],
+				"02": ["Dialog-N0_08"]
+			}
+		},
+		"D1": {
+			"0": {
+				"00": ["SystemMessage-012"],
+				"01": ["SystemMessage-012"],
+				"02": ["SystemMessage-012"]
+			},
+			"1": {
+				"02": ["SystemMessage-007", "AddSearch-Company_3"]
+			}
+		},
+		"A0": {
+			"0": {
+				"21": ["SystemMessage-041"]
+			},
+			"1": {
+				"02": []
 			}
 		},
 		"A1": {
 			"0": {
-				"02": [ "SystemMessage-007", "AddSearch-Company_3" ]
+				"37": [ ]
 			},
 			"1": {
-				"02": [ "SystemMessage-007", "AddSearch-Company_3" ]
+				"02": []
+			}
+		},
+		"A2": {
+			"0": {},
+			"1": {
+				"02": ["SystemMessage-007", "AddSearch-Company_3"]
+			}
+		},
+		"D3": {
+			"0": {
+				"00": [],
+				"01": [],
+				"50": []
+			},
+			"1": {}
+		},
+		"D4": {
+			"0": {
+				"00": []
+			},
+			"1": {}
+		},
+		"D5": {
+			"0": {
+				"00": [],
+				"01": [],
+				"03": []
+			},
+			"1": {}
+		},
+		"D9": {
+			"0": {
+				"10": ["SystemMessage-016"],
+				"15": ["SystemMessage-016"],
+				"16": ["SystemMessage-016"],
+				"20": [],
+				"42": [ ],
+				"99": ["SystemMessage-016"]
+			},
+			"1": {
+				"20": ["SystemMessage-013", "AddArea-Company_0"]
+			}
+		},
+		"D10": {
+			"0": {
+				"06": [],
+				"07": [],
+			},
+			"1": {}
+		},
+		"C1": {
+			"0": {},
+			"1": {
+				"10": [ ],
+				"20": [ ],
+				"24": [ "SystemMessage-031" ]
 			}
 		}
 	},
@@ -131,156 +292,574 @@
 	"Dialog": {
 		"N0": {
 			"0": {
-				"00": [ "AddArea-Case_0" ],
-				"02": [ "SystemMessage-003" ],
-				"03": [ "SystemMessage-005", "AddSearch-Company_0" ]
+				"00": [ "AddSelection-D15_01", "AddSelection-D15_50", "SystemMessage-026", "AddNpcEvent-D11_0" ],
+				"01": [],
+				"02": ["SystemMessage-003"],
+				"03": ["SystemMessage-005", "SetEvidence-Company_0+A2"],
+				"05": ["SystemMessage-008"],
+				"09": ["RemoveSelection-D4_03", "RemoveSelection-D4_11", "AddSelection-D4_04", "SwapEvidence-A0"],
+				"99": ["AddArea-Case_0", "AddNpcEvent-D9_0", "AddNpcEvent-D11_0", "AddSelection-D15_00", "AddSelection-D15_01", "AddSelection-D15_50", "SystemMessage-026"]
 			},
 			"1": {
-				"00": [ "AddArea-Case_0" ],
-				"02": [ "SystemMessage-003" ],
-				"03": [ "SystemMessage-005", "AddSearch-Company_0" ],
-				"05": [ "SystemMessage-008" ]
+				"20": ["AddArea-Case_3", "AddNpcEvent-D9_0", "AddNpcEvent-D10_0", "AddNpcEvent-D11_0"],
+				"01": ["AddEvidence-00"],
+				"02": ["SystemMessage-003"],
+				"03": ["SystemMessage-005", "SetEvidence-Company_0+A2"],
+				"05": ["SystemMessage-008"],
+				"21": ["SystemMessage-015"]
 			}
-
 		},
 		"N1": {
 			"0": {
-				"00": [ "AddArea-Extra_0", "AddSelection-D0_00", "SystemMessage-001" ],
-				"01": [ "AddArea-Case_0", "AddArea-Company_0" ]
+				"00": ["AddArea-Extra_0", "AddSelection-D0_00", "SystemMessage-001"],
+				"01": ["AddArea-Case_0", "AddArea-Company_0"]
 			},
 			"1": {
-				"00": [ "AddArea-Extra_0", "AddSelection-D0_00", "SystemMessage-001" ],
-				"01": [ "AddArea-Case_0", "AddArea-Company_0" ]
+				"00": ["AddArea-Extra_0", "AddSelection-D0_00", "SystemMessage-001"],
+				"01": ["AddArea-Case_0", "AddArea-Company_0"]
 			}
 
 		},
 		"A0": {
 			"0": {
-				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
-				"S01": [ "GameOver-A0_3" ],
-				"S02": [ "GameOver-A0_3" ]
+				"00": ["RemoveSelection-A0_00", "AddSelection-A0_01", "AddSelection-A0_04", "AddSelection-A0_50"],
+				"01": ["RemoveSelection-A0_01" , "AddEvidence-A34" ],
+				"04": ["RemoveSelection-A0_04", "AddSelection-A0_05"],
+				"05": ["RemoveSelection-A0_05"],
+				"10": ["SwapEvidence-A34_0" , "SwapEvidence-A39_0"],
+				"20": ["RemoveSelection-A0_20", "AddSelection-A0_21", "AddSelection-A0_24", "AddSelection-A0_50"],
+				"21": ["RemoveSelection-A0_01" , "AddEvidence-A39" ],
+				"24": ["RemoveSelection-A0_24", "AddSelection-A0_25"],
+				"25": ["RemoveSelection-A0_25"],
+				"26": ["SystemMessage-044" , "RemoveSelection-A1_41"],
+				"50": ["RemoveSelection-A0_50"],
+				"60": ["RemoveSelection-A0_60", "AddSelection-A0_61", "AddSelection-A0_04", "AddSelection-A0_50"],
+				"61": ["RemoveSelection-A0_61", "AddSelection-A0_62"],
+				"62": ["RemoveSelection-A0_02", "AddSelection-A0_63"],
+				"63": [],
 			},
 			"1": {
-				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
-				"S01": [ "GameOver-A0_3" ],
-				"S02": [ "GameOver-A0_3" ]
+
 			}
 
 		},
 		"A1": {
 			"0": {
-				"00": [ "AddSelection-A1_02" ],
-				"03": [ "AddArea-Company_4" ],
-				"S00": [ "AddArea-Home_2", "AddSearch-Home_2", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
-				"S01": [ "GameOver-A1_3" ],
-				"S02": [ "GameOver-A1_3" ]
+				"00": ["RemoveSelection-A1_00" , "AddSelection-A1_01", "AddSelection-A1_03" , "AddSelection-A1_50" ],
+				"01": [ ],
+				"02": ["AddSelection-A1_04"],
+				"03": [ "SystemMessage-022" ],
+				"04": [ "RemoveSelection-A1_04"  ],
+				"05": [  ],
+				"06": [],
+				"10": [],
+				"18": [],
+				"19": ["RemoveSelection-A1_18", "RemoveSelection-A1_19", "AddSelection-A1_01", "AddSelection-A1_03", "AddSelection-A1_50", "RemoveEvidence-A11", "AddEvidence-A31"],
+				"20": ["RemoveSelection-A1_00", "RemoveSelection-A1_20", "AddSelection-A1_18", "AddSelection-A1_19"],
+				"21": ["RemoveSelection-A1_21", "RemoveSelection-A1_22", "AddSelection-A1_01", "AddSelection-A1_03"],
+				"22": ["RemoveSelection-A1_21", "RemoveSelection-A1_22", "AddSelection-A1_23"],
+				"23": ["RemoveSelection-A1_23", "AddSelection-A1_25"],
+				"24": ["SystemMessage-018"],
+				"25": ["AddSelection-A1_26"],
+				"26": ["RemoveSelection-A1_25", "RemoveSelection-A1_26", "AddSelection-A1_29", "AddSelection-A1_27"],
+				"27": ["RemoveSelection-A1_27"],
+				"31": ["SystemMessage-049"],
+				"32": ["SystemMessage-050"],
+				"33": ["RemoveSelection-A1_33"],
+				"35": ["RemoveSelection-A1_01"],
+				"36": ["RemoveSelection-A1_01"],
+				"37": ["RemoveSelection-A1_37", "AddSelection-A1_38"],
+				"38": ["RemoveSelection-A1_38" , "AddSelection-A1_39" , "AddSelection-A1_41" ],
+				"39": ["RemoveEvidence-A33" , "RemoveEvidence-A55" , "AddEvidence-A56"],
+				"41": ["SystemMessage-054"],
+				"50": ["RemoveSelection-A1_50"],
+				"60": ["RemoveSelection-A1_60", "RemoveSelection-A1_20", "AddSelection-A1_01", "AddSelection-A1_03", "AddSelection-A1_02", "AddSelection-A1_50"],
+				"70": ["RemoveSelection-A1_70" , "AddSelection-A1_73" , "AddSelection-A1_50"],
+				"73": ["AddArea-Company_4", "AddEvidence-A51" , "SystemMessage-022"  ],
+				"S00": ["AddArea-Home_2", "AddSearch-Home_2", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1"],
+				"S01": ["ShowEnding-A1_4"],
+				"S02": ["ShowEnding-A1_4"]
+
 
 			},
 			"1": {
-				"00": [ "AddSelection-A1_02" ],
-				"03": [ "AddArea-Company_4" ],
-				"S00": [ "AddArea-Home_2", "AddSearch-Home_2", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
-				"S01": [ "GameOver-A1_3" ],
-				"S02": [ "GameOver-A1_3" ]
+				"00": ["AddSelection-A1_02"],
+				"03": ["AddArea-Company_4"],
+				"S00": ["AddArea-Home_2", "AddSearch-Home_2", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1"],
+				"S01": ["GameOver-A1_3"],
+				"S02": ["GameOver-A1_3"]
 			}
 
 		},
-		"D0": {
+		"A2": {
 			"0": {
-				"00": [ "AddSelection-D0_01" ],
-				"10": [ "RemoveSelection-D0_00", "RemoveSelection-D0_01", "AddSelection-D0_03", "AddArea-Company_0", "AddSearch-Company_0" ],
-				"12": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
-				"S01": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
-				"S02": [ "AddArea-Extra_2", "AddSearch-Extra_2" ]
+				"02": ["SystemMessage-011"],
+				"03": ["AddSelection-A2_04", "AddSelection-A2_05", "AddArea-Extra_1", "SetEvidence-Extra_1+A10"]
 			},
 			"1": {
-				"00": [ "AddSelection-D0_01" ],
-				"01": [ "AddNpcEvent-D0_0" ],
-				"10": [ "RemoveSelection-D0_00", "RemoveSelection-D0_01", "AddSelection-D0_03", "AddArea-Company_0", "AddSearch-Company_0" ],
-				"12": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
-				"S00": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
-				"S01": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
-				"S02": [ "AddArea-Extra_2", "AddSearch-Extra_2" ]
+				"02": ["SystemMessage-011"],
+				"03": ["AddArea-Extra_1"],
+				"20": ["AddSelection-A2_10"]
+			}
+		},
+		"C0": {
+			"0": {
+				"00": ["RemoveSelection-C0_00", "AddSelection-C0_01", "AddSelection-C0_04", "AddSelection-C0_50"],
+				"01": ["RemoveSelection-C0_01" ],
+				"02": ["RemoveSelection-C0_02", "RemoveSelection-C0_03"],
+				"03": ["RemoveSelection-C0_02", "RemoveSelection-C0_03"],
+				"04": ["RemoveSelection-C0_04" ],
+				"11": ["RemoveEvidence-A56" , "AddEvidence-A57" , "RemoveSelection-A1_39" ],
+				"50": ["RemoveSelection-C0_50" ]
+			},
+			"1": {
+				"02": ["SystemMessage-011"],
+				"03": ["AddArea-Extra_1"],
+				"20": ["AddSelection-A2_10"]
+			}
+		},
+		"C1": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"02": [ ],
+				"03": [ ],
+				"10": [ "AddSelection-C1_11" , "RemoveSelection-C1_10" ],
+				"11": [ "AddArea-Extra_4" , "SetEvidence-Extra_4+A18" , "AddNpcEvent-D19_0" ],
+				"20": [ ],
+				"21": [ "AddSelection-D16_10" , "AddSelection-C1_22" ,"RemoveSelection-C1_21"], 
+				"22": [ "AddArea-Extra_0" , "AddSelection-D18_01" , "AddSelection-D19_00"],
+				"23": [ "RemoveSelection-C1_23" , "AddSelection-C1_24"],
+				"24": [ "RemoveSelection-C1_24"],
+				"30": [ "RemoveSelection-C1_30" , "AddSelection-C1_31" , "AddSelection-C1_32"],
+				"31": [ "RemoveSelection-C1_31" , "RemoveSelection-C1_32" , "RemoveSelection-D18_02" , "AddSelection-D18_20" ],
+				"32": [ "RemoveSelection-C1_31", "RemoveSelection-C1_32" , "RemoveSelection-D18_02" , "AddSelection-D18_10"],
+				"40": [ "AddSelection-C1_41" , "RemoveSelection-C1_40"],
+				"41": [ "AddArea-Extra_4" , "SetEvidence-Extra_4+A18" , "AddNpcEvent-D19_0" ],
+				"50": [ "AddSelection-C1_51" , "RemoveSelection-C1_50"],
+				"51": [ "AddArea-Extra_4" , "SetEvidence-Extra_4+A18" , "AddNpcEvent-D19_0" ],
+				"60": [ "AddSelection-C1_61" , "RemoveSelection-C1_60"],
+				"61": [ "AddArea-Extra_4" , "SetEvidence-Extra_4+A18" , "AddNpcEvent-D19_0" ],
+				"S00": [ "AddArea-Company_1", "AddSelection-D20_10" ],
+				"S01": [ "AddArea-Company_1" , "AddSelection-D20_00"],
+				"S02": [ "AddArea-Company_1" , "AddSelection-D20_20" , "AddSelection-D20_21"],
+				"S03": [ "AddArea-Company_1" , "AddSelection-D20_20" , "AddSelection-D20_21"]
+			}
+		},
+		"C2": {
+			"0": {
+				"00": ["RemoveSelection-C2_00", "AddSelection-C2_01", "AddSelection-C2_50"],
+				"01": ["AddSelection-C2_03", "RemoveSelection-C2_01"],
+				"02": [],
+				"03": [ "AddEvidence-A35"],
+				"50": [ ]
+			},
+			"1": {
+				"02": ["SystemMessage-011"],
+				"03": ["AddArea-Extra_1"],
+				"20": ["AddSelection-A2_10"]
+			}
+		},
+		"D0": {
+			"0": {
+				"00": ["AddSelection-D0_01", "AddNpcEvent-D4_0", "UnlockDT-0013"],
+				"10": ["RemoveSelection-D0_00", "RemoveSelection-D0_01", "AddSelection-D0_03", "AddArea-Company_0", "SystemMessage-014"],
+				"12": ["AddArea-Extra_2", "SetEvidence-Extra_2+A5", "AddSelection-D0_16"],
+				"14": ["AddSelection-D0_15"],
+				"16": ["AddSelection-A1_04"],
+				"S00": ["AddArea-Extra_2", "SetEvidence-Extra_2+A5"],
+				"S01": ["AddArea-Extra_2", "SetEvidence-Extra_2+A5"],
+				"S02": ["AddArea-Extra_2", "SetEvidence-Extra_2+A5"]
+			},
+			"1": {
+				"00": ["AddSelection-D0_01", "AddNpcEvent-D4_0"],
+				"10": ["RemoveSelection-D0_00", "RemoveSelection-D0_01", "AddSelection-D0_03", "AddArea-Company_0", "AddSearch-Company_0"],
+				"12": ["AddArea-Extra_2", "AddSearch-Extra_2"],
+				"S00": ["AddArea-Extra_2", "AddSearch-Extra_2"],
+				"S01": ["AddArea-Extra_2", "AddSearch-Extra_2"],
+				"S02": ["AddArea-Extra_2", "AddSearch-Extra_2"]
 			}
 		},
 		"D1": {
 			"0": {
-				"05": [ "SystemMessage-004" ],
-				"07": [ "AddSelection-A0_02" ],
-				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
-				"S01": [ "GameOver-D1_3" ],
-				"S02": [ "GameOver-D1_3" ]
+				"05": ["SystemMessage-004"],
+				"07": ["AddSelection-A0_02", "ChangeNpcState-D1_Missing"],
+				"S00": ["AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1"],
+				"S01": ["GameOver-D1_3"],
+				"S02": ["GameOver-D1_3"]
 			},
 			"1": {
-				"05": [ "SystemMessage-004" ],
-				"07": [ "AddSelection-A0_02" ],
-				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
-				"S01": [ "GameOver-D1_3" ],
-				"S02": [ "GameOver-D1_3" ]
+				"05": ["SystemMessage-004"],
+				"07": ["AddSelection-A0_02"],
+				"S00": ["AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1"],
+				"S01": ["GameOver-D1_3"],
+				"S02": ["GameOver-D1_3"],
+				"22": ["AddArea-Company_3"],
+				"23": ["AddArea-Company_3"]
 			}
 		},
 		"D2": {
 			"0": {
-				"01": [ "AddSelection-D3_11" ],
-				"02": [ "AddSelection-D2_021" ]
+				"00": ["RemoveSelection-D2_00", "AddSelection-D2_01", "AddSelection-D2_03", "AddSelection-D2_50"],
+				"01": ["RemoveSelection-D2_01"],
+				"02": ["AddEvidence-A37"],
+				"03": ["RemoveSelection-D2_03"],
+				"04": ["RemoveSelection-D2_00", "RemoveSelection-D2_02"],
+				"50": ["RemoveSelection-D2_50"]
 			},
 			"1": {
-				"01": [ "AddSelection-D3_11" ],
-				"02": [ "AddSelection-D2_021" ]
+				"01": ["AddSelection-D2_21"],
+				"02": []
 			}
 		},
 		"D3": {
 			"0": {
-				"01": [ "AddSelection-D3_11" ]
+				"00": ["RemoveSelection-D3_00"],
+				"01": ["RemoveSelection-D3_01"],
+				"02": ["RemoveSelection-D3_02"],
+				"10": ["RemoveSelection-D3_10"],
+				"11": ["RemoveSelection-D3_11"],
+				"50": ["RemoveSelection-D3_50", "AddSelection-D3_00"],
+				"S0": [],
+				"S00": ["AddSelection-A1_20", "AddEvidence-A11", "AddSelection-D3_10", "AddSelection-D3_01", "AddSelection-D3_50"],
+				"S01": ["AddSelection-D3_15", "AddSelection-D3_11", "RemoveSelection-D3_12", "RemoveSelection-D3_13", "RemoveSelection-D3_14", "AddSelection-D3_02", "AddSelection-D3_50", "RemoveSelection-A1_00", "AddSelection-A1_60"],
+				"S02": ["AddSelection-D3_15", "AddSelection-D3_11", "RemoveSelection-D3_12", "RemoveSelection-D3_13", "RemoveSelection-D3_14", "AddSelection-D3_02", "AddSelection-D3_50", "RemoveSelection-A1_00", "AddSelection-A1_60"]
 			},
 			"1": {
-				"01": [ "AddSelection-D3_11" ]
+				"01": ["AddSelection-D3_11"]
 			}
 		},
 		"D4": {
 			"0": {
-				"01": [ "AddSelection-D4_02" ],
-				"02": [ "AddSelection-D4_03" ],
-				"03": [ "AddSelection-D4_11" ],
-				"11": [ "AddEvidence-A0" ]
+				"00": ["RemoveSelection-D4_00",  "AddSelection-D4_01",  "AddSelection-D4_02", "AddSelection-D4_50"],
+				"01": ["RemoveSelection-D4_01"],
+				"02": ["RemoveSelection-D4_02", "AddSelection-D4_04"],
+				"03": ["RemoveSelection-D4_03", "AddSelection-D4_04", "AddSelection-D4_05"],
+				"04": [ "RemoveSelection-D4_04" , "AddSelection-D4_05"],
+				"05": [ "RemoveSelection-D4_05" , "AddEvidence-A38"],
+				"06": [ "SystemMessage-055" ],
+				"07": ["RemoveSelection-D4_07", "AddSelection-D4_08"],
+				"08": ["RemoveSelection-D4_08", "AddSelection-D4_09", "AddSelection-D4_10"],
+				"09": ["RemoveSelection-D4_10", "RemoveSelection-D4_09"],
+				"10": ["RemoveSelection-D4_10", "RemoveSelection-D4_09", "AddArea-Company_4"],
+				"11": [],
+				"12": ["SystemMessage-057"],
+				"13": [],
+				"14": [],
+				"50": ["RemoveSelection-D4_50"]
 			},
 			"1": {
-				"01": [ "AddSelection-D4_02" ],
-				"02": [ "AddSelection-D4_03" ],
-				"03": [ "AddSelection-D4_11" ],
-				"11": [ "AddEvidence-A0" ]
+				"03": ["AddSelection-D4_11"],
+				"21": ["AddArea-Company_1", "AddArea-Company_2"],
+				"22": ["AddSelection-D4_23"],
+				"23": ["AddArea-Company_2"],
+				"11": ["AddEvidence-A0"]
 			}
 		},
 		"D5": {
 			"0": {
-				"01": [ "AddSelection-D5_03" ],
-				"04": [ "AddArea-Extra_1", "AddSearch-Extra_1" ]
+				"00": ["RemoveSelection-D5_00", "AddSelection-D5_01", "AddSelection-D5_03", "AddSelection-D5_50"],
+				"01": ["RemoveSelection-D5_01" , "AddSelection-D5_04" ],
+				"02": [ ],
+				"03": ["RemoveSelection-D5_03", "AddSelection-D5_04" , "AddEvidence-A61"],
+				"04": ["SystemMessage-058"],
+				"05": ["SystemMessage-056" ],
+				"50": ["RemoveSelection-D5_50"],
+				"S00": [ "SwapEvidence-A64_0" ],
+				"S01": [ "SwapEvidence-A64_1" ],
+				"S02": [ ]				
 			},
 			"1": {
-				"01": [ "AddSelection-D5_03" ],
-				"04": [ "AddArea-Extra_1", "AddSearch-Extra_1" ]
+				"01": ["AddSelection-D5_13"],
+				"20": ["AddArea-Company_5"],
+				"04": []
 			}
 		},
 		"D6": {
 			"0": {
-				"03": [ "AddSelection-D7_04" ]
+				"00": ["RemoveSelection-D6_00", "AddSelection-D6_02", "AddSelection-D6_03" , "AddSelection-D6_50"],
+				"01": ["RemoveSelection-D6_01"],
+				"02": ["RemoveSelection-D6_02"],
+				"03": ["RemoveSelection-D6_03" , "AddSelection-D6_04"],
+				"04": ["RemoveSelection-D6_04", "AddSelection-D6_05", "AddSelection-D6_06" ],
+				"05": ["SystemMessage-053"],
+				"05": ["SystemMessage-053"],
+				"07": [ "SystemMessage-046" ],
+				"08": [ "SystemMessage-059" ],
+				"10": [  ],
+				"11": [ "RemoveSelection-D6_11", "AddSelection-D6_12"],
+				"12": ["RemoveSelection-D6_12", "AddSelection-D6_13"],
+				"13": ["RemoveSelection-D6_13"],
+				"30": [ "SystemMessage-047"],
+				"32": ["SystemMessage-024"],
+				"33": [],
+				"50": ["RemoveSelection-D6_50"]
 			},
 			"1": {
-				"03": [ "AddSelection-D7_04" ]
+				"01": ["AddSelection-D6_05"]
 			}
 		},
 		"D7": {
+			"0": {},
+			"1": {}
+		},
+		"D8": {
 			"0": {
+				"00": [ "AddSelection-D8_02", "AddSelection-D8_50" , "RemoveSelection-D8_00"],
+				"02": ["RemoveSelection-D8_02"],
+				"30": ["SystemMessage-048"],
+				"31": [],
+				"32": ["SystemMessage-051"  ],
+				"33": ["SystemMessage-052" ],
+				"50": ["RemoveSelection-D8_50"]
+			},
+			"1": {
+				"00": ["AddSelection-D8_01", "RemoveSelection-D8_00"]
+			}
+		},
+		"D9": {
+			"0": {
+				"00": ["RemoveSelection-D15_00", "RemoveSelection-D9_00", "RemoveSelection-D9_20", "AddSelection-D9_09", "AddSelection-D9_02", "AddSelection-D9_06", "AddSelection-D9_17", "AddSelection-D9_07", "AddEvidence-00", "SetEvidence-Case_0+A0", "SetEvidence-Case_0+01", "SetEvidence-Case_0+02", "SetEvidence-Case_0+A6"],
+				"09": ["RemoveSelection-D9_09", "AddSelection-D9_03"],
+				"02": ["RemoveSelection-D9_02", "AddSelection-D9_04", "AddSelection-D9_05"],
+				"03": ["RemoveSelection-D9_03"],
+				"04": ["RemoveSelection-D9_04"],
+				"05": ["RemoveSelection-D9_05"],
+				"06": ["RemoveSelection-D9_06"],
+				"07": ["RemoveSelection-D9_09", "RemoveSelection-D9_02", "RemoveSelection-D9_03", "RemoveSelection-D9_04", "RemoveSelection-D9_05", "RemoveSelection-D9_06", "RemoveSelection-D9_07", "RemoveSelection-D9_17", "AddSelection-D9_08", "AddSelection-D9_18", "AddEvidence-A2", "AddEvidence-A3"],
+				"08": ["RemoveSelection-D9_08", "AddSelection-D9_10", "AddSelection-D9_11"],
+				"10": ["RemoveSelection-D9_10", "RemoveSelection-D9_11", "AddNpcEvent-D9_1", "AddNpcEvent-D10_0", "AddArea-Company_3", "SetEvidence-Company_3+A16", "AddArea-Home_4", "AddSelection-A1_00", "AddSelection-D9_60", "AddSelection-D9_22", "AddSelection-D10_00", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D3_12"],
+				"11": ["RemoveSelection-D9_10", "RemoveSelection-D9_11", "RemoveSelection-D9_12", "AddSelection-D9_12", "AddSelection-D9_13", "AddSelection-D9_14"],
+				"12": ["RemoveSelection-D9_12", "RemoveSelection-D9_13", "RemoveSelection-D9_14", "AddSelection-D9_15", "AddSelection-D9_16"],
+				"13": ["RemoveSelection-D9_12", "RemoveSelection-D9_13", "RemoveSelection-D9_14", "AddSelection-D9_15", "AddSelection-D9_16"],
+				"14": ["RemoveSelection-D9_12", "RemoveSelection-D9_13", "RemoveSelection-D9_14", "AddSelection-D9_15", "AddSelection-D9_16"],
+				"15": ["RemoveSelection-D9_15", "RemoveSelection-D9_16", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "AddArea-Company_0", "AddArea-Home_4", "AddSelection-D4_00", "AddSelection-D5_00", "AddSelection-D9_61", "AddSelection-D9_22", "AddSelection-D10_00", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D3_13"],
+				"16": ["RemoveSelection-D9_15", "RemoveSelection-D9_16", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_2", "AddArea-Extra_3", "AddArea-Extra_5", "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00", "AddSelection-D9_62", "AddSelection-D9_22", "AddSelection-D10_00", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D3_14"],
+				"17": ["RemoveSelection-D9_17"],
+				"18": ["RemoveSelection-D9_18", "AddSelection-D10_02", "RemoveSelection-D10_03"],
+				"20": ["RemoveSelection-D15_00", "RemoveSelection-D9_20", "RemoveSelection-D10_00", "AddSelection-D10_40", "RemoveSelection-D9_00", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "SetEvidence-Case_0+A0", "SetEvidence-Case_0+01", "SetEvidence-Case_0+02", "SetEvidence-Case_0+A6", "AddEvidence-00", "AddEvidence-A2", "AddEvidence-A3", "AddArea-Home_4", "AddSelection-D9_63"],
+				"22": ["RemoveSelection-D9_22"],
+				"23": ["RemoveSelection-D9_23"],
+				"36": ["RemoveSelection-D9_36", "SystemMessage-025"],
+				"38": ["SystemMessage-028"],
+				"39": ["SystemMessage-029"],
+				"40": [ "AddSelection-D9_41" , "AddSelection-D9_42" , "RemoveSelection-D9_40" , "AddCase-4" , "AddSelection-D10_00", "AddSelection-D10_01" , "AddSelection-D10_03", "AddSelection-D10_04" , "SetEvidence-Case_0+01" , , "SetEvidence-Case_0+02" ],
+				"41": [ "RemoveSelection-D9_41" , "RemoveSelection-D9_42" , "AddArea-Company_3" , "AddEvidence-A17" , "AddNpcEvent-D10_0" , "AddSelection-D9_60" , "AddEvidence-A25" , "AddSelection-A1_00"],
+				"42": [ "RemoveSelection-D9_41" , "RemoveSelection-D9_42" , "AddEvidence-A24" , "AddNpcEvent-D10_0" , "AddSelection-D9_63" ],
+				"50": [ "RemoveEvidence-A23" , "AddEvidence-A26" ],
+				"54": [  ],
+				"55": [ "SystemMessage-034" ],
+				"56": [ "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_2", "AddArea-Extra_3" , "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00" ],
+				"57": [ "SystemMessage-036" ],
+				"58": [ "SystemMessage-036" ],
+				"59": [ "SystemMessage-038" ],
+				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" ],
+				"70": [ "SystemMessage-042" ],
+				"71": [ "SystemMessage-042" ],
+				"72": [ "AddArea-Company_3" , "AddEvidence-A25" , "AddSelection-A1_70"],
+				"73": [ "SystemMessage-036" ],
+				"74": [ "AddSelection-A1_42" ],
+				"S0": [ ],
+				"S00": [ "SystemMessage-037" ],
+				"S01": [ "AddArea-Company_0", "AddSelection-D4_00", "AddSelection-D5_00" ],
+				"S02": [ "SystemMessage-037" ],
+			},
+			"1": {
+				"20": ["AddEvidence-10"]
+			}
+		},
+		"D10": {
+			"0": {
+				"00": ["RemoveSelection-D10_00"],
+				"01": ["RemoveSelection-D10_01"],
+				"02": ["RemoveSelection-D10_02"],
+				"03": ["RemoveSelection-D10_03"],
+				"05": ["RemoveSelection-D10_05", "AddSelection-D10_06", "AddSelection-D10_07", "AddSelection-D10_08"],
+				"06": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Company_3", "AddSelection-A1_00", "AddSelection-D3_12"],
+				"07": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Company_3", "AddSelection-A1_00", "AddSelection-D3_12"],
+				"08": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Home_0", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_2", "AddArea-Extra_3", "AddArea-Extra_5", "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00", "AddSelection-D3_14"],
+				"40": ["RemoveSelection-D10_40", "AddSelection-D10_05"],
+				"32": ["RemoveSelection-D10_02"],
+				"50": ["RemoveSelection-D10_50"]
+			},
+			"1": {
+				"00": ["AddSelection-D8_01", "RemoveSelection-D8_00"]
+			}
+		},
+		"D11": {
+			"0": {
+				"S0": [ ],
+				"S00": [ "AddSelection-D10_06" ],
+				"S01": [ "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1","AddArea-Extra_2", "AddArea-Extra_3" ,  "AddSelection-D2_00",  "AddSelection-C0_00", "AddSelection-A0_20", "AddSelection-C2_00" ],
+				"S02": [ "AddSelection-D10_06" ]
+			},
+			"1": {
+				"50": []
+			}
+		},
+		"D12": {
+			"0": {
+				"S0": [ ],
+				"S00": [ "SystemMessage-039" ],
+				"S01": [ "SystemMessage-040" , "RemoveSelection-A1_50" , "RemoveSelection-A1_01" ],
+				"S02": [ "SystemMessage-039" ]
+			},
+			"1": {
+				"50": []
+			}
+		},
+		"D13": {
+			"0": {
+				"00": ["AddSelection-D13_01", "AddSelection-D13_60" , "RemoveSelection-D13_00"],
+				"20": ["ShowEnding-A1_7"],
+				"21": ["ShowEnding-A1_8"],
+				"50": ["ShowEnding-Bad"],
+				"60": ["RemoveSelection-D13_60"]
+			},
+			"1": {
+				"50": ["ShowEnding-Bad"]
+			}
+		},
+		"D14": {
+			"0": {
+				"S00": ["AddArea-Extra_3"],
+				"S01": ["AddArea-Extra_3"],
+				"S02": ["AddArea-Extra_3"],
+				"00": ["AddSelection-D14_03"],
+				"01": ["AddSelection-D14_03"]
+			},
+			"1": {
+				"00": []
+			}
+		},
+		"D15": {
+			"0": {
+				"00": ["RemoveSelection-D15_00"],
+				"01": [],
+				"03": ["RemoveSelection-D15_03"],
+				"50": ["RemoveSelection-D15_50", "AddSelection-D15_03"]
+			},
+			"1": {
+				"00": ["AddSelection-D15_01"]
+			}
+		},
+		"D16": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"10": [ "AddSelection-D16_11" , "AddSelection-D16_20" , "RemoveSelection-D16_10"],
+				"11": [ "AddSelection-D16_12" , "AddSelection-D17_10" , "RemoveSelection-D16_11"]
+			}
+		},
+		"D17": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"10": [ ],
+				"11": [ ]
+			}
+		},
+		"D18": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"01": [ "RemoveSelection-D18_01" , "AddSelection-D18_02" ,  "RemoveSelection-C1_22" ],
+				"02": [ "AddSelection-C1_23"],
+				"10": [ "RemoveSelection-D18_10" , "RemoveSelection-D18_11" , "AddSelection-C1_10" ],
+				"20": [ "AddSelection-C1_60" ]
+			}
+		},
+		"D19": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"00": [ "RemoveSelection-D19_00", "AddSelection-D19_01"  ],
+				"01": [ "AddSelection-D19_02" ],
+				"02": [ "SetEvidence-Extra_1+A17"],
+				"10": [ "AddNpcEvent-D18_0" ]
+			}
+		},
+		"D20": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"00": [ "RemoveSelection-D20_00", "AddSelection-D20_01"  ],
+				"01": [ "RemoveSelection-D20_01", "AddSelection-D20_02" ],
+				"02": [ "AddSelection-C1_30" ],
+				"10": [ "RemoveSelection-D20_10" , "AddSelection-D20_11" ],
+				"11": [ "RemoveSelection-D20_11" , "AddSelection-C1_40" ],
+				"20": [ "RemoveSelection-D20_20" , "RemoveSelection-D20_21" , "AddSelection-C1_50" ],
+				"21": [ "ShowEnding-A1_6" ]
+			}
+		},
+		"D21": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"00": [ "AddArea-Company_5" , "AddSelection-D21_01" ,"RemoveSelection-D21_00" ],
+				"01": [ "AddSelection-D21_02" ,"RemoveSelection-D21_01" ],
+				"02": [ "AddSelection-D21_03" ,"RemoveSelection-D21_02" ],
+				"03": [ "AddSelection-D21_04" ,"RemoveSelection-D21_03" ],
+				"04": [ "AddSelection-D21_05" ,"RemoveSelection-D21_04" ],
+				"05": [ "AddSelection-D21_06" ,"RemoveSelection-D21_05" ],
+				"06": [ "AddSelection-D21_07" ,"RemoveSelection-D21_06" ],
+				"07": [ "RemoveSelection-D21_07", "AddSelection-D21_08" , "AddSelection-D21_09"  ],
+				"08": [ "AddNpcEvent-D22_0" , "AddNpcEvent-D23_0" , "RemoveSelection-D21_08" , "RemoveSelection-D21_09" , "AddEvidence-A19", "AddEvidence-A20" , "AddEvidence-A21" , "AddSelection-D23_00"],
+				"09": [ "RemoveSelection-D21_08" , "RemoveSelection-D21_09", "AddSelection-D21_08" ],
+				"10": [ ],
+				"11": [ "ShowEnding-A1_5" ]
+			}
+		},
+		"D22": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"00": [ "AddEvidence-A30" , "AddEvidence-A31" , "AddEvidence-A32" ],
+				"01": [ "AddEvidence-A33" , "AddEvidence-A34" , "AddEvidence-A35" ],
+				"02": [ "AddEvidence-A36" , "AddEvidence-A37" , "AddEvidence-A38" ],
+				"10": [ "AddEvidence-A40" ],
+				"11": [ "AddEvidence-A41" ],
+				"12": [ "AddEvidence-A42" ]
+			}
+		},
+		"D23": {
+			"0": {
+				"00": [ ]
+			},
+			"1": {
+				"20": [ "AddEvidence-A22" ],
+				"21": [ "AddEvidence-A23"],
+				"22": [ "AddEvidence-A24" ],
+				"30": [ "AddEvidence-A50" , "AddEvidence-A51" , "AddEvidence-A52" , "AddEvidence-A53" ],
+				"31": [ "AddEvidence-A54" ],
+				"32": [ "AddEvidence-A55" , "AddEvidence-A56" ]
+			}
+		},
+		"D24": {
+			"0": {
+				"10": [ "AddEvidence-A18" , "AddEvidence-A20" , "AddEvidence-A21" , "AddEvidence-A23" , "AddArea-Case_0" ],
+				"11": [ "AddEvidence-A18" , "AddEvidence-A20" , "AddEvidence-A22" , "AddEvidence-A23" , "AddArea-Case_0" ]
 			},
 			"1": {
 			}
 		},
-		"D8": {
+		"D26": {
 			"0": {
-				"00": [ "AddSelection-D8_01", "RemoveSelection-D8_00" ]
+				"01": [ "RemoveSelection-D26_01" , "AddSelection-D26_03", "AddSelection-D26_02" , "AddSelection-D26_04"],
+				"02": [ "AddSelection-D26_05" , "RemoveSelection-D26_02" ],
+				"03": [  ],
+				"04": [ "RemoveSelection-D26_04"  ],
+				"05": [ "AddEvidence-A59" ],
 			},
 			"1": {
-				"00": [ "AddSelection-D8_01", "RemoveSelection-D8_00" ]
 			}
 		}
 	}

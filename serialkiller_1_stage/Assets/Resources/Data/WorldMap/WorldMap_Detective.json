@@ -1,16 +1,28 @@
 ﻿{
 	"00": {
 		"0": {
-			"MurderMotive": [ "00_00_A1", "01_00_A1", "02_00_A1" ],
-			"Criminal":			[ "00_00_A1", "01_00_A2", "02_00_A3" ],
-			"Victim":				[ "00_00_A1", "01_00_A2", "02_00_A3" ],
-			"Tools":				[ "00_00_A1", "01_00_A2", "02_00_A3" ]
+			"Index": "S00_C0",
+			"Murder": "0000:Character-A0",
+			"Motive": [ "0001:Evidence-A10", "0002:Evidence-A6", "0003:Evidence-A4" ],
+			"Method": [ "0005:Evidence-A7", "0006:Evidence-A1" ],
+			"Victim": [ "0009:Character-C0", "00010:Character-C1", "00011:Character-C2" ],
+			"Etc": [ "00013:Character-D0", "00014:Evidence-A14", "00015:Character-D0" ]
 		},
 		"1": {
-			"MurderMotive": [],
-			"Criminal": [],
-			"Victim": [],
-			"Tools": []
+			"Index": "S00_C1",
+			"Murder": "0100:Character-A2",
+			"Motive": [ "0101:Evidence-A0", "0102:Evidence-A0", "0103:Evidence-A0" ],
+			"Method": [ "0105:Evidence-A1", "0106:Evidence-A0", "0107:Evidence-A0"],
+			"Victim": [ "0109:Evidence-A2", "0110:Character-A2", "0111:Evidence-A0" ],
+			"Etc": [ "0113:Evidence-A3", "0114:Evidence-A0", "0115:Evidence-A0", "0116:Evidence-A0" ]
+		},
+		"2": {
+			"Index": "S00_C2",
+			"Murder": "0200:Character-A0",
+			"Motive": [ "0201:Evidence-A0" ],
+			"Method": [ "0202:Evidence-A1", "0203:Character-A1" ],
+			"Victim": [ "0204:Evidence-A2" ],
+			"Etc": [ "0206:Evidence-A3" ]
 		}
 	}
 }

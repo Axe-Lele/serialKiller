@@ -5,15 +5,15 @@
 	},
 	"Case_01" : 
 	{
-		"m_Date" : 3
+		"m_Date" : 0
 	},
 	"News_Case_1" : 
 	{
-		"m_Date" : 2
+		"m_Date" : 0
 	},	
 	"News_Case_2" : 
 	{
-		"m_Date" : 3,
+		"m_Date" : 0,
 		"m_EventType" : "Case",
 		"m_OnFinished" : []
 	},
@@ -25,49 +25,49 @@
 	},
 	"NewsCommon00" : 
 	{
-		"m_Date" : 1,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon01" : 
 	{
-		"m_Date" : 2,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon02" : 
 	{
-		"m_Date" : 3,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon03" : 
 	{
-		"m_Date" : 4,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon04" : 
 	{
-		"m_Date" : 5,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon05" : 
 	{
-		"m_Date" : 6,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon06" : 
 	{
-		"m_Date" : 7,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	},
 	"NewsCommon07" : 
 	{
-		"m_Date" : 8,
+		"m_Date" : 0,
 		"m_EventType" : "Common",
 		"m_OnFinished" : []
 	}

@@ -7,14 +7,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			},
 			"Monday": {
@@ -23,14 +23,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			},
 			"Tuesday": {
@@ -39,14 +39,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			},
 			"Wednesday": {
@@ -55,14 +55,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			},
 			"Thursday": {
@@ -71,14 +71,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			},
 			"Friday": {
@@ -87,14 +87,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			},
 			"Saturday": {
@@ -103,14 +103,14 @@
 					"StartMinute": 0,
 					"EndHour": 14,
 					"EndMinute": 59,
-					"Position": "1_4"
+					"Position": "0_0"
 				},
 				"1": {
 					"StartHour": 15,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "0_4"
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "0_0"
 				}
 			}
 		},
@@ -121,7 +121,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -131,7 +131,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -140,7 +140,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -149,7 +149,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -158,7 +158,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -167,7 +167,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -176,7 +176,7 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 23,
+							"EndHour": 21,
 							"EndMinute": 59,
 							"Position": "0_4"
 						}
@@ -191,9 +191,9 @@
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 23,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Missing"
+					"Position": "Company"
 				}
 			},
 			"Monday": {
@@ -202,12 +202,12 @@
 					"StartMinute": 0,
 					"EndHour": 11,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Company"
 				},
 				"1": {
 					"StartHour": 12,
 					"StartMinute": 0,
-					"EndHour": 23,
+					"EndHour": 21,
 					"EndMinute": 59,
 					"Position": "Company"
 				}
@@ -218,12 +218,12 @@
 					"StartMinute": 0,
 					"EndHour": 11,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Company"
 				},
 				"1": {
 					"StartHour": 12,
 					"StartMinute": 0,
-					"EndHour": 23,
+					"EndHour": 21,
 					"EndMinute": 59,
 					"Position": "Company"
 				}
@@ -234,7 +234,7 @@
 					"StartMinute": 0,
 					"EndHour": 11,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Company"
 				},
 				"1": {
 					"StartHour": 12,
@@ -246,9 +246,9 @@
 				"2": {
 					"StartHour": 17,
 					"StartMinute": 0,
-					"EndHour": 23,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Missing"
+					"Position": "Company"
 				}
 			},
 			"Thursday": {
@@ -257,12 +257,12 @@
 					"StartMinute": 0,
 					"EndHour": 11,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Company"
 				},
 				"1": {
 					"StartHour": 12,
 					"StartMinute": 0,
-					"EndHour": 23,
+					"EndHour": 21,
 					"EndMinute": 59,
 					"Position": "Company"
 				}
@@ -273,12 +273,12 @@
 					"StartMinute": 0,
 					"EndHour": 11,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Company"
 				},
 				"1": {
 					"StartHour": 12,
 					"StartMinute": 0,
-					"EndHour": 23,
+					"EndHour": 21,
 					"EndMinute": 59,
 					"Position": "Company"
 				}
@@ -289,301 +289,14 @@
 					"StartMinute": 0,
 					"EndHour": 16,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Company"
 				},
 				"1": {
 					"StartHour": 17,
 					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			}
-		}
-	},
-	"C0": {
-	},
-	"C1": {
-		"Common": {
-			"Sunday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			},
-			"Monday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 17,
+					"EndHour": 21,
 					"EndMinute": 59,
 					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 18,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Home"
-				}
-			},
-			"Tuesday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 17,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 18,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Home"
-				}
-			},
-			"Wednesday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 17,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 18,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			},
-			"Thursday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 17,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 18,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Home"
-				}
-			},
-			"Friday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 17,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 18,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			},
-			"Saturday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 17,
-					"EndMinute": 59,
-					"Position": "0_0"
-				},
-				"1": {
-					"StartHour": 18,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			}
-		}
-	},
-	"C2": {
-		"Common": {
-			"Sunday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			},
-			"Monday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 10,
-					"EndMinute": 59,
-					"Position": "Home"
-				},
-				"1": {
-					"StartHour": 11,
-					"StartMinute": 0,
-					"EndHour": 15,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 16,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Home"
-				}
-			},
-			"Tuesday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 10,
-					"EndMinute": 59,
-					"Position": "Home"
-				},
-				"1": {
-					"StartHour": 11,
-					"StartMinute": 0,
-					"EndHour": 15,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 16,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Home"
-				}
-			},
-			"Wednesday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 10,
-					"EndMinute": 59,
-					"Position": "Home"
-				},
-				"1": {
-					"StartHour": 11,
-					"StartMinute": 0,
-					"EndHour": 15,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 16,
-					"StartMinute": 0,
-					"EndHour": 23,
-					"EndMinute": 59,
-					"Position": "Missing"
-				}
-			},
-			"Thursday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Missing"
-				}
-			},
-			"Friday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Missing"
-				}
-			},
-			"Saturday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Missing"
-				}
-			}
-		}
-	},
-	"D0": {
-		"Common": {
-			"Sunday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "3_0"
-				}
-			},
-			"Monday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "1_0"
-				}
-			},
-			"Tuesday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "1_0"
-				}
-			},
-			"Wednesday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "3_0"
-				}
-			},
-			"Thursday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "3_0"
-				}
-			},
-			"Friday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "3_0"
-				}
-			},
-			"Saturday": {
-				"0": {
-					"StartHour": 9,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "3_0"
 				}
 			}
 		},
@@ -594,17 +307,318 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
 							"EndHour": 24,
 							"EndMinute": 0,
-							"Position": "1_0"
+							"Position": "Missing"
 						}
 					},
 					"Monday": {
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
 							"EndHour": 24,
 							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "1_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"A2": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "3_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
 							"Position": "3_0"
 						}
 					},
@@ -612,8 +626,8 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 24,
-							"EndMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
 							"Position": "3_0"
 						}
 					},
@@ -621,9 +635,975 @@
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "3_0"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "3_0"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "3_0"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "3_0"
+						}
+					}
+				}
+			}
+		}
+	},
+	"C0": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 17,
+					"EndMinute": 59,
+					"Position": "0_1"
+				},
+				"1": {
+					"StartHour": 18,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			}
+		}
+	},
+	"C1": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
 							"EndHour": 24,
 							"EndMinute": 0,
-							"Position": "1_0"
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"C2": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D0": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 0,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 21,
+					"EndMinute": 59,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "Company"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "Company"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "Company"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "Company"
 						}
 					},
 					"Thursday": {
@@ -632,30 +1612,214 @@
 							"StartMinute": 0,
 							"EndHour": 24,
 							"EndMinute": 0,
-							"Position": "1_0"
+							"Position": "Company"
 						}
 					},
 					"Friday": {
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 24,
-							"EndMinute": 0,
-							"Position": "1_0"
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "Company"
 						}
 					},
 					"Saturday": {
 						"0": {
 							"StartHour": 9,
 							"StartMinute": 0,
-							"EndHour": 24,
-							"EndMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
 							"Position": "1_0"
 						}
 					}
 				}
 			},
-
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 21,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D1": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 0,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 0,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 19,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 20,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
 			"1": {
 				"0": {
 					"Sunday": {
@@ -724,122 +1888,6 @@
 				}
 			}
 		}
-	},
-	"D1": {
-		"Common": {
-			"Sunday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 0,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			},
-			"Monday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 0,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			},
-			"Tuesday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			},
-			"Wednesday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			},
-			"Thursday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			},
-			"Friday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			},
-			"Saturday": {
-				"0": {
-					"StartHour": 15,
-					"StartMinute": 0,
-					"EndHour": 19,
-					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"1": {
-					"StartHour": 20,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
-				}
-			}
-		}
 
 	},
 	"D2": {
@@ -848,161 +1896,112 @@
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 11,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 12,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 15,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 16,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			},
 			"Monday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 9,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 10,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 18,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 19,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			},
 			"Tuesday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 9,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 10,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 18,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 19,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			},
 			"Wednesday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 9,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 10,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 18,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 19,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			},
 			"Thursday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 9,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 10,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 18,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 19,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			},
 			"Friday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 9,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 10,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 18,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 19,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			},
 			"Saturday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 9,
+					"EndHour": 17,
 					"EndMinute": 59,
-					"Position": "Home"
+					"Position": "Missing"
 				},
 				"1": {
-					"StartHour": 10,
+					"StartHour": 18,
 					"StartMinute": 0,
-					"EndHour": 18,
+					"EndHour": 21,
 					"EndMinute": 59,
-					"Position": "Company"
-				},
-				"2": {
-					"StartHour": 19,
-					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Home"
+					"Position": "0_1"
 				}
 			}
 		}
@@ -1208,69 +2207,237 @@
 			}
 		}
 	},
-	"D6": {
+	"D6":  {
 		"Common": {
 			"Sunday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "1_4"
 				}
 			},
 			"Monday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "1_4"
 				}
 			},
 			"Tuesday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "1_4"
 				}
 			},
 			"Wednesday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "1_4"
 				}
 			},
 			"Thursday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "1_4"
 				}
 			},
 			"Friday": {
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
-					"EndHour": 24,
-					"EndMinute": 0,
-					"Position": "Company"
-				}
-			},
-			"Saturday": {
-				"0": {
-					"StartHour": 9,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "1_4"
+				}
+			},
+			"Saturday": {
+				"0":{
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					},
+
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 13,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 14,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "1_4"
+						}
+					}
 				}
 			}
 		}
@@ -1283,7 +2450,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			},
 			"Monday": {
@@ -1292,7 +2459,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			},
 			"Tuesday": {
@@ -1301,7 +2468,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			},
 			"Wednesday": {
@@ -1310,7 +2477,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			},
 			"Thursday": {
@@ -1319,7 +2486,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			},
 			"Friday": {
@@ -1328,7 +2495,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			},
 			"Saturday": {
@@ -1337,7 +2504,7 @@
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
-					"Position": "Company"
+					"Position": "Missing"
 				}
 			}
 		}
@@ -1348,6 +2515,13 @@
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
 					"Position": "1_4"
@@ -1356,6 +2530,13 @@
 			"Monday": {
 				"0": {
 					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
@@ -1366,6 +2547,13 @@
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
 					"Position": "1_4"
@@ -1374,6 +2562,13 @@
 			"Wednesday": {
 				"0": {
 					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
@@ -1384,6 +2579,13 @@
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
 					"Position": "1_4"
@@ -1392,6 +2594,13 @@
 			"Friday": {
 				"0": {
 					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
 					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
@@ -1402,9 +2611,5764 @@
 				"0": {
 					"StartHour": 9,
 					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
 					"EndHour": 24,
 					"EndMinute": 0,
 					"Position": "1_4"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D9": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D10": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_3"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_3"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_3"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_3"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 0,
+					"Position": "0_5"
+				},
+				"1": {
+					"StartHour": 22,
+					"StartMinute": 1,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 0,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 22,
+							"StartMinute": 1,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D11": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_2"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_2"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D12": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "0_5"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "3_0"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D13": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D14": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_5"
+						}
+					}
+				}
+			}
+		}
+	},
+	"T1": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			},
+			"Saturday": {
+				"0":{
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "1_4"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 23,
+							"EndMinute": 59,
+							"Position": "0_4"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D15":  {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0":{
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 13,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 14,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		}
+	},
+	"D16": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D17": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_1"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D18": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D19": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D20": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D21": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Company"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+                        }
+                    }
+                }
+            }
+        }
+    },
+	"D22": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+                        }
+                    }
+                }
+            }
+        }
+    },
+	"D53": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_2"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "0_2"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "0_2"
+                        }
+                    }
+                }
+            }
+        }
+    },
+	"D23": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "Missing"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_0"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "2_1"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "2_1"
+                        }
+                    }
+                }
+            }
+        }
+    },
+	"D24": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "0_4"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			}
+		}
+	},
+	"D26": {
+		"Common": {
+			"Sunday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Monday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Tuesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Wednesday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Thursday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Friday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			},
+			"Saturday": {
+				"0": {
+					"StartHour": 9,
+					"StartMinute": 0,
+					"EndHour": 22,
+					"EndMinute": 59,
+					"Position": "2_0"
+				},
+				"1": {
+					"StartHour": 23,
+					"StartMinute": 0,
+					"EndHour": 24,
+					"EndMinute": 0,
+					"Position": "Missing"
+				}
+			}
+		},
+		"Criminal": {
+			"0": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_0"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
+				}
+			},
+			"1": {
+				"0": {
+					"Sunday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Monday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Tuesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Wednesday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "3_3"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Thursday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Friday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					},
+					"Saturday": {
+						"0": {
+							"StartHour": 9,
+							"StartMinute": 0,
+							"EndHour": 22,
+							"EndMinute": 59,
+							"Position": "Missing"
+						},
+						"1": {
+							"StartHour": 23,
+							"StartMinute": 0,
+							"EndHour": 24,
+							"EndMinute": 0,
+							"Position": "Missing"
+						}
+					}
 				}
 			}
 		}

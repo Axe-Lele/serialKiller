@@ -1,5 +1,5 @@
 {
-	"m_Year" : 2018,
+	"m_Year" : 1975,
 	"m_Month" : 4,
 	"m_Day" : 30,
 	"m_SuspectCount" : 2,
@@ -8,33 +8,33 @@
 	{
 		"0" : 
 		{
-			"m_CaseCount" : 3,
-			"m_NumberOfEventsAssinged" : 3
+			"m_CaseCount" : 2,
+			"m_NumberOfEventsAssinged" : 0
 		},
 		"1" : 
 		{
-			"m_CaseCount" : 3,
-			"m_NumberOfEventsAssinged" : 3
+			"m_CaseCount" : 0,
+			"m_NumberOfEventsAssinged" : 0
 		},
 		"2" : 
 		{
-			"m_CaseCount" : 3,
-			"m_NumberOfEventsAssinged" : 5
+			"m_CaseCount" : 0,
+			"m_NumberOfEventsAssinged" : 0
 		},
 		"3" : 
 		{
-			"m_CaseCount" : 3,
-			"m_NumberOfEventsAssinged" : 5
+			"m_CaseCount" : 0,
+			"m_NumberOfEventsAssinged" : 0
 		},
 		"4" : 
 		{
-			"m_CaseCount" : 4,
-			"m_NumberOfEventsAssinged" : 6
+			"m_CaseCount" : 0,
+			"m_NumberOfEventsAssinged" : 0
 		},
 		"5" : 
 		{
-			"m_CaseCount" : 4,
-			"m_NumberOfEventsAssinged" : 6
+			"m_CaseCount" : 0,
+			"m_NumberOfEventsAssinged" : 0
 		}	
 	}		
 }
