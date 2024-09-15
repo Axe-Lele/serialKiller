@@ -1,0 +1,73 @@
+﻿{
+
+	"0" : 
+	{
+		"Standard" : "MainPersonality",
+		"Statement" : 
+		{
+			"0" : ["사이코패스"],
+			"1" : ["소시오패스"]
+		},
+		"Result" :
+		{
+			"0" : "Lust",
+			"1" : "Religion"
+		}	
+	},
+	"1" : 
+	{
+		"Standard" : "Religion",
+		"Statement" :
+		{
+			"0" : ["무교"],
+			"1" : ["제로교"]
+		},
+		"Result" :
+		{
+			"0" : "Family",
+			"1" : "Religion"
+		}
+	},
+	"2" : 
+	{
+		"Standard" : "Family",
+		"Statement" :
+		{
+			"0" : ["Family0A","Family3A","Family4A"],
+			"1" : ["Family0B","Family3B","Family4B"]
+		},
+		"Result" :
+		{
+			"0" : "Family",
+			"1" : "Drug"
+		}
+	},
+	"3" : 
+	{
+		"Standard" : "Family",
+		"Statement" :
+		{
+			"0" : ["Family3C"],
+			"1" : ["Family4C"]
+		},
+		"Result" :
+		{
+			"0" : "Family",
+			"1" : "Race"
+		}
+	},
+	"4" : 
+	{
+		"Standard" : "Job",
+		"Statement" :
+		{
+			"0" : ["10","13"],
+			"1" : ["11","12"]
+		},
+		"Result" :
+		{
+			"0" : "Wealth",
+			"1" : "Religion"
+		}
+	}
+}

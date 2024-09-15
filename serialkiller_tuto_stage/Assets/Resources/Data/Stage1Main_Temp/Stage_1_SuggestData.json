@@ -1,0 +1,68 @@
+{	
+	"Suspect_0" : 
+	{
+		"0" : 
+		{	
+			"Target" : "0_Lust_0",
+			"Save" : "True",
+			"Index" : "0A0"		
+		},
+		"1" : 
+		{	
+			"Target" : "1_Lust_0",
+			"Save" : "True",
+			"Index" : "0B0"	
+		},
+		"2" : 
+		{	
+			"Target" : "2_Lust_0",
+			"Save" : "True",	
+			"Index" : "0C0"		
+		},
+		"3" : 
+		{	
+			"Target" : "Colleague_0_0A1",
+			"Save" : "True",	
+			"Index" : "1A0"		
+		},
+		"4" : 
+		{	
+			"Target" : "Colleague_0_0B1",
+			"Save" : "True",	
+			"Index" : "1B0"		
+		},
+		"5" : 
+		{	
+			"Target" : "Colleague_0_0C1",
+			"Save" : "True",	
+			"Index" : "1A0"		
+		},
+		"7" : 
+		{
+			"Target" : "Extra_0_2A0",
+			"Save" : "False",
+			"Index" : "2A1"		
+		}	
+	},	
+	"Colleague_0" : 
+	{
+		"0" : 
+		{
+			"Target" : "Suspect_0_0A0",	
+			"Save" : "True",
+			"Index" : "0A1"		
+		},
+		"1" : 
+		{	
+			"Target" : "1_Lust_0",
+			"Save" : "True",
+			"Index" : "0B1"	
+		},
+		"2" : 
+		{
+			"Target" : "Suspect_0_0C0",	
+			"Save" : "True",
+			"Index" : "0A1"		
+		}
+	}
+}

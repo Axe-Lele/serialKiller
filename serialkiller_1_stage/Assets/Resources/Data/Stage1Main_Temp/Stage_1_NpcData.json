@@ -1,0 +1,298 @@
+﻿{
+	
+	"0" : 
+	{
+		"Lust" : 
+		{
+			"Teacher" : 
+			{
+				"Teacher_0" : 
+				{
+					"Selection" : ["00","01","02","03","04"]
+				},
+				"Teacher_1" : 
+				{
+					"Selection" : ["00","01","02"]
+		    		}
+			},
+			"Extra" : 
+			{
+				"Extra_0" : 
+				{
+					"Selection" : []
+				}
+			},
+			"Colleague" : 
+			{
+				"Colleague_0" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_1" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_2" : 
+				{
+					"Selection" : []
+				},
+				"Colleague_3" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_4" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_5" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_6" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_7" : 
+				{
+					"Selection" : []		
+				}
+			}	
+		}
+	},
+	"1" : 
+	{
+		"Religion" : 
+		{
+			"Teacher" : 
+			{
+				"Teacher_0" : 
+				{
+					"Selection" : ["00","01","02","03","04"]
+				},
+				"Teacher_1" : 
+				{
+					"Selection" : ["00","01","02"]
+		    		}
+			},
+			"Extra" : 
+			{
+				"Extra_0" : 
+				{
+					"Selection" : []
+				}
+			},
+			"Colleague" : 
+			{
+				"Colleague_0" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_1" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_2" : 
+				{
+					"Selection" : []
+				},
+				"Colleague_3" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_4" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_5" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_6" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_7" : 
+				{
+					"Selection" : []		
+				}
+			}	
+		}
+	},
+	"2" : 
+	{
+		"Family" : 
+		{
+			"Teacher" : 
+			{
+				"Teacher_0" : 
+				{
+					"Selection" : ["00","01","02","03","04"]
+				},
+				"Teacher_1" : 
+				{
+					"Selection" : ["00","01","02"]
+		    		}
+			},
+			"Extra" : 
+			{
+				"Extra_0" : 
+				{
+					"Selection" : []
+				}
+			},
+			"Colleague" : 
+			{
+				"Colleague_0" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_1" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_2" : 
+				{
+					"Selection" : []
+				},
+				"Colleague_3" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_4" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_5" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_6" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_7" : 
+				{
+					"Selection" : []		
+				}
+			}	
+		}
+	},
+	"3" : 
+	{
+		"Race" : 
+		{
+			"Teacher" : 
+			{
+				"Teacher_0" : 
+				{
+					"Selection" : ["00","01","02","03","04"]
+				},
+				"Teacher_1" : 
+				{
+					"Selection" : ["00","01","02"]
+		    		}
+			},
+			"Extra" : 
+			{
+				"Extra_0" : 
+				{
+					"Selection" : []
+				}
+			},
+			"Colleague" : 
+			{
+				"Colleague_0" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_1" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_2" : 
+				{
+					"Selection" : []
+				},
+				"Colleague_3" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_4" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_5" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_6" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_7" : 
+				{
+					"Selection" : []		
+				}
+			}	
+		}
+	},
+	"4" : 
+	{
+		"Wealth" : 
+		{
+			"Teacher" : 
+			{
+				"Teacher_0" : 
+				{
+					"Selection" : ["00","01","02","03","04"]
+				},
+				"Teacher_1" : 
+				{
+					"Selection" : ["00","01","02"]
+		    		}
+			},
+			"Extra" : 
+			{
+				"Extra_0" : 
+				{
+					"Selection" : []
+				}
+			},
+			"Colleague" : 
+			{
+				"Colleague_0" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_1" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_2" : 
+				{
+					"Selection" : []
+				},
+				"Colleague_3" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_4" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_5" : 
+				{
+					"Selection" : []		
+				},
+				"Colleague_6" : 
+				{
+					"Selection" : []	
+				},
+				"Colleague_7" : 
+				{
+					"Selection" : []		
+				}
+			}	
+		}
+	}				
+}

@@ -1,0 +1,25 @@
+﻿{
+
+  "0": {
+    "m_Index": "N0",
+    "m_Sex": "Male",
+    "m_Religion": "Zero",
+    "m_Age": 50,
+    "m_Height": 175,
+    "m_Home": -1,
+    "m_HomeaArea": 1,
+    "m_AtlasIndex": 0,
+    "m_Company": -1
+  },
+  "1": {
+    "m_Index": "Player",
+    "m_Sex": "Male",
+    "m_Religion": "Zero",
+    "m_Age": 30,
+    "m_Height": 171,
+    "m_Home": -1,
+    "m_HomeaArea": -1,
+    "m_AtlasIndex": 0,
+    "m_Company": -1
+  }
+}

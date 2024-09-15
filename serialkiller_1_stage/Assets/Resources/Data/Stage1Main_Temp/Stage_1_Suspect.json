@@ -1,0 +1,146 @@
+﻿{
+	"Name" : 49,
+	"Suspect" :
+	{
+		"0" : 
+		{
+			"Sex" : "남성",
+			"Race" : ["백인"],
+			"Religion" : ["제로교"],
+			"Home" : [2],
+			"Job" : [0],
+			"MinAge" : 25,
+			"MaxAge" : 28,
+			"MinHeight" : 170,
+			"MaxHeight" : 179,
+			"IsAppear" : true,
+			"MainPersonality" : ["소시오패스","결벽증"],
+			"PersonalityRate" : [1,1,10],
+			"SubPersonality" : ["외향적","매력적","똑똑한","오만한"],
+			"CriminalCharacter" : ["LustA","LustB"],
+			"Selection" : ["00", "01", "02"],
+			"Personality" : 
+			{	
+				"Family" : ["Family2"],
+				"Education" : ["Education02"],
+				"Wealth" : ["Wealth01"],
+				"School" : ["School00", "School02","School03"],
+				"Speaking" : ["Speaking04"],
+				"Love" : ["Love02"],
+				"Violence" :["Violence00"]
+			}
+		},
+		"1" : 
+		{
+			"Sex" : "남성",
+			"Race" : ["전체"],
+			"Religion" : ["제로교"],
+			"Home" : [3,4],
+			"Job" : [1],
+			"MinAge" : 23,
+			"MaxAge" : 26,
+			"MinHeight" : 165,
+			"MaxHeight" : 175,
+			"IsAppear" : true,
+			"MainPersonality" : ["사이코패스","정서불안","정신분열"],
+			"PersonalityRate" : [1,10,10],
+			"SubPersonality" : ["내성적","충동적"],
+			"CriminalCharacter" : ["ReligionA","ReligionB"],
+			"Selection" : ["00", "01", "02"],
+			"Personality" : 
+			{	
+				"Family" : ["Family0","Family3","Family4"],
+				"Education" : ["Education01","Education02"],
+				"Wealth" : ["Wealth10"],
+				"School" : ["School01"],
+				"Speaking" : ["Speaking00"],
+				"Love" : ["Love01"],
+				"Violence" :["Violence00"]
+			}	
+		},
+		"2" : 
+		{
+			"Sex" : "남성",
+			"Religion" : ["무교"],
+			"Home" : [1,6],
+			"Job" : [2],
+			"Race" : ["전체"],
+			"MinAge" : 26,
+			"MaxAge" : 30,
+			"MinHeight" : 177,
+			"MaxHeight" : 185,
+			"IsAppear" : true,
+			"MainPersonality" : ["사이코패스","폭력적","정신분열"],
+			"PersonalityRate" : [1,10,10],
+			"SubPersonality" : ["외향적","산만한","충동적"],
+			"CriminalCharacter" : ["FamilyA","DrugA"],
+			"Selection" : ["00", "01", "02"],
+			"Personality" : 
+			{	
+				"Family" : ["Family0A","Family0B","Family3A","Family3B","Family4A","Family4B"],
+				"Education" : ["Education21"],
+				"Wealth" : ["Wealth10"],
+				"School" : ["School01"],
+				"Speaking" : ["Speaking02"],
+				"Love" : ["Love00"],
+				"Violence" :["Violence02"]
+			}
+		},
+		"3" : 
+		{
+			"Sex" : "남성",
+			"Religion" : ["무교,"제로교"],
+			"Home" : [1,4,7],
+			"Job" : [3],
+			"Race" : ["백인"],
+			"MinAge" : 24,
+			"MaxAge" : 28,
+			"MinHeight" : 170,
+			"MaxHeight" : 180,
+			"IsAppear" : true,
+			"MainPersonality" : ["사이코패스","폭력적","이기적"],
+			"PersonalityRate" : [1,10,10],
+			"SubPersonality" : ["외향적","오만한","충동적"],
+			"CriminalCharacter" : ["RaceA","RaceB"],
+			"Selection" : ["00", "01", "02"],
+			"Personality" : 
+			{	
+				"Family" : ["Family3C","Family4C"],
+				"Education" : ["Education20"],
+				"Wealth" : ["Wealth20"],
+				"School" : ["School10"],
+				"Speaking" : ["Speaking03"],
+				"Love" : ["Love02"],
+				"Violence" :["Violence03"]
+			}
+		},
+		"4" : 
+		{
+			"Sex" : "M",
+			"Religion" : ["제로교"],
+			"Home" : [0,1],
+			"Job" : [4],
+			"Race" : [0,1,4],
+			"MinAge" : 24,
+			"MaxAge" : 29,
+			"MinHeight" : 160,
+			"MaxHeight" : 165,
+			"IsAppear" : true,
+			"MainPersonality" : ["소시오패스","이기적"],
+			"PersonalityRate" : [0,10],
+			"SubPersonality" : ["외향적","산만한","거짓말쟁이"],
+			"CriminalCharacter" : ["WealthA","WealthB"],
+			"Selection" : ["00", "01", "02"],
+			"Personality" : 
+			{	
+				"Family" : ["Family1"],
+				"Education" : ["Education10"],
+				"Wealth" : ["Wealth20","Wealth21"],
+				"School" : ["School13"],
+				"Speaking" : ["Speaking01"],
+				"Love" : ["Love02"],
+				"Violence" :["Violence01"]
+			}
+		}
+	}
+}

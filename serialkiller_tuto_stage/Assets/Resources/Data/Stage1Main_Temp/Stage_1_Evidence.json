@@ -1,0 +1,24 @@
+{
+	"1_Religion_1" : 
+	{
+		"ContentText" : 
+		{
+			"0" : "Suspect_1_Company"
+		}
+	},
+	"3_Race_2" : 
+	{
+		"ContentText" :
+		{
+			"0" : "Suspect_3_Company"
+		}
+	},	
+	"4_Wealth_1" : 
+	{
+		"ContentText" :
+		{
+			"0" : "Suspect_4_Company"
+		}
+				
+	}
+}

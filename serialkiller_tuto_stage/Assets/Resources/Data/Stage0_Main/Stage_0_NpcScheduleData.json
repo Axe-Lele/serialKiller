@@ -1,0 +1,422 @@
+﻿{
+
+	"A0": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Missing"
+			},
+			"Monday": {
+
+				"10": "1_4",
+				"15": "Missing",
+				"20": "1_4"
+			},
+			"Tuesday": {
+
+				"10": "1_4",
+				"15": "Missing",
+				"20": "1_4"
+			},
+			"Wednesday": {
+
+				"10": "1_4",
+				"15": "Missing"
+			},
+			"Thursday": {
+
+				"10": "1_4",
+				"15": "Missing",
+				"20": "1_4"
+			},
+			"Friday": {
+
+				"10": "1_4",
+				"15": "Missing",
+				"20": "1_4"
+			},
+			"Saturday": {
+
+				"10": "1_4",
+				"15": "Missing"
+			}
+		}
+	},
+	"A1": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Missing"
+			},
+			"Monday": {
+				"9": "Home",
+				"12": "Company"
+			},
+			"Tuesday": {
+				"9": "Home",
+				"12": "Company"
+			},
+			"Wednesday": {
+				"9": "Home",
+				"12": "Company",
+				"17": "Missing"
+			},
+			"Thursday": {
+				"9": "Home",
+				"12": "Company"
+			},
+			"Friday": {
+				"9": "Home",
+				"12": "Company"
+			},
+			"Saturday": {
+				"9": "Home",
+				"17": "Missing"
+			}
+		}
+	},
+	"C0": {
+		"State": "Dead"
+	},
+	"C1": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Missing"
+			},
+			"Monday": {
+				"9": "Company",
+				"18": "Home"
+			},
+			"Tuesday": {
+				"9": "Company",
+				"18": "Home"
+			},
+			"Wednesday": {
+				"9": "Company",
+				"18": "Missing"
+			},
+			"Thursday": {
+				"9": "Company",
+				"18": "Home"
+			},
+			"Friday": {
+				"9": "Company",
+				"14": "Home"
+			},
+			"Saturday": {
+				"9": "0_0",
+				"18": "Missing"
+			}
+		},
+		"Event": {
+			"Dead_C1": "Dead"
+
+		}
+	},
+	"C2": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Missing"
+			},
+			"Monday": {
+				"9": "Home",
+				"11": "Company",
+				"16": "Home"
+			},
+			"Tuesday": {
+				"9": "Home",
+				"11": "Company",
+				"16": "Home"
+			},
+			"Wednesday": {
+				"9": "Home",
+				"11": "Company",
+				"18": "Missing"
+			},
+			"Thursday": {
+				"9": "Missing"
+			},
+			"Friday": {
+				"9": "Missing"
+			},
+			"Saturday": {
+				"9": "Missing"
+			}
+		},
+		"Event": {
+			"Dead_C2": "Dead"
+
+		}
+	},
+	"D0": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "1_0"
+			},
+			"Monday": {
+				"9": "1_0"
+			},
+			"Tuesday": {
+				"9": "1_0"
+			},
+			"Wednesday": {
+				"9": "1_0"
+			},
+			"Thursday": {
+				"9": "1_0"
+			},
+			"Friday": {
+				"9": "1_0"
+			},
+			"Saturday": {
+				"9": "1_0"
+			}
+		}
+	},
+	"D1": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Missing"
+			},
+			"Monday": {
+				"9": "Missing",
+				"10": "Missing",
+				"15": "Company",
+				"20": "Missing"
+			},
+			"Tuesday": {
+				"9": "Missing",
+				"10": "Missing",
+				"15": "Company",
+				"20": "Missing"
+			},
+			"Wednesday": {
+				"9": "Missing",
+				"10": "Missing",
+				"15": "Company",
+				"17": "Missing"
+			},
+			"Thursday": {
+				"9": "Missing",
+				"10": "Missing",
+				"15": "Company",
+				"20": "Missing"
+			},
+			"Friday": {
+				"9": "Missing",
+				"10": "Missing",
+				"15": "Company",
+				"20": "Missing"
+			},
+			"Saturday": {
+				"9": "Missing",
+				"10": "Missing",
+				"15": "Company",
+				"17": "Missing"
+			}
+		}
+
+	},
+	"D2": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Home",
+				"12": "Company",
+				"16": "Home"
+
+			},
+			"Monday": {
+				"9": "Home",
+				"10": "Company",
+				"19": "Home"
+			},
+			"Tuesday": {
+				"9": "Home",
+				"10": "Company",
+				"19": "Home"
+			},
+			"Wednesday": {
+				"9": "Home",
+				"10": "Company",
+				"19": "Home"
+			},
+			"Thursday": {
+				"9": "Home",
+				"10": "Company",
+				"19": "Home"
+			},
+			"Friday": {
+				"9": "Home",
+				"10": "Company",
+				"19": "Home"
+			},
+			"Saturday": {
+				"9": "Home",
+				"10": "Company",
+				"19": "Home"
+			}
+		}
+	},
+	"D3": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Company"
+			},
+			"Monday": {
+				"9": "Company"
+			},
+			"Tuesday": {
+				"9": "Company"
+			},
+			"Wednesday": {
+				"9": "Company"
+			},
+			"Thursday": {
+				"9": "Company"
+			},
+			"Friday": {
+				"9": "Company"
+			},
+			"Saturday": {
+				"9": "Company"
+			}
+		}
+	},
+	"D4": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Company"
+			},
+			"Monday": {
+				"9": "Company"
+			},
+			"Tuesday": {
+				"9": "Company"
+			},
+			"Wednesday": {
+				"9": "Company"
+			},
+			"Thursday": {
+				"9": "Company"
+			},
+			"Friday": {
+				"9": "Company"
+			},
+			"Saturday": {
+				"9": "Company"
+			}
+		}
+	},
+	"D5": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Company"
+			},
+			"Monday": {
+				"9": "Company"
+			},
+			"Tuesday": {
+				"9": "Company"
+			},
+			"Wednesday": {
+				"9": "Company"
+			},
+			"Thursday": {
+				"9": "Company"
+			},
+			"Friday": {
+				"9": "Company"
+			},
+			"Saturday": {
+				"9": "Company"
+			}
+		}
+	},
+	"D6": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Company"
+			},
+			"Monday": {
+				"9": "Company"
+			},
+			"Tuesday": {
+				"9": "Company"
+			},
+			"Wednesday": {
+				"9": "Company"
+			},
+			"Thursday": {
+				"9": "Company"
+			},
+			"Friday": {
+				"9": "Company"
+			},
+			"Saturday": {
+				"9": "Company"
+			}
+		}
+	},
+	"D7": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Company"
+			},
+			"Monday": {
+				"9": "Company"
+			},
+			"Tuesday": {
+				"9": "Company"
+			},
+			"Wednesday": {
+				"9": "Company"
+			},
+			"Thursday": {
+				"9": "Company"
+			},
+			"Friday": {
+				"9": "Company"
+			},
+			"Saturday": {
+				"9": "Company"
+			}
+		}
+	},
+	"D8": {
+		"State": "Alive",
+		"Common": {
+			"Sunday": {
+				"9": "Company"
+			},
+			"Monday": {
+				"9": "Company"
+			},
+			"Tuesday": {
+				"9": "Company"
+			},
+			"Wednesday": {
+				"9": "Company"
+			},
+			"Thursday": {
+				"9": "Company"
+			},
+			"Friday": {
+				"9": "Company"
+			},
+			"Saturday": {
+				"9": "Company"
+			}
+		}
+
+	}
+}

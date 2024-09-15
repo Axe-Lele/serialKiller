@@ -1,0 +1,72 @@
+﻿{
+
+	"0" : 
+	{
+		"Case" : 
+		{
+			"0" : 
+			{
+				"CaseLocation" : 0,	
+				"VictimName" : "Name_Stage0_Main_C0",
+				"Date" : 0,
+				"NewsDate" : 0
+			},
+			"1" : 
+			{
+				"CaseLocation" : 2,	
+				"VictimName" : "Name_Stage0_Main_C1",
+				"Date" : 3,
+				"NewsDate" : 0
+			},
+			"2" : 
+			{
+				"CaseLocation" : 1,	
+				"VictimName" : "Name_Stage0_Main_C2",
+				"Date" : 3,
+				"NewsDate" : 0
+			}	
+		},
+		"Order" : 
+		{
+			"0" : "0",
+			"1" : "2",
+			"2" : "1"	
+		}
+		
+		
+	},
+	"1" : 
+	{
+		"Case" : 
+		{
+			"0" : 
+			{
+				"CaseLocation" : 0,	
+				"VictimName" : "Name_Stage0_Main_C0",
+				"Date" : 0,
+				"NewsDate" : 0	
+			},
+			"1" : 
+			{
+				"CaseLocation" : 2,	
+				"VictimName" : "Name_Stage0_Main_C1",
+				"Date" : 3,
+				"NewsDate" : 0
+			},
+			"2" : 
+			{
+				"CaseLocation" : 1,	
+				"VictimName" : "Name_Stage0_Main_C2",
+				"Date" : 3,
+				"NewsDate" : 0
+			}
+		},
+		"Order" : 
+		{
+			"0" : "0",
+			"1" : "2",
+			"2" : "1"	
+		}
+			
+	}
+}

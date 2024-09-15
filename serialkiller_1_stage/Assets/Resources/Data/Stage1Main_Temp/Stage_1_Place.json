@@ -1,0 +1,84 @@
+{
+	"0" :
+	{
+		"0" : 
+		{
+			"home" : [0,1],
+			"job" : [1,2],
+			"race" : [0,1],
+			"minAge" : 25,
+			"maxAge" : 30,
+			"minHeight" : 166,
+			"maxHeight" : 175,
+			"crime" : [0],
+			"getCrimeRecord" : [1],
+			"issue" : [1]
+		},
+		"1" : 
+		{
+			"home" : [1,2],
+			"job" : [0,3],
+			"race" : [0],
+			"minAge" : 23,
+			"maxAge" : 27,
+			"minHeight" : 155,
+			"maxHeight" : 165,
+			"crime" : [2, 4],
+			"getCrimeRecord" : [1],
+			"issue" : [1]
+		},
+		"2" : 
+		{
+			"home" : [0,6],
+			"job" : [4,7],
+			"race" : [1],
+			"minAge" : 30,
+			"maxAge" : 35,
+			"minHeight" : 170,
+			"maxHeight" : 180,
+			"crime" : [1,2],
+			"getCrimeRecord" : [1],
+			"issue" : [0]
+		},
+		"3" : 
+		{
+			"home" : [2,3],
+			"job" : [0],
+			"race" : [0,1],
+			"minAge" : 20,
+			"maxAge" : 25,
+			"minHeight" : 166,
+			"maxHeight" : 175,
+			"crime" : [5],
+			"getCrimeRecord" : [2],
+			"issue" : [1]
+		},
+		"4" : 
+		{
+			"home" : [1,3],
+			"job" : [5,8],
+			"race" : [0,1],
+			"minAge" : 25,
+			"maxAge" : 30,
+			"minHeight" : 170,
+			"maxHeight" : 180,
+			"crime" : [1,2,4],
+			"getCrimeRecord" : [1],
+			"issue" : [0]
+		},
+		"5" : 
+		{
+			"home" : [1,2],
+			"job" : [6],
+			"race" : [0,1],
+			"minAge" : 20,
+			"maxAge" : 25,
+			"minHeight" : 160,
+			"maxHeight" : 170,
+			"crime" : [0],
+			"getCrimeRecord" : [1],
+			"issue" : [0]
+		}
+	}
+	
+}

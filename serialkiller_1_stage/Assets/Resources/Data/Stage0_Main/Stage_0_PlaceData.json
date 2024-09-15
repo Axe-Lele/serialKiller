@@ -1,0 +1,76 @@
+﻿{
+	"Case": {
+		"0": {
+			"IsOpen": true,
+			"Sprite": 1
+		},
+		"1": {
+			"IsOpen": false,
+			"Sprite": 1
+		},
+		"2": {
+			"IsOpen": false,
+			"Sprite": 1
+		}
+	},
+	"Home": {
+		"0": {
+			"IsOpen": false,
+			"Sprite": 2
+		},
+		"1": {
+			"IsOpen": false,
+			"Sprite": 2
+		},
+		"2": {
+			"IsOpen": false,
+			"Sprite": 2
+		},
+		"3": {
+			"IsOpen": false,
+			"Sprite": 2
+		},
+		"4": {
+			"IsOpen": false,
+			"Sprite": 2
+		}
+
+	},
+	"Company": {
+		"0": {
+			"IsOpen": true,
+			"Sprite": 1
+		},
+		"1": {
+			"IsOpen": false,
+			"Sprite": 1
+		},
+		"2": {
+			"IsOpen": false,
+			"Sprite": 1
+		},
+		"3": {
+			"IsOpen": false,
+			"Sprite": 1
+		},
+		"4": {
+			"IsOpen": false,
+			"Sprite": 1
+		}
+	},
+	"Extra": {
+		"0": {
+			"IsOpen": true,
+			"Sprite": 3
+		},
+		"1": {
+			"IsOpen": false,
+			"Sprite": 2
+		},
+		"2": {
+			"IsOpen": false,
+			"Sprite": 2
+		}
+	}
+
+}

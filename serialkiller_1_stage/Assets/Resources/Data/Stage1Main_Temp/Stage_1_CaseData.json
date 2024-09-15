@@ -1,0 +1,774 @@
+﻿{
+
+	"0" : 
+	{
+		"Lust" : 
+		{	
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"DelayDate" : 3,
+				"Location" : 4,
+				"DeathTime" : "Standard",	
+				"Standard" : ["DeathTime"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{	"Statement" : "Job",	
+						"0" : [23],
+						"1" : [15]		
+					}
+				}
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"DelayDate" : 3,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Job",
+				"DeathTime" : 23
+		
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Home",
+				"DeathTime" : 23
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 3,
+				"MaxDate" : 3,
+				"Location" : 4,
+				"DeathTime" : 23
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}		
+				
+			
+		},
+		"Religion" : 
+		{
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" : "Standard",	
+				"Standard" : ["DeathTime"],
+				"Statement"  : 
+				{	
+					"0" :  
+					{	
+						"Statement" : "Job",
+						"0" : [23],
+						"1" : [15]		
+					}
+				}
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Job",
+				"DeathTime" : 23	
+		
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Home",
+				"DeathTime" : 23
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성", "여성"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 3,
+				"MaxDate" : 3,
+				"Location" : 4,
+				"DeathTime" : 23
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}
+		}
+		
+	},
+	"1" : 
+	{
+		"Family" : 
+		{	
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  6,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 5,
+				"MaxDate" : 7,
+				"Location" : "Job",
+				"DeathTime" : 23,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Home",
+				"DeathTime" : 3,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 3,
+				"MaxDate" : 3,
+				"Location" : "Home",
+				"DeathTime" : 22,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}		
+				
+			
+		},
+		"Religion" : 
+		{
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  6,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Job",
+				"DeathTime" : 11,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Home",
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 3,
+				"MaxDate" : 3,
+				"Location" : "Home",
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0" : ["남성", "여성"],
+						"Family3" : ["남성"],
+						"Family4" : ["여성"]
+					}
+				}
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}
+		}
+	},
+	"2" : 
+	{
+		"Family" : 
+		{	
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  1,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0A" : ["남성", "여성"],
+						"Family3A" : ["남성"],
+						"Family4A" : ["여성"]
+					}
+				}
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 5,
+				"MaxDate" : 7,
+				"Location" : "Job",
+				"DeathTime" :  7,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0A" : ["남성", "여성"],
+						"Family3A" : ["남성"],
+						"Family4A" : ["여성"]
+					}
+				}
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Home",
+				"DeathTime" :  6,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0A" : ["남성", "여성"],
+						"Family3A" : ["남성"],
+						"Family4A" : ["여성"]
+					}
+				}
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["Standard"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 3,
+				"MaxDate" : 3,
+				"Location" : "Home",
+				"DeathTime" :  6,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0A" : ["남성", "여성"],
+						"Family3A" : ["남성"],
+						"Family4A" : ["여성"]
+					}
+				}
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}		
+				
+			
+		},
+		"Drug" : 
+		{
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  1
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 30,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Job",
+				"DeathTime" :  7
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 40,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["전체"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Home",
+				"DeathTime" :  6
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 3,
+				"MaxDate" : 3,
+				"Location" : "Home",
+				"DeathTime" :  6
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}
+		}
+	},
+	"3" : 
+	{
+		"Family" : 
+		{	
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 22,
+				"VictimRace" : ["백인"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  11
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 22,
+				"VictimRace" : ["백인"],
+				"MinDate" : 5,
+				"MaxDate" : 7,
+				"Location" : "Job",
+				"DeathTime" :  7
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["백인"],
+				"MinDate" : 4,
+				"MaxDate" : 8,
+				"Location" : "Home",
+				"DeathTime" :  11
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 2,
+				"MaxDate" : 2,
+				"Location" : "Home",
+				"DeathTime" :  14,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0A" : ["남성", "여성"],
+						"Family3A" : ["남성"],
+						"Family4A" : ["여성"]
+					}
+				}
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}		
+				
+			
+		},
+		"Race" : 
+		{
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 39,
+				"VictimRace" : ["흑인", "라틴"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  11
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 25,
+				"VictimMaxAge" : 28,
+				"VictimRace" : ["흑인", "라틴"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Job",
+				"DeathTime" :  7
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 24,
+				"VictimMaxAge" : 26,
+				"VictimRace" : ["흑인", "라틴"],
+				"MinDate" : 4,
+				"MaxDate" : 8,
+				"Location" : "Home",
+				"DeathTime" :  11
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 2,
+				"MaxDate" : 2,
+				"Location" : "Home",
+				"DeathTime" :  14
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}
+		}
+	},
+	"4" : 
+	{
+		"Wealth" : 
+		{	
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["남성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 22,
+				"VictimRace" : ["백인"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  11
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 22,
+				"VictimRace" : ["백인"],
+				"MinDate" : 5,
+				"MaxDate" : 7,
+				"Location" : "Job",
+				"DeathTime" :  7
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : ["백인"],
+				"MinDate" : 4,
+				"MaxDate" : 8,
+				"Location" : "Home",
+				"DeathTime" :  11
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 50,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 2,
+				"MaxDate" : 2,
+				"Location" : "Home",
+				"DeathTime" :  14,
+				"Standard" : ["VictimSex"],
+				"Statement"  : 
+				{	
+					"0" : 
+					{
+						"Statement" : "Family",
+						"Family0A" : ["남성", "여성"],
+						"Family3A" : ["남성"],
+						"Family4A" : ["여성"]
+					}
+				}
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}		
+				
+			
+		},
+		"Religion" : 
+		{
+			"0" : 
+ 			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 20,
+				"VictimMaxAge" : 39,
+				"VictimRace" : ["흑인", "라틴"],
+				"MinDate" : -3,
+				"MaxDate" : -2,
+				"Location" : 4,
+				"DeathTime" :  11
+			},
+			"1" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 25,
+				"VictimMaxAge" : 28,
+				"VictimRace" : ["흑인", "라틴"],
+				"MinDate" : 4,
+				"MaxDate" : 6,
+				"Location" : "Job",
+				"DeathTime" :  7
+			},
+			"2" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 24,
+				"VictimMaxAge" : 26,
+				"VictimRace" : ["흑인", "라틴"],
+				"MinDate" : 4,
+				"MaxDate" : 8,
+				"Location" : "Home",
+				"DeathTime" :  11
+			},
+			"3" : 
+			{
+				"VictimName" : "전체",
+				"VictimSex" : ["여성"],
+				"VictimMinAge" : 55,
+				"VictimMaxAge" : 59,
+				"VictimRace" : [2],
+				"MinDate" : 2,
+				"MaxDate" : 2,
+				"Location" : "Home",
+				"DeathTime" :  14
+			},
+			"4" : 
+			{
+				"Event" : "GameOver",
+				"MinDate" : 3,
+				"MaxDate" : 3
+			}
+		}
+	}
+}

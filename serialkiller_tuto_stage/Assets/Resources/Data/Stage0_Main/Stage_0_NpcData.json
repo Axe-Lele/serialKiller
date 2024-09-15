@@ -1,0 +1,207 @@
+﻿{
+	
+	"0" : 
+	{
+		"m_Index" : "A0",
+		"m_Sex" : "Female",
+		"m_Religion" : "Zero",
+		"m_Age" : 25,
+		"m_Height" : 161,
+		"m_Home" : 3,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 4
+	},
+	"1" : 
+	{
+		"m_Index" : "A1",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 24,
+		"m_Height" : 169,
+		"m_Home" : 2,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 3
+	},
+	"2" : 
+	{
+		"m_Index" : "C0",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 40,
+		"m_Height" : 178,
+		"m_Home" : 4,
+		"m_HomeaArea" : 0,
+		"m_AtlasIndex": 1,
+		"m_Company" : 0
+	},
+	"3" : 
+	{
+		"m_Index" : "C1",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 49,
+		"m_Height" : 181,
+		"m_Home" : 0,
+		"m_HomeaArea" : 0,
+		"m_AtlasIndex": 1,
+		"m_Company" : 1
+	},
+	"4" : 
+	{
+		"m_Index" : "C2",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 38,
+		"m_Height" : 171,
+		"m_Home" : 1,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 2
+	},
+	"5" : 
+	{
+		"m_Index" : "D0",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 28,
+		"m_Height" : 181,
+		"m_Home" : 4,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 1
+	},
+	"6" : 
+	{
+		"m_Index" : "D1",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 25,
+		"m_Height" : 163,
+		"m_Home" : 3,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 0
+	},
+	"7" : 
+	{
+		"m_Index" : "D2",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 33,
+		"m_Height" : 174,
+		"m_Home" : 1,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 1
+	},
+	"8" : 
+	{
+		"m_Index" : "D3",
+		"m_Sex" : "Female",
+		"m_Religion" : "Zero",
+		"m_Age" : 23,
+		"m_Height" : 160,
+		"m_Home" : 2,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 1
+	},
+	"9" : 
+	{
+		"m_Index" : "D4",
+		"m_Sex" : "Female",
+		"m_Religion" : "Zero",
+		"m_Age" : 27,
+		"m_Height" : 155,
+		"m_Home" : 4,
+		"m_HomeaArea" : -1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 0
+	},
+	"10" : 
+	{
+		"m_Index" : "D5",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 33,
+		"m_Height" : 178,
+		"m_Home" : 3,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 0
+	},
+	"11" : 
+	{
+		"m_Index" : "D6",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 50,
+		"m_Height" : 169,
+		"m_Home" : 1,
+		"m_HomeaArea" : 0,
+		"m_AtlasIndex": 1,
+		"m_Company" : 2
+	},
+	"12" : 
+	{
+		"m_Index" : "D7",
+		"m_Sex" : "Female",
+		"m_Religion" : "Zero",
+		"m_Age" : 22,
+		"m_Height" : 155,
+		"m_Home" : 2,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 2
+	},
+	"13" : 
+	{
+		"m_Index" : "D8",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 42,
+		"m_Height" : 175,
+		"m_Home" : 3,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 1,
+		"m_Company" : 3
+	},
+	"14" : 
+	{
+		"m_Index" : "Player",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 30,
+		"m_Height" : 171,
+		"m_Home" : -1,
+		"m_HomeaArea" : -1,
+		"m_AtlasIndex": 0,
+		"m_Company" : -1
+	},
+	"15" :
+	{
+		"m_Index" : "N0",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 50,
+		"m_Height" : 175,
+		"m_Home" : -1,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 0,
+		"m_Company" : -1
+	},
+	"16" : 
+	{
+		"m_Index" : "N1",
+		"m_Sex" : "Male",
+		"m_Religion" : "Zero",
+		"m_Age" : 50,
+		"m_Height" : 175,
+		"m_Home" : -1,
+		"m_HomeaArea" : 1,
+		"m_AtlasIndex": 0,
+		"m_Company" : -1
+	}					
+}

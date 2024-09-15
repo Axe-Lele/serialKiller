@@ -1,0 +1,105 @@
+{
+	"TurnLimit" : 3,	
+	"SuspectCount" : 5,
+	"AreaCount" : 8,
+	"JobLocation" : [4,0,5,7,4,7,3,5,4,6], 
+	"VictimCount" : 3,
+	"CaseCount" : 3,
+	"VictimMNameCount" : 5,
+	"VictimFNameCount" : 5,
+	"TotalNewsCount" : 30,
+	"Life" : 2,
+	"FACE_SKIN" :  5,
+	"FACE_OUTER" :  4,
+	"FACE_CLOTHES_COMMON" :  5,
+	"FACE_CLOTHES_MALE" :  11,
+	"FACE_CLOTHES_FEMALE" :  7,
+	"FACE_NECK_COMMON" :  3,
+	"FACE_NECK_MALE" :  2,
+	"FACE_NECK_FEMALE" :  2,
+	"FACE_SHAPE" :  3,
+	"FACE_EARING_COMMON" :  2,
+	"FACE_EARING_MALE" :  2,
+	"FACE_EARING_FEMALE" :  3,
+	"FACE_HAIR_COMMON" :  4,
+	"FACE_HAIR_MALE" :  14,
+	"FACE_HAIR_FEMALE" :  8,
+	"FACE_LIP" :  1,
+	"FACE_SCAR" :  3,
+	"FACE_POINT" :  6,
+	"FACE_EYELASH" :  1,
+	"FACE_EYEBROW" :  1,
+	"FACE_BEARD" :  4,
+	"FACE_GLASSES" :  2,
+	"FACE_HAIRACEESARY" :  3,
+	"Building" : 
+	{
+		"0" : 
+		{
+			"Home" : 6,
+			"Case" : 3,	
+			"Extra" : 0
+		},
+		"1" : 
+		{
+			"Home" : 7,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"2" : 
+		{
+			"Home" : 4,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"3" : 
+		{
+			"Home" : 3,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"4" : 
+		{
+			"Home" : 4,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"5" : 
+		{
+			"Home" : 5,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"6" : 
+		{
+			"Home" : 2,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"7" : 
+		{
+			"Home" : 2,
+			"Case" : 3,
+			"Extra" : 0
+		},
+		"8" : 
+		{
+			"Home" : 2,
+			"Case" : 3,
+			"Extra" : 0
+		}
+	},
+	"CriminalCharacter" : 
+	{
+		"0" : ["Lust"],
+		"1" : ["Religion"],
+		"2" : ["Family"],
+		"3" : ["Race"],
+		"4" : ["Wealth"]
+	},
+	"Teacher" : ["HighSchool", "Universe"],
+	"Extra", : ["Homeless"]
+		
+		
+	
+}

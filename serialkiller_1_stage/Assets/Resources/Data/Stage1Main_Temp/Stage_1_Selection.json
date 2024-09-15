@@ -1,0 +1,2617 @@
+{
+		
+	"Teacher" : 
+	{
+		"0" : 
+		{
+			"0" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}
+			},
+			"1" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0
+					}
+				}
+			},
+			"00" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}		
+			},
+			"01" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}		
+			},
+			"02" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					},
+					"3" : 
+					{
+						"Talker" : 0
+					},
+					"4":
+					{	
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					}
+				}		
+			},
+			"03" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}		
+			},
+			"04" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}		
+			}
+		},
+		"1" : 
+		{
+			"0" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_1"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}
+			},
+			"1" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Teacher_1"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0
+					}
+				}
+			},
+			"00" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_1"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}		
+			},
+			"01" :
+			{
+				"Type" : "GetItem",
+				"Item" : "Evidence", 
+				"Talker" : ["Player", "Teacher_1"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0
+					},
+					"4":
+					{	
+						"Talker" : 1
+					}
+				}		
+			},
+			"02" :
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Teacher_1"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0
+					},
+					"2":
+					{	
+						"Talker" : 1
+					}
+				}		
+			}
+		}			
+	},	
+	"Extra" : 
+	{
+		"0" :
+		{	
+			
+		}	 
+	}
+	"Colleague" : 
+	{
+		"Colleague_0" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["UserName"]
+					},	
+					"1" : 
+					{
+						"Talker" : 1
+					},
+					"2":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_0_Name"]
+					},
+					"3" : 
+					{
+						"Talker" : 1
+					},
+					"4":
+					{	
+						"Talker" : 0
+					},
+					"5":
+					{	
+						"Talker" : 1
+					},
+					"6":
+					{	
+						"Talker" : 0
+					}
+				}
+			},
+			"0A1" : 
+			{	
+				"Type" : "None",
+				"Talker" : ["Player","Colleague_0"],
+				"Dialog" : 
+				{
+					"0":
+					{	
+						"Talker" : 0
+					},
+					"1":
+					{	
+						"Talker"  : 1
+					},
+					"2":
+					{
+						"Talker"  : 0
+					},
+					"3":
+					{	
+						"Talker"  : 1	
+					},
+					"4":
+					{	
+						"Talker"  : 0	
+					},
+					"5":
+					{	
+						"Talker"  : 1,	
+						"Parameter" : ["Suspect_0_Name"]
+					}
+				}
+			},
+			"0B1" : 				
+			{
+				"Type" : "None",
+				"Talker" : ["Player","Colleague_0"],
+				"Dialog" : 
+				{
+					"0":
+					{	
+						"Talker"  : 1
+					},
+					"1":
+					{	
+						"Talker"  : 0
+					},
+					"2":
+					{	
+						"Talker"  : 1,	
+						"Parameter" : ["Suspect_0_Name"]
+					},
+					"3":
+					{	
+						"Talker"  : 0
+					}
+				}
+			
+			},
+			"0C1" : 
+			{	
+				"Type" : "None",
+				"Talker" : ["Player","Colleague_0"],
+				"Dialog" : 
+				{
+					"0":
+					{	
+						"Talker"  : 0
+					},
+					"1":
+					{	
+						"Talker"  : 1
+					},
+					"2":
+					{
+						"Talker"  : 0
+					},
+					"3":
+					{	
+						"Talker"  : 1	
+					},
+					"4":
+					{	
+						"Talker"  : 0	
+					},
+					"5":
+					{	
+						"Talker"  : 1,	
+						"Parameter" : ["Suspect_0_Name"]
+					}
+				}
+			}		
+		},
+		"Colleague_1" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_1"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0
+					},
+					"1":
+					{	
+						"Talker" : 1
+					},
+					"2" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["Suspect_1_Name"]
+					},
+					"3":
+					{	
+						"Talker" : 1
+					},
+					"4":
+					{	
+						"Talker" : 0
+					},
+					"5":
+					{	
+						"Talker" : 1
+					}
+				}
+			},
+			"0B0" : 
+			{	
+				"Type" : "None",
+				"Talker" : ["Player","Colleague_1"],
+				"Dialog" : 
+				{
+					"0":
+					{	
+						"Talker"  : 1
+					},
+					"1":
+					{	
+						"Talker"  : 0
+					},
+					"2":
+					{
+						"Talker"  : 1,
+						"Parameter" : ["Suspect_1_Name"]
+					},
+					"3":
+					{	
+						"Talker"  : 0,
+						"Parameter" : ["Suspect_1_Name"]	
+					},
+					"4":
+					{	
+						"Talker"  : 1	
+					}
+				}
+			}	
+		},
+		"Colleague_2" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_2"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0
+					},
+					"1":
+					{	
+						"Talker" : 1
+					},
+					"2" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["Suspect_1_Name"]
+					},
+					"3":
+					{	
+						"Talker" : 1
+					},
+					"4":
+					{	
+						"Talker" : 0
+					},
+					"5":
+					{	
+						"Talker" : 1
+					}
+				}
+			},
+			"0B0" : 
+			{	
+				"Type" : "None",
+				"Talker" : ["Player","Colleague_2"],
+				"Dialog" : 
+				{
+					"0":
+					{	
+						"Talker"  : 1
+					},
+					"1":
+					{	
+						"Talker"  : 0
+					},
+					"2":
+					{
+						"Talker"  : 1,
+						"Parameter" : ["Suspect_1_Name"]
+					},
+					"3":
+					{	
+						"Talker"  : 0,
+						"Parameter" : ["Suspect_1_Name"]	
+					},
+					"4":
+					{	
+						"Talker"  : 1	
+					}
+				}
+			}	
+		},
+		"Colleague_3" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_3"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0
+					},
+					"1":
+					{	
+						"Talker" : 1
+					},
+					"2" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["Suspect_1_Name"]
+					},
+					"3":
+					{	
+						"Talker" : 1
+					},
+					"4":
+					{	
+						"Talker" : 0
+					},
+					"5":
+					{	
+						"Talker" : 1
+					}
+				}
+			},
+			"0B0" : 
+			{	
+				"Type" : "None",
+				"Talker" : ["Player","Colleague_3"],
+				"Dialog" : 
+				{
+					"0":
+					{	
+						"Talker"  : 1
+					},
+					"1":
+					{	
+						"Talker"  : 0
+					},
+					"2":
+					{
+						"Talker"  : 1,
+						"Parameter" : ["Suspect_1_Name"]
+					},
+					"3":
+					{	
+						"Talker"  : 0,
+						"Parameter" : ["Suspect_1_Name"]	
+					},
+					"4":
+					{	
+						"Talker"  : 1	
+					}
+				}
+			}		
+		},
+		"Colleague_4" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_4"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_2_Name"]
+					},
+					"2" : 
+					{
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0
+					},
+					"4":
+					{	
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					}
+				}
+			}		
+		},
+		"Colleague_5" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_5"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["UserName"]
+					},	
+					"2" : 
+					{
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_3_Name"]
+					},
+					"4" : 
+					{
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					},
+					"6":
+					{	
+						"Talker" : 1
+					},
+					"7":
+					{	
+						"Talker" : 0
+					}
+				}
+			}		
+		},
+		"Colleague_6" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_6"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["UserName"]
+					},	
+					"2" : 
+					{
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_3_Name"]
+					},
+					"4" : 
+					{
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					},
+					"6":
+					{	
+						"Talker" : 1
+					},
+					"7":
+					{	
+						"Talker" : 0
+					}
+				}
+			}		
+		},
+		"Colleague_7" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_7"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["UserName"]
+					},	
+					"2" : 
+					{
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_4_Name"]
+					},
+					"4" : 
+					{
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					},
+					"6":
+					{	
+						"Talker" : 1
+					},
+					"7":
+					{	
+						"Talker" : 0
+					},
+					"8" : 
+					{
+						"Talker" : 1
+					},
+					"9":
+					{	
+						"Talker" : 0
+					},
+					"10":
+					{	
+						"Talker" : 1
+					},
+					"11":
+					{	
+						"Talker" : 0
+					}
+				}
+			}		
+		},
+		"Colleague_8" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_8"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["UserName"]
+					},	
+					"2" : 
+					{
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_4_Name"]
+					},
+					"4" : 
+					{
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					},
+					"6":
+					{	
+						"Talker" : 1
+					},
+					"7":
+					{	
+						"Talker" : 0
+					},
+					"8" : 
+					{
+						"Talker" : 1
+					},
+					"9":
+					{	
+						"Talker" : 0
+					},
+					"10":
+					{	
+						"Talker" : 1
+					},
+					"11":
+					{	
+						"Talker" : 0
+					}
+				}
+			}		
+		},
+		"Colleague_9" : 
+		{
+			"0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Colleague_9"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 1
+					},
+					"1" : 
+					{
+						"Talker" : 0,
+						"Parameter" : ["UserName"]
+					},	
+					"2" : 
+					{
+						"Talker" : 1
+					},
+					"3":
+					{	
+						"Talker" : 0,
+						"Parameter" : ["Suspect_4_Name"]
+					},
+					"4" : 
+					{
+						"Talker" : 1
+					},
+					"5":
+					{	
+						"Talker" : 0
+					},
+					"6":
+					{	
+						"Talker" : 1
+					},
+					"7":
+					{	
+						"Talker" : 0
+					},
+					"8" : 
+					{
+						"Talker" : 1
+					},
+					"9":
+					{	
+						"Talker" : 0
+					},
+					"10":
+					{	
+						"Talker" : 1
+					},
+					"11":
+					{	
+						"Talker" : 0
+					}
+				}
+			}		
+		}
+	},
+	"Extra" : 	
+	{
+		"0" : 
+		{
+			"2A0" : 
+			{
+				"Type" : "None", 
+				"Talker" : ["Player", "Extra_0"],		
+				"Dialog" : 
+				{
+					"0" : 
+					{
+						"Talker" : 0
+					},
+					"1" : 
+					{
+						"Talker" : 1
+					},	
+					"2" : 
+					{
+						"Talker" : 0
+					},
+					"3" : 
+					{
+						"Talker" : 1
+					},
+					"4" : 
+					{
+						"Talker" : 0
+					},
+					"5" : 		
+					{
+						"Talker" : 1
+					},
+					"6" : 
+					{
+						"Talker" : 0
+					},
+					"7" : 		
+					{
+						"Talker" : 1
+					},
+					"8" : 
+					{
+						"Talker" : 0
+					}
+				}
+			}
+		}
+	}	
+	"Suspect" : 
+	{
+		"0" : 
+		{
+			"Lust" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},	
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter":["UserName"]
+						},
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},	
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},	
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						}
+					}	
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},	
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"0A0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"0B0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+					
+				},
+				"1A0" : 
+				{
+					"Type" : "Event",
+					"Event" : "StartEvent1", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},	
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 		
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						},
+					}
+				},
+				"1B0" : 
+				{
+					"Type" : "Event",
+					"Event" : "StartEvent1",
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+							
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},	
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"2A1" : 
+				{
+					"Type" : "Event",
+					"Event" : "StartEvent2", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},	
+						"1" : 
+						{
+							"Talker" : 0
+						},
+						"2" : 
+						{
+							"Talker" : 1
+						},	
+						"3" : 
+						{
+							"Talker" : 0
+						},
+						"4" : 
+						{
+							"Talker" : 1
+						},
+						"5" : 
+						{
+							"Talker" : 0
+						},
+						"6" : 		
+						{
+							"Talker" : 1
+						}
+					}
+				}			
+			},
+			"None" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},	
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter":["UserName"]
+						},
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},	
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},	
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						}
+					}	
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},	
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"0A0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"0B0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+					
+				},
+				"1A0" : 
+				{
+					"Type" : "Event",
+					"Event" : "StartEvent1", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},	
+						"1" : 
+						{
+							"Talker" : 1
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},	
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 		
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						},
+					}
+				},
+				"1B0" : 
+				{
+					"Type" : "Event",
+					"Event" : "StartEvent1",
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+							
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},	
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"2A1" : 
+				{
+					"Type" : "Event",
+					"Event" : "StartEvent2", 
+					"Talker" : ["Player", "Suspect_0"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},	
+						"1" : 
+						{
+							"Talker" : 0
+						},
+						"2" : 
+						{
+							"Talker" : 1
+						},	
+						"3" : 
+						{
+							"Talker" : 0
+						},
+						"4" : 
+						{
+							"Talker" : 1
+						},
+						"5" : 
+						{
+							"Talker" : 0
+						},
+						"6" : 		
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			}
+		},
+		"1" : 
+		{
+			"Religion" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter" : ["UserName"]
+						},
+						"2" : 
+						{
+							"Talker" : 1
+						},
+						"3" : 
+						{
+							"Talker" : 0
+						
+						}		
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0
+						}	
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 		
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						},
+						"9" : 		
+						{
+							"Talker" : 1
+						},
+						"10" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1,
+							"Parameter" : ["Suspect_1_JobName"]
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"0A0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			},
+			"None" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter" : ["UserName"]
+						},
+						"2" : 
+						{
+							"Talker" : 1
+						},
+						"3" : 
+						{
+							"Talker" : 0
+						
+						}		
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0
+						}	
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 		
+						{
+							"Talker" : 1
+						},
+						"8" : 
+						{
+							"Talker" : 0
+						},
+						"9" : 		
+						{
+							"Talker" : 1
+						},
+						"10" : 
+						{
+							"Talker" : 0
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_1"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1,
+							"Parameter" : ["Suspect_1_JobName"]
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						},
+						"6" : 
+						{
+							"Talker" : 0
+						}
+					}
+				}
+			}
+		},
+		"2" : 
+		{
+			"Family" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter" : ["UserName"]	
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						},
+						"3" : 
+						{
+							"Talker" : 0
+						}
+					}
+					
+
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1,
+							"Parameter" : ["Suspect_2_JobName"]
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			},
+			"None" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter" : ["UserName"]	
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						},
+						"3" : 
+						{
+							"Talker" : 0
+						}
+					}
+					
+
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 		
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_2"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1,
+							"Parameter" : ["Suspect_2_JobName"]
+						},
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			}
+		},
+		"3" : 
+		{
+			"Race" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter" : ["UserName"]	
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},	
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			},
+			"None" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter" : ["UserName"]	
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						},
+						"4" : 
+						{
+							"Talker" : 0
+						},
+						"5" : 
+						{
+							"Talker" : 1
+						},	
+						"6" : 
+						{
+							"Talker" : 0
+						},
+						"7" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_3"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			}
+		},
+		"4" : 
+		{
+			"Wealth" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter":["UserName"]	
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+					
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			},
+			"None" : 
+			{
+				"0" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+						},
+						"1" : 
+						{
+							"Talker" : 0,
+							"Parameter":["UserName"]	
+						},	
+						"2" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"1" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 1
+					
+						}
+					}
+				},
+				"00" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"01" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						}
+					}
+				},
+				"02" : 
+				{
+					"Type" : "None", 
+					"Talker" : ["Player", "Suspect_4"],		
+					"Dialog" : 
+					{
+						"0" : 
+						{
+							"Talker" : 0
+						},
+						"1" : 
+						{
+							"Talker" : 1
+						},	
+						"2" : 
+						{
+							"Talker" : 0
+						},
+						"3" : 
+						{
+							"Talker" : 1
+						}
+					}
+				}
+			}
+		}
+	}
+}

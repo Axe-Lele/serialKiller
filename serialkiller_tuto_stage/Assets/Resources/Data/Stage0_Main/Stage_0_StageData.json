@@ -1,0 +1,40 @@
+{
+	"m_Year" : 2018,
+	"m_Month" : 4,
+	"m_Day" : 30,
+	"m_SuspectCount" : 2,
+	"m_PowerfulSuspect" : [0,1],
+	"m_Suspect" : 
+	{
+		"0" : 
+		{
+			"m_CaseCount" : 3,
+			"m_NumberOfEventsAssinged" : 3
+		},
+		"1" : 
+		{
+			"m_CaseCount" : 3,
+			"m_NumberOfEventsAssinged" : 3
+		},
+		"2" : 
+		{
+			"m_CaseCount" : 3,
+			"m_NumberOfEventsAssinged" : 5
+		},
+		"3" : 
+		{
+			"m_CaseCount" : 3,
+			"m_NumberOfEventsAssinged" : 5
+		},
+		"4" : 
+		{
+			"m_CaseCount" : 4,
+			"m_NumberOfEventsAssinged" : 6
+		},
+		"5" : 
+		{
+			"m_CaseCount" : 4,
+			"m_NumberOfEventsAssinged" : 6
+		}	
+	}		
+}

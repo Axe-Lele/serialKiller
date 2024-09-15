@@ -1,0 +1,287 @@
+﻿{
+	"Start": {
+		"0": ["AddNpcEvent-D0_0"],
+		"1": []
+	},
+
+	"Case": {
+		"0": {
+			"0": [ "AddNews-0", "AddSearch-Extra_0" ],
+			"1": [ "AddNews-2", "AddArea-Case_1", "ChangeNpcState-C2_Dead" ],
+			"2": [ "AddNews-1", "AddArea-Case_2", "ChangeNpcState-C1_Dead", "AddArea-Extra_1", "AddSearch-Extra_1" ]
+
+		},
+		"1": {
+			"0": [ "AddNews-0", "AddSearch-Extra_0" ],
+			"1": [ "AddNews-2", "AddArea-Case_1", "ChangeNpcState-C2_Dead" ],
+			"2": [ "AddNews-1", "AddArea-Case_2", "ChangeNpcState-C1_Dead", "AddArea-Extra_1", "AddSearch-Extra_1" ]
+		}
+	},
+
+	"GetItem": {
+		"0": {
+			"A2": [ "AddArea-Company_3" ],
+			"A5": [ "SystemMessage-009", "AddEvidence-A3" ],
+			"A6": [ "AddEvidence-A7" ],
+			"A9": [ "AddEvidence-A7" ],
+			"A10": [ "Case-Side_0" ],
+			"A14": [ "SystemMessage-010" ]
+		},
+		"1": {
+			"A2": [ "AddArea-Company_3" ],
+			"A5": [ "SystemMessage-009", "AddEvidence-A3" ],
+			"A6": [ "AddEvidence-A7" ],
+			"A9": [ "AddEvidence-A7" ],
+			"A10": [ "Case-Side_0" ],
+			"A14": [ "SystemMessage-010" ]
+		}
+	},
+
+	"Analysis": {
+		"0": {
+			"00": [ "Dialog-N0_A0" ]
+		},
+		"1": {
+			"00": [ "Dialog-N0_A1" ]
+		}
+	},
+
+	"CasePlace": {
+		"0": {
+			"0": [ "Dialog-N1_00", "AddEvidence-00" ],
+			"1": [ "AddEvidence-01" ],
+			"2": [ "AddEvidence-02" ]
+		},
+		"1": {
+			"0": [ "Dialog-N1_00", "AddEvidence-00" ],
+			"1": [ "AddEvidence-01" ],
+			"2": [ "AddEvidence-02" ]
+		}
+	},
+
+	"SystemMessage": {
+		"001": [ "Dialog-N0_01" ],
+		"002": [ "Dialog-N0_02" ],
+		"003": [],
+		"004": [ "Dialog-N0_03" ],
+		"005": [],
+		"006": [],
+		"007": [ "Dialog-N0_04" ],
+		"008": [],
+		"009": [ "Dialog-N0_06" ],
+		"010": [ "Dialog-N0_07" ]
+	},
+
+	"Search": {
+		"0": {
+			"Home_0": [],
+			"Home_1": [],
+			"Home_2": [],
+			"Home_3": [ "AddEvidence-A6" ],
+			"Home_4": [],
+			"Company_0": [ "AddEvidence-A6" ],
+			"Company_1": [ "AddSearch-Company_0" ],
+			"Company_2": [ "AddArea-Extra_1", "AddEvidence-A11" ],
+			"Company_3": [ "AddEvidence-A9" ],
+			"Company_4": [ "AddEvidence-A7" ],
+			"Extra_0": [ "AddEvidence-A6" ],
+			"Extra_1": [ "AddEvidence-A10" ],
+			"Extra_2": [ "AddEvidence-A5" ],
+			"Case_0": [ "ChangeNpcState-D0_Dead" ]
+		},
+		"1": {
+			"Home_0": [],
+			"Home_1": [],
+			"Home_2": [],
+			"Home_3": [ "AddEvidence-A6" ],
+			"Home_4": [],
+			"Company_0": [ "SystemMessage-006", "AddEvidence-A2" ],
+			"Company_1": [ "AddSearch-Company_0" ],
+			"Company_2": [ "AddArea-Extra_1", "AddEvidence-A11" ],
+			"Company_3": [ "AddEvidence-A9" ],
+			"Company_4": [ "AddEvidence-A7" ],
+			"Extra_0": [ "AddEvidence-A5" ],
+			"Extra_1": [ "AddEvidence-A10" ],
+			"Extra_2": [ "AddEvidence-A5" ],
+			"Case_0": [ "AddCase-1" ]
+		}
+	},
+
+	"EndDialog": {
+		"D0": {
+			"0": {
+				"01": [ "SystemMessage-002" ],
+				"02": [ "Dialog-N0_08" ]
+			},
+			"1": {
+				"01": [ "SystemMessage-002" ],
+				"02": [ "Dialog-N0_08" ]
+			}
+		},
+		"A1": {
+			"0": {
+				"02": [ "SystemMessage-007", "AddSearch-Company_3" ]
+			},
+			"1": {
+				"02": [ "SystemMessage-007", "AddSearch-Company_3" ]
+			}
+		}
+	},
+
+	"Dialog": {
+		"N0": {
+			"0": {
+				"00": [ "AddArea-Case_0" ],
+				"02": [ "SystemMessage-003" ],
+				"03": [ "SystemMessage-005", "AddSearch-Company_0" ]
+			},
+			"1": {
+				"00": [ "AddArea-Case_0" ],
+				"02": [ "SystemMessage-003" ],
+				"03": [ "SystemMessage-005", "AddSearch-Company_0" ],
+				"05": [ "SystemMessage-008" ]
+			}
+
+		},
+		"N1": {
+			"0": {
+				"00": [ "AddArea-Extra_0", "AddSelection-D0_00", "SystemMessage-001" ],
+				"01": [ "AddArea-Case_0", "AddArea-Company_0" ]
+			},
+			"1": {
+				"00": [ "AddArea-Extra_0", "AddSelection-D0_00", "SystemMessage-001" ],
+				"01": [ "AddArea-Case_0", "AddArea-Company_0" ]
+			}
+
+		},
+		"A0": {
+			"0": {
+				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
+				"S01": [ "GameOver-A0_3" ],
+				"S02": [ "GameOver-A0_3" ]
+			},
+			"1": {
+				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
+				"S01": [ "GameOver-A0_3" ],
+				"S02": [ "GameOver-A0_3" ]
+			}
+
+		},
+		"A1": {
+			"0": {
+				"00": [ "AddSelection-A1_02" ],
+				"03": [ "AddArea-Company_4" ],
+				"S00": [ "AddArea-Home_2", "AddSearch-Home_2", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
+				"S01": [ "GameOver-A1_3" ],
+				"S02": [ "GameOver-A1_3" ]
+
+			},
+			"1": {
+				"00": [ "AddSelection-A1_02" ],
+				"03": [ "AddArea-Company_4" ],
+				"S00": [ "AddArea-Home_2", "AddSearch-Home_2", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
+				"S01": [ "GameOver-A1_3" ],
+				"S02": [ "GameOver-A1_3" ]
+			}
+
+		},
+		"D0": {
+			"0": {
+				"00": [ "AddSelection-D0_01" ],
+				"10": [ "RemoveSelection-D0_00", "RemoveSelection-D0_01", "AddSelection-D0_03", "AddArea-Company_0", "AddSearch-Company_0" ],
+				"12": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
+				"S01": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
+				"S02": [ "AddArea-Extra_2", "AddSearch-Extra_2" ]
+			},
+			"1": {
+				"00": [ "AddSelection-D0_01" ],
+				"01": [ "AddNpcEvent-D0_0" ],
+				"10": [ "RemoveSelection-D0_00", "RemoveSelection-D0_01", "AddSelection-D0_03", "AddArea-Company_0", "AddSearch-Company_0" ],
+				"12": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
+				"S00": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
+				"S01": [ "AddArea-Extra_2", "AddSearch-Extra_2" ],
+				"S02": [ "AddArea-Extra_2", "AddSearch-Extra_2" ]
+			}
+		},
+		"D1": {
+			"0": {
+				"05": [ "SystemMessage-004" ],
+				"07": [ "AddSelection-A0_02" ],
+				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
+				"S01": [ "GameOver-D1_3" ],
+				"S02": [ "GameOver-D1_3" ]
+			},
+			"1": {
+				"05": [ "SystemMessage-004" ],
+				"07": [ "AddSelection-A0_02" ],
+				"S00": [ "AddArea-Home_3", "AddSearch-Home_3", "MissingNpc-A0", "MissingNpc-A1", "MissingNpc-D1" ],
+				"S01": [ "GameOver-D1_3" ],
+				"S02": [ "GameOver-D1_3" ]
+			}
+		},
+		"D2": {
+			"0": {
+				"01": [ "AddSelection-D3_11" ],
+				"02": [ "AddSelection-D2_021" ]
+			},
+			"1": {
+				"01": [ "AddSelection-D3_11" ],
+				"02": [ "AddSelection-D2_021" ]
+			}
+		},
+		"D3": {
+			"0": {
+				"01": [ "AddSelection-D3_11" ]
+			},
+			"1": {
+				"01": [ "AddSelection-D3_11" ]
+			}
+		},
+		"D4": {
+			"0": {
+				"01": [ "AddSelection-D4_02" ],
+				"02": [ "AddSelection-D4_03" ],
+				"03": [ "AddSelection-D4_11" ],
+				"11": [ "AddEvidence-A0" ]
+			},
+			"1": {
+				"01": [ "AddSelection-D4_02" ],
+				"02": [ "AddSelection-D4_03" ],
+				"03": [ "AddSelection-D4_11" ],
+				"11": [ "AddEvidence-A0" ]
+			}
+		},
+		"D5": {
+			"0": {
+				"01": [ "AddSelection-D5_03" ],
+				"04": [ "AddArea-Extra_1", "AddSearch-Extra_1" ]
+			},
+			"1": {
+				"01": [ "AddSelection-D5_03" ],
+				"04": [ "AddArea-Extra_1", "AddSearch-Extra_1" ]
+			}
+		},
+		"D6": {
+			"0": {
+				"03": [ "AddSelection-D7_04" ]
+			},
+			"1": {
+				"03": [ "AddSelection-D7_04" ]
+			}
+		},
+		"D7": {
+			"0": {
+			},
+			"1": {
+			}
+		},
+		"D8": {
+			"0": {
+				"00": [ "AddSelection-D8_01", "RemoveSelection-D8_00" ]
+			},
+			"1": {
+				"00": [ "AddSelection-D8_01", "RemoveSelection-D8_00" ]
+			}
+		}
+	}
+}

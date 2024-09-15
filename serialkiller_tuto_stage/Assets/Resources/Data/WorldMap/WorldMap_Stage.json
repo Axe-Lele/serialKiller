@@ -1,0 +1,28 @@
+﻿{
+  "0": {
+    "IsOpen": true,
+    "0": {
+      "Labels": "",
+      "Events": "",
+      "IsOpen": true
+    },
+    "1": {
+      "Labels": "",
+      "Events": "",
+      "IsOpen": true
+    }
+  },
+  "1": {
+    "IsOpen": false,
+    "0": {
+      "Labels": "",
+      "Events": "",
+      "IsOpen": true
+    },
+    "1": {
+      "Labels": "",
+      "Events": "",
+      "IsOpen": false
+    }
+  }
+}

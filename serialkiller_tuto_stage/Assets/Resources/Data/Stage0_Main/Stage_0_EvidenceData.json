@@ -1,0 +1,85 @@
+{
+	"Evidence": {
+		"00": {
+			"IsAnalyzed": true,
+			"IsMatched": true,
+			"AnalyzedTime": 120,
+			"MatchedTime": 120
+		},
+		"01": {
+			"IsAnalyzed": false,
+			"IsMatched": true,
+			"MatchedTime": 3600
+		},
+		"02": {
+			"IsAnalyzed": true,
+			"IsMatched": true,
+			"AnalyzedTime": 120,
+			"MatchedTime": 120
+		},
+		"A0": "",
+		"A1": "",
+		"A2": "",
+		"A3": "",
+		"A4": "",
+		"A5": {
+			"IsAnalyzed": true,
+			"IsMatched": false,
+			"IsChange": true,
+			"Swap": "A14",
+			"AnalyzedTime": 120
+		},
+		"A7": {
+			"IsAnalyzed": true,
+			"IsMatched": true,
+			"AnalyzedTime": 120,
+			"MatchedTime": 120
+		},
+		"A9": {
+			"IsAnalyzed": false,
+			"IsMatched": true,
+			"AnalyzedTime": 120,
+			"MatchedTime": 120
+		},
+		"A10": "",
+		"A11": "",
+		"A12": "",
+		"A13": "",
+		"A14": ""
+	},
+	"Match": {
+		"00": {
+			"0": {
+				"Index": "A7",
+				"Evidence": "B0"
+			}
+		},
+		"01": {
+			"0": {
+				"Index": "A7",
+				"Evidence": "B1"
+			}
+		},
+		"02": {
+			"0": {
+				"Index": "A7",
+				"Evidence": "B2"
+			}
+		},
+		"A7": {
+			"0": {
+				"Index": "00",
+				"Evidence": "B0"
+			},
+			"1": {
+				"Index": "01",
+				"Evidence": "B1"
+			},
+			"2": {
+				"Index": "02",
+				"Evidence": "B2"
+			}
+		}
+	}
+
+}

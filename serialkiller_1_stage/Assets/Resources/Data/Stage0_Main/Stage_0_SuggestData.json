@@ -1,0 +1,122 @@
+﻿{	
+	"A0" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A10",
+			"m_Type" : "CompulsionSelection",
+			"m_DialogIndex" : "S0",
+			"m_Selection" : ["0", "1"],
+			"m_Event" : ["Dialog-D1_S00","Dialog-D1_S01", "Dialog-D1_S02"]
+		}
+	},
+	"A1" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A10",
+			"m_Type" : "CompulsionSelection",
+			"m_DialogIndex" : "S0",
+			"m_Selection" : ["0", "1"],
+			"m_Event" : ["Dialog-D1_S00","Dialog-D1_S01", "Dialog-D1_S02"]
+		},
+		"1" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A2",
+			"m_DialogIndex" : "03"
+		}
+	},	
+	"D0" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Dialog_Stage0_Main_D4_02",
+			"m_Selection" : ["0", "1"],
+			"m_DialogIndex" : "S0",
+			"m_Type" : "CompulsionSelection",
+			"m_Event" : ["Dialog-D0_S00","Dialog-D0_S01", "Dialog-D0_S02"]
+		},
+		"1" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_00",
+			"m_DialogIndex" : "10"
+		},
+		"2" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A6",
+			"m_DialogIndex" : "11"
+		},
+		"3" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A8",
+			"m_DialogIndex" : "11"
+		},
+		"4" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A10",
+			"m_DialogIndex" : "13"
+		},
+		"5" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A3",
+			"m_DialogIndex" : "14"
+		}
+	},
+	"D1" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A10",
+			"m_DialogIndex" : "07"
+		},
+		"1" : 
+		{
+			"m_Index" : "Dialog_Stage0_Main_D4_00",
+			"m_DialogIndex" : "04"
+		},
+		"2" : 
+		{
+			"m_Index" : "Dialog_Stage0_Main_D5_03",
+			"m_DialogIndex" : "05"
+		},
+		"3" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A2",
+			"m_DialogIndex" : "06"
+		},
+		"4" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A3",
+			"m_DialogIndex" : "08"
+		}
+	},	
+	"D3" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Dialog_Stage0_Main_D2_03",
+			"m_DialogIndex" : "04"
+		}
+	},
+	"D4" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Dialog_Stage0_Main_D5_02",
+			"m_DialogIndex" : "12"
+		},
+		"1" : 
+		{
+			"m_Index" : "Dialog_Stage0_Main_D5_02",
+			"m_DialogIndex" : "12"
+		}
+	},		
+	"D5" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A14",	
+			"m_DialogIndex" : "04"
+		}
+	}	
+}

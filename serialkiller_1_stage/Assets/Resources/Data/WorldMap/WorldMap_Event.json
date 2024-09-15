@@ -1,0 +1,11 @@
+﻿{
+  "StartFirst": [],
+  "SystemMessage": [],
+  "Dialog": {
+    "N0": {
+      "0": {
+        "00": ["AddSelection"]
+      }
+    }
+  }
+}
