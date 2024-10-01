@@ -32,6 +32,7 @@
 			"A30": ["RemoveEvidence-A11"],
 			"A31": ["RemoveEvidence-A11"],
 			"A39": [],
+			"A59": [],
 			"A98": [  ]
 		},
 		"1": {
@@ -144,10 +145,12 @@
 		"053": [ "AddNpcEvent-D6_0" ],
 		"054": ["AddEvidence-A63"],
 		"055": [ "Dialog-D4_13"],
-		"056": ["Dialog-D05_04" ],
-		"057": ["SwapEvidence-A60"],
-		"058": ["ShowCompulsion-D5_S0"],
-		"059": ["Dialog-D06_10" , "RemoveEvidence-A65", "RemoveEvidence-A66", "AddEvidence-67" ],
+		"056": ["Dialog-D5_04" ],
+		"057": ["Dialog-D4_14"],
+		"058": ["ShowCompulsion-D30_S0"],
+		"059": ["Dialog-D6_10" , "RemoveEvidence-A65", "RemoveEvidence-A66", "AddEvidence-A67" ],
+		"060": ["AddSelection-D4_18"],
+		"062": ["RemoveEvidence-A67", "AddEvidence-A68"],
 		"098": [],
 		"099": []
 	},
@@ -247,7 +250,8 @@
 		},
 		"D4": {
 			"0": {
-				"00": []
+				"00": [],
+				"20": [ ]
 			},
 			"1": {}
 		},
@@ -547,6 +551,8 @@
 				"12": ["SystemMessage-057"],
 				"13": [],
 				"14": [],
+				"17": [ "SystemMessage-060"],
+				"18": [ "RemoveSelection-D4_18" , "AddSelection-D4_20", "SystemMessage-062"],
 				"50": ["RemoveSelection-D4_50"]
 			},
 			"1": {
@@ -566,9 +572,6 @@
 				"04": ["SystemMessage-058"],
 				"05": ["SystemMessage-056" ],
 				"50": ["RemoveSelection-D5_50"],
-				"S00": [ "SwapEvidence-A64_0" ],
-				"S01": [ "SwapEvidence-A64_1" ],
-				"S02": [ ]				
 			},
 			"1": {
 				"01": ["AddSelection-D5_13"],
@@ -858,6 +861,15 @@
 				"03": [  ],
 				"04": [ "RemoveSelection-D26_04"  ],
 				"05": [ "AddEvidence-A59" ],
+			},
+			"1": {
+			}
+		},
+		"D30": {
+			"0": {
+				"S00": [ "SwapEvidence-A64_0" ],
+				"S01": [ "SwapEvidence-A64_1" ],
+				"S02": [ ]				
 			},
 			"1": {
 			}

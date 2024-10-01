@@ -331,7 +331,7 @@
 			"m_Index" : "Evidence_Stage0_Main_A65",
 			"m_DialogIndex" : "15"
 		},
-		"3" : 
+		"4" : 
 		{
 			"m_Index" : "Evidence_Stage0_Main_A66",
 			"m_DialogIndex" : "16"
@@ -339,6 +339,11 @@
 		"5" : 
 		{
 			"m_Index" : "Evidence_Stage0_Main_A67",
+			"m_DialogIndex" : "17"
+		},
+		"6" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A007",
 			"m_DialogIndex" : "17"
 		}
 	},		
@@ -353,14 +358,6 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A64",
 			"m_DialogIndex" : "05"
-		},
-		"2" : 
-		{
-			"m_Index" : "Event001",
-			"m_Selection" : ["0", "1"],
-			"m_DialogIndex" : "S0",
-			"m_Type" : "CompulsionSelection",
-			"m_Event" : ["Dialog-D5_S00","Dialog-D5_S01", "Dialog-D5_S02"]
 		}
 	},	
 	"D6" : 
@@ -444,6 +441,11 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A66",
 			"m_DialogIndex" : "08"
+		},
+		"16" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A64",
+			"m_DialogIndex" : "36"
 		}
 	},	
 	"D8" : 
@@ -993,6 +995,17 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A24",	
 			"m_DialogIndex" : "11"
+		}
+	},
+	"D30" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Event001",
+			"m_Type" : "CompulsionSelection",
+			"m_DialogIndex" : "S0",
+			"m_Selection" : ["0", "1"],
+			"m_Event" : ["Dialog-D30_S00","Dialog-D30_S01", "Dialog-D30_S02"]
 		}
 	}		
 }
