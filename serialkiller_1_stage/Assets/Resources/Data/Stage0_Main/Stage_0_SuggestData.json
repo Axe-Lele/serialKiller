@@ -188,6 +188,16 @@
 		{
 			"m_Index" : "Dialog_Stage0_Main_A1_39",	
 			"m_DialogIndex" : "11"
+		},
+		"3" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A68",	
+			"m_DialogIndex" : "05"
+		},
+		"4" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A26",	
+			"m_DialogIndex" : "05"
 		}
 	},			
 	"C1" : 
@@ -289,12 +299,12 @@
 	{
 		"0" : 
 		{
-			"m_Index" : "Evidence_Stage0_Main_A27",
+			"m_Index" : "Evidence_Stage0_Main_A23",
 			"m_DialogIndex" : "05"
 		},
 		"1" : 
 		{
-			"m_Index" : "Evidence_Stage0_Main_A35",
+			"m_Index" : "Evidence_Stage0_Main_A26",
 			"m_DialogIndex" : "02"
 		}
 	},	

@@ -173,6 +173,13 @@
 			"IsAnalyzed": false,
 			"IsMatched": false
 		},
+		"A26":
+		{
+			"AtlasIndex": 0,
+			"IsAnalyzed": false,
+			"IsMatched": false,
+			"Swap": ["A73"  ],
+		},
 		"A27":
 		{
 			"AtlasIndex": 0,
@@ -228,19 +235,23 @@
 		{
 			"AtlasIndex": 0,
 			"IsAnalyzed": false,
-			"IsMatched": false
+			"IsMatched": false,
+			"Swap": [ "A74" ]
+
 		},
 		"A37":
 		{
 			"AtlasIndex": 0,
 			"IsAnalyzed": false,
-			"IsMatched": false
+			"IsMatched": false,
+			"Swap": [ "A75" ]
 		},
 		"A38":
 		{
 			"AtlasIndex": 0,
 			"IsAnalyzed": false,
-			"IsMatched": false
+			"IsMatched": false,
+			"Swap": [ "A74" ]
 		},
 		"A39":
 		{
@@ -274,7 +285,8 @@
 		{
 			"AtlasIndex": 0,
 			"IsAnalyzed": false,
-			"IsMatched": false
+			"IsMatched": false,
+			"Swap": [ "A72" ]
 		},
 		"A51":
 		{
@@ -314,6 +326,13 @@
 			"IsAnalyzed": false,
 			"IsMatched": false
 		},
+		"A59":
+		{
+			"AtlasIndex": 0,
+			"IsAnalyzed": false,
+			"IsMatched": false,
+			"Swap": ["A71" ]
+		},
 		"A60":
 		{
 			"AtlasIndex": 0,
@@ -327,6 +346,13 @@
 			"IsAnalyzed": false,
 			"IsMatched": false,
 			"Swap": ["A65" , "A66" ]
+		},
+		"A68":
+		{
+			"AtlasIndex": 0,
+			"IsAnalyzed": false,
+			"IsMatched": false,
+			"Swap": ["A76" ]
 		},
 		"B0":
 		{
