@@ -347,6 +347,13 @@
 			"IsMatched": false,
 			"Swap": ["A65" , "A66" ]
 		},
+		"A67":
+		{
+			"AtlasIndex": 0,
+			"IsAnalyzed": false,
+			"IsMatched": false,
+			"Swap": ["A68" ]
+		},
 		"A68":
 		{
 			"AtlasIndex": 0,

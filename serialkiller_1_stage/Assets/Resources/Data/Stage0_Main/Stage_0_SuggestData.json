@@ -137,6 +137,16 @@
 		},
 		"20" : 
 		{
+			"m_Index" : "Evidence_Stage0_Main_A63",
+			"m_DialogIndex" : "43"
+		},
+		"21" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A70",
+			"m_DialogIndex" : "44"
+		},
+		"22" : 
+		{
 			"m_Index" : "Event001",
 			"m_Type" : "CompulsionSelection",
 			"m_DialogIndex" : "S0",
