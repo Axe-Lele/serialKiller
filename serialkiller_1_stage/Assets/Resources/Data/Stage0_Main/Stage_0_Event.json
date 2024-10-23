@@ -3,7 +3,6 @@
 		"0": ["Dialog-N0_00",  "ChangeNpcState-T1_Missing", "AddArea-Home_2" , "UnlockDT-0009" "UnlockDT-0001", "UnlockDT-0002" , "UnlockDT-0003" , "AddSelection-D53_00"  ],
 		"1": [ "SystemMessage-030" ]
 	},
-
 	"Case": {
 		"0": {
 			"0": [ "AddNews-2" , "UnlockDT-0009" ],
@@ -159,12 +158,13 @@
 		"060": ["Dialog-D4_18"],
 		"062": [ "RemoveEvidence-A67", "AddEvidence-A68" , "SwapEvidence-A37_0" ],
 		"063": ["AddEvidence-A59", "SwapEvidence-A36_0" , "SwapEvidence-A50_0"   ],
-		"064": ["AddEvidence-A69"],
+		"064": ["AddEvidence-A69" , "AddArea-Extra_4" , "AddNpcEvent-D40_0" ],
 		"065": ["Dialog-D26_20" ],
 		"066": ["SwapEvidence-A34_0" , "SwapEvidence-A39_0" , "SwapEvidence-A59_0" ],
 		"067": ["Dialog-D4_19" , "RemoveEvidence-A37" , "RemoveEvidence-A75" ],
-		"068": ["AddSelection-D6_11"], 
-		"098": [], 
+		"068": ["SwapEvidence-A77_0"], 
+		"069": ["SwapEvidence-A78_0"],
+		"098": [],
 		"099": []
 	},
 	"Search": {
@@ -609,7 +609,7 @@
 				"07": [ "SystemMessage-046" ],
 				"08": [ "SystemMessage-059" ],
 				"10": [  ],
-				"11": [ "RemoveSelection-D6_11"],
+				"11": [ "SystemMessage-069"],
 				"12": [],
 				"13": [],
 				"30": [ "SystemMessage-047"],
@@ -675,7 +675,7 @@
 				"57": [ "SystemMessage-036" ],
 				"58": [ "SystemMessage-036" ],
 				"59": [ "SystemMessage-038" ],
-				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" ],
+				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" , "AddArea-Extra_4", "AddSelection-D10_42", "AddNpcEvent-D42_0" ],
 				"70": [ "SystemMessage-042" ],
 				"71": [ "SystemMessage-042" ],
 				"72": [ "AddArea-Company_3" , "AddEvidence-A25" , "AddSelection-A1_70"],
@@ -878,8 +878,9 @@
 				"01": [ "RemoveSelection-D26_01" , "AddSelection-D26_02" ],
 				"02": [ "SystemMessage-064" , "RemoveSelection-D26_02", "AddSelection-D26_03" ],
 				"03": [ "RemoveSelection-D26_03", "AddSelection-D26_04" ],
-				"04": [ "RemoveSelection-D26_04", "AddSelection-D26_05" ],
+				"04": [ "RemoveSelection-D26_04", "AddSelection-D26_06" ],
 				"05": [ "RemoveSelection-D26_05" ],
+				"06": [ "RemoveSelection-D26_06", "AddSelection-D26_05" , "AddEvidence-A80" ],
 				"50": [ "RemoveSelection-D26_50", "AddSelection-D26_01" ],				
 			},
 			"1": {
