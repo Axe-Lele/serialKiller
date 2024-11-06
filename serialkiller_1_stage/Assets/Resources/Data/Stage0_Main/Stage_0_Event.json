@@ -39,6 +39,7 @@
 			"A74": [ "SwapEvidence-A59_0" ],
 			"A75": [ "SwapEvidence-A68_0" ],
 			"A76": [ "SystemMessage-067" ],
+			"A76": [ "SystemMessage-073" ],
 			"A98": [  ]
 		},
 		"1": {
@@ -121,11 +122,11 @@
 		"022": ["AddSelection-D8_00", "AddSelection-D6_00" , "AddArea-Company_4", "AddEvidence-A27" ] ,
 		"023": ["AddSelection-A1_32", "RemoveSelection-A1_03"],
 		"024": ["AddSelection-D6_33"],
-		"025": ["AddSelection-D9_37", "AddArea-Company_0", "AddSelection-D4_00", "AddSelection-D5_00", "AddArea-Home_0", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_3", "AddArea-Extra_2", "AddSelection-C0_00", "AddSelection-D2_00", "AddSelection-A0_60", "AddSelection-C2_00", "RemoveSelection-D9_60", "RemoveSelection-D9_61", "RemoveSelection-D9_62", "RemoveSelection-D9_63"],
+		"025": ["AddSelection-D9_37", "AddArea-Company_0", "AddSelection-D4_00", "AddSelection-D5_00", "AddArea-Home_0", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_3", "AddArea-Extra_5", "AddSelection-C0_00", "AddSelection-D2_00", "AddSelection-A0_60", "AddSelection-C2_00", "RemoveSelection-D9_60", "RemoveSelection-D9_61", "RemoveSelection-D9_62", "RemoveSelection-D9_63"],
 		"026": ["Dialog-D9_64" , "AddSelection-D13_00" ],
 		"027": ["AddEvidence-A37"],
 		"028": ["AddArea-Company_3", "AddArea-Company_0", "AddSelection-A1_60", "RemoveSelection-A1_20", "AddSelection-D4_00", "AddSelection-D5_00"],
-		"029": ["AddArea-Company_3", "AddSearch-Home_0", "AddSearch-Home_1", "AddArea-Extra_3", "AddArea-Extra_2", "AddSelection-A1_60", "RemoveSelection-A1_20", "AddSelection-A0_60", "AddSelection-C0_00", "AddSelection-C2_00", "AddSelection-D2_00"],
+		"029": ["AddArea-Company_3", "AddSearch-Home_0", "AddSearch-Home_1", "AddArea-Extra_3", "AddArea-Extra_5", "AddSelection-A1_60", "RemoveSelection-A1_20", "AddSelection-A0_60", "AddSelection-C0_00", "AddSelection-C2_00", "AddSelection-D2_00"],
 		"030": ["Dialog-C1_20" , "AddArea-Extra_1" , "AddSelection-C1_21" ],
 		"031": ["ShowCompulsion-C1_S0" ],
 		"032": ["Dialog-D21_00" ],
@@ -158,12 +159,16 @@
 		"060": ["Dialog-D4_18"],
 		"062": [ "RemoveEvidence-A67", "AddEvidence-A68" , "SwapEvidence-A37_0" ],
 		"063": ["AddEvidence-A59", "SwapEvidence-A36_0" , "SwapEvidence-A50_0"   ],
-		"064": ["AddEvidence-A69" , "AddArea-Extra_4" , "AddNpcEvent-D40_0" ],
+		"064": ["AddEvidence-A69" , "AddArea-Extra_4" , "AddNpcEvent-D40_0" , "AddSelection-D40_01" ],
 		"065": ["Dialog-D26_20" ],
 		"066": ["SwapEvidence-A34_0" , "SwapEvidence-A39_0" , "SwapEvidence-A59_0" ],
 		"067": ["Dialog-D4_19" , "RemoveEvidence-A37" , "RemoveEvidence-A75" ],
 		"068": ["SwapEvidence-A77_0"], 
 		"069": ["SwapEvidence-A78_0"],
+		"070": ["AddArea-Company_6" , "AddSelection-D43_01" , "RemoveEvidence-A69", "AddEvidence-A81" ],
+		"071": ["AddEvidence-A35" , "AddNpcEvent-D41_0" , "AddSelection-D41_01" ],
+		"072": ["AddArea-Extra_2", "SetEvidence-Extra_2+A82"],
+		"073": [],
 		"098": [],
 		"099": []
 	},
@@ -475,7 +480,7 @@
 				"00": ["RemoveSelection-C2_00", "AddSelection-C2_01", "AddSelection-C2_50"],
 				"01": ["AddSelection-C2_03", "RemoveSelection-C2_01"],
 				"02": [],
-				"03": [ "AddEvidence-A35"],
+				"03": [  "SystemMessage-071" , "RemoveSelection-C2_03"  ],
 				"50": [ ]
 			},
 			"1": {
@@ -603,9 +608,9 @@
 				"00": ["RemoveSelection-D6_00", "AddSelection-D6_02", "AddSelection-D6_03" , "AddSelection-D6_50"],
 				"01": ["RemoveSelection-D6_01"],
 				"02": ["RemoveSelection-D6_02"],
-				"03": ["RemoveSelection-D6_03" , "AddSelection-D6_04"],
+				"03": ["RemoveSelection-D6_03" , "AddSelection-D6_04" , "AddNpcEvent-D41_0" , "AddSelection-D41_01"],
 				"04": ["RemoveSelection-D6_04", "AddSelection-D6_05", "AddSelection-D6_06" ],
-				"05": ["SystemMessage-053"],
+				"05": [ "SystemMessage-053"],
 				"07": [ "SystemMessage-046" ],
 				"08": [ "SystemMessage-059" ],
 				"10": [  ],
@@ -656,7 +661,7 @@
 				"13": ["RemoveSelection-D9_12", "RemoveSelection-D9_13", "RemoveSelection-D9_14", "AddSelection-D9_15", "AddSelection-D9_16"],
 				"14": ["RemoveSelection-D9_12", "RemoveSelection-D9_13", "RemoveSelection-D9_14", "AddSelection-D9_15", "AddSelection-D9_16"],
 				"15": ["RemoveSelection-D9_15", "RemoveSelection-D9_16", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "AddArea-Company_0", "AddArea-Home_4", "AddSelection-D4_00", "AddSelection-D5_00", "AddSelection-D9_61", "AddSelection-D9_22", "AddSelection-D10_00", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D3_13"],
-				"16": ["RemoveSelection-D9_15", "RemoveSelection-D9_16", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_2", "AddArea-Extra_3", "AddArea-Extra_5", "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00", "AddSelection-D9_62", "AddSelection-D9_22", "AddSelection-D10_00", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D3_14"],
+				"16": ["RemoveSelection-D9_15", "RemoveSelection-D9_16", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_5", "AddArea-Extra_3", "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00", "AddSelection-D9_62", "AddSelection-D9_22", "AddSelection-D10_00", "AddSelection-D10_01", "AddSelection-D10_03", "AddSelection-D10_50", "AddSelection-D3_14"],
 				"17": ["RemoveSelection-D9_17"],
 				"18": ["RemoveSelection-D9_18", "AddSelection-D10_02", "RemoveSelection-D10_03"],
 				"20": ["RemoveSelection-D15_00", "RemoveSelection-D9_20", "RemoveSelection-D10_00", "AddSelection-D10_40", "RemoveSelection-D9_00", "AddNpcEvent-D10_0", "AddNpcEvent-D9_1", "SetEvidence-Case_0+A0", "SetEvidence-Case_0+01", "SetEvidence-Case_0+02", "SetEvidence-Case_0+A6", "AddEvidence-00", "AddEvidence-A2", "AddEvidence-A3", "AddArea-Home_4", "AddSelection-D9_63"],
@@ -671,11 +676,11 @@
 				"50": [ "RemoveEvidence-A23" , "AddEvidence-A26" ],
 				"54": [  ],
 				"55": [ "SystemMessage-034" ],
-				"56": [ "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_2", "AddArea-Extra_3" , "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00" ],
+				"56": [ "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_5", "AddArea-Extra_3" , "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00" ],
 				"57": [ "SystemMessage-036" ],
 				"58": [ "SystemMessage-036" ],
 				"59": [ "SystemMessage-038" ],
-				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" , "AddArea-Extra_4", "AddSelection-D10_42", "AddNpcEvent-D42_0" ],
+				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" , "AddArea-Extra_4", "AddSelection-D10_42", "AddNpcEvent-D42_0" , "AddSelection-D42_01" ],
 				"70": [ "SystemMessage-042" ],
 				"71": [ "SystemMessage-042" ],
 				"72": [ "AddArea-Company_3" , "AddEvidence-A25" , "AddSelection-A1_70"],
@@ -699,7 +704,7 @@
 				"05": ["RemoveSelection-D10_05", "AddSelection-D10_06", "AddSelection-D10_07", "AddSelection-D10_08"],
 				"06": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Company_3", "AddSelection-A1_00", "AddSelection-D3_12"],
 				"07": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Company_3", "AddSelection-A1_00", "AddSelection-D3_12"],
-				"08": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Home_0", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_2", "AddArea-Extra_3", "AddArea-Extra_5", "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00", "AddSelection-D3_14"],
+				"08": ["RemoveSelection-D10_06", "RemoveSelection-D10_08", "RemoveSelection-D10_07", "AddArea-Home_0", "AddArea-Home_1", "AddSelection-D2_00", "AddArea-Extra_5", "AddArea-Extra_3", "AddSelection-C0_00", "AddSelection-A0_00", "AddSelection-C2_00", "AddSelection-D3_14"],
 				"09": ["SystemMessage-068"],
 				"40": ["RemoveSelection-D10_40", "AddSelection-D10_05"],
 				"32": ["RemoveSelection-D10_02"],
@@ -713,7 +718,7 @@
 			"0": {
 				"S0": [ ],
 				"S00": [ "AddSelection-D10_06" ],
-				"S01": [ "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1","AddArea-Extra_2", "AddArea-Extra_3" ,  "AddSelection-D2_00",  "AddSelection-C0_00", "AddSelection-A0_20", "AddSelection-C2_00" ],
+				"S01": [ "AddArea-Home_0", "AddArea-Home_4", "AddArea-Home_1","AddArea-Extra_5", "AddArea-Extra_3" ,  "AddSelection-D2_00",  "AddSelection-C0_00", "AddSelection-A0_20", "AddSelection-C2_00" ],
 				"S02": [ "AddSelection-D10_06" ]
 			},
 			"1": {
@@ -891,6 +896,20 @@
 				"S00": [ "SwapEvidence-A64_0" ],
 				"S01": [ "SwapEvidence-A64_1" ],
 				"S02": [ ]				
+			},
+			"1": {
+			}
+		},
+		"D40": {
+			"0": {
+				"02": [ "SystemMessage-070" ]
+			},
+			"1": {
+			}
+		},
+		"D41": {
+			"0": {
+				"02": [ "SystemMessage-072" ]
 			},
 			"1": {
 			}
