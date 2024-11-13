@@ -235,6 +235,14 @@
 			"m_Type" : "CompulsionSelection",
 			"m_Event" : ["Dialog-C1_S00","Dialog-C1_S01", "Dialog-C1_S02", "Dialog-C1_S03"]
 		}
+	},			
+	"C2" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A85",	
+			"m_DialogIndex" : "04"
+		}
 	},	
 	"D0" : 
 	{
@@ -474,8 +482,8 @@
 		},
 		"17" : 
 		{
-			"m_Index" : "Evidence_Stage0_Main_A78",
-			"m_DialogIndex" : "11"
+			"m_Index" : "Evidence_Stage0_Main_A88",
+			"m_DialogIndex" : "12"
 		}
 	},	
 	"D8" : 
@@ -730,6 +738,11 @@
 		},
 		"43" : 
 		{
+			"m_Index" : "Evidence_Stage0_Main_A101",
+			"m_DialogIndex" : "77"
+		},
+		"44" : 
+		{
 			"m_Index" : "Event001",
 			"m_Selection" : ["0", "1"],
 			"m_DialogIndex" : "S0",
@@ -892,6 +905,54 @@
 			"m_DialogIndex" : "17"
 		}
 	},
+	"D17" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A85",	
+			"m_DialogIndex" : "04"
+		},
+		"1" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A86",	
+			"m_DialogIndex" : "05"
+		},
+		"2" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A89",	
+			"m_DialogIndex" : "06"
+		},
+		"3" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A90",	
+			"m_DialogIndex" : "07"
+		},
+		"4" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A91",	
+			"m_DialogIndex" : "07"
+		},
+		"5" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A92",	
+			"m_DialogIndex" : "07"
+		},
+		"6" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A93",	
+			"m_DialogIndex" : "07"
+		},
+		"7" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A96",	
+			"m_DialogIndex" : "10"
+		},
+		"8" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A97",	
+			"m_DialogIndex" : "12"
+		}
+	},
 	"D19" : 
 	{
 		"0" : 
@@ -1032,11 +1093,6 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A17",	
 			"m_DialogIndex" : "10"
-		},
-		"1" : 
-		{
-			"m_Index" : "Evidence_Stage0_Main_A24",	
-			"m_DialogIndex" : "11"
 		}
 	},
 	"D26" : 
@@ -1063,6 +1119,17 @@
 			"m_Event" : ["Dialog-D30_S00","Dialog-D30_S01", "Dialog-D30_S02"]
 		}
 	},
+	"D31" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Event001",
+			"m_Type" : "CompulsionSelection",
+			"m_DialogIndex" : "S0",
+			"m_Selection" : ["0", "1"],
+			"m_Event" : ["Dialog-D31_S00","Dialog-D31_S01", "Dialog-D31_S02"]
+		}
+	},
 	"D40" : 
 	{
 		"0" : 
@@ -1080,11 +1147,6 @@
 		},
 		"1" : 
 		{
-			"m_Index" : "Dialog_Stage0_Main_D6_03",	
-			"m_DialogIndex" : "02"
-		},
-		"2" : 
-		{
 			"m_Index" : "Evidence_Stage0_Main_A82",	
 			"m_DialogIndex" : "04"
 		}
@@ -1096,5 +1158,36 @@
 			"m_Index" : "Evidence_Stage0_Main_A81",	
 			"m_DialogIndex" : "02"
 		}
-	}		
+	},
+	"D44" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A27",	
+			"m_DialogIndex" : "10"
+		},
+		"1" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A51",	
+			"m_DialogIndex" : "10"
+		},
+		"2" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A82",	
+			"m_DialogIndex" : "11"
+		},
+		"3" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A83",	
+			"m_DialogIndex" : "12"
+		}
+	},
+	"D45" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A20",	
+			"m_DialogIndex" : "10"
+		}
+	}
 }
