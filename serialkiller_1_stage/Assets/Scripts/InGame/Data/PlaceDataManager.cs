@@ -37,6 +37,14 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 
 	public void LoadPlaceData()
 	{
+		int CC = StageDataManager.instance.m_CriminalCode;
+		if (CC == -1)
+		{
+			print("[Test Mode] Load Place Data");
+			CC = 0;
+		}
+		PlaceNode = PlaceNode[CC];
+
 		m_PlaceDatas = new List<PlaceData2>();
 		if (GlobalMethod.instance.ReturnFileExist(filePath))
 		{
@@ -94,10 +102,13 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 			return false;
 		}
 
-		return _place.IsSearched;
+		if (_place.Evidences.Count == 0)
+			return false;
+
+		return true;
 	}
 
-	public bool CanSearched(string code)
+	public bool CanSearch(string code)
 	{
 		string[] tempstr = code.Split('_');
 		PlaceType type = tempstr[0].ToEnum<PlaceType>();
@@ -106,18 +117,51 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 		return this.CanSearched(type, index);
 	}
 
-	//public void AddEvidence(PlaceType type, int index, string evidence)
-	//{
-	//	PlaceData2 _place = GetPlaceData(type, index);
+	public void AddEvidence(string place, string evidence)
+	{
+		string[] tempstr = place.Split('_');
+		PlaceType type = tempstr[0].ToEnum<PlaceType>();
+		int index = tempstr[1].ToInt();
 
-	//	if(_place == null)
-	//	{
-	//		print("Can't find " + type.ToString() + "_" + index + " PlaceData.");
-	//		return;
-	//	}
+		this.AddEvidence(type, index, evidence);
+	}
 
-	//	_place.Evidences.Add(evidence);
-	//}
+	public void AddEvidence(PlaceType type, int index, string evidence)
+	{
+		PlaceData2 _place = GetPlaceData(type, index);
+
+		if (_place == null)
+		{
+			print("Can't find " + type.ToString() + "_" + index + " PlaceData.");
+			return;
+		}
+
+		_place.Evidences.Add(evidence);
+		PlaceManager.instance.GetPlace(type, index).AddEvidence(evidence);
+	}
+
+	public List<string> GetEvidences(PlaceType type, int index)
+	{
+		PlaceData2 _place = GetPlaceData(type, index);
+		if (_place == null)
+		{
+			//print("Can't find " + type.ToString() + "_" + index + " PlaceData.");
+			return null;
+		}
+		return _place.Evidences;
+	}
+
+	public void RemoveEvidence(PlaceType type, int index, string evidence)
+	{
+		PlaceData2 _place = GetPlaceData(type, index);
+		if (_place == null)
+		{
+			print("Can't find " + type.ToString() + "_" + index + " PlaceData.");
+			return;
+		}
+
+		_place.Evidences.Remove(evidence);
+	}
 
 	public void ControlPlaceIsOpened(string code, bool b)
 	{
@@ -181,7 +225,7 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 
 	public void ControlPlaceIsSearched(PlaceType type, int index, bool b)
 	{
-		print("[Contorl Place IsSearched] type : " + type + " / index : " + index + " / " + b);
+		//print("[Contorl Place IsSearched] type : " + type + " / index : " + index + " / " + b);
 
 		PlaceData2 _changedPlace = GetPlaceData(type, index);
 
@@ -195,11 +239,16 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 		return;
 	}
 
-	public string GetBackgroundSpriteName(string place)
+	public int GetAtlasIndex(string place)
 	{
 		string[] temp = place.Split('_');
-		string s = "BG_" + PlaceNode[temp[0]][temp[1]]["Sprite"];
-		return s;
+		return PlaceNode[temp[0]][temp[1]]["Atlas"].AsInt;
+	}
+
+	public string GetSpriteIndex(string place)
+	{
+		string[] temp = place.Split('_');
+		return PlaceNode[temp[0]][temp[1]]["Sprite"].Value;
 	}
 	#endregion
 
@@ -281,6 +330,7 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 	private void DataInitialize()
 	{
 		PlaceData2 item = null;
+		string evidence = string.Empty;
 		for (int _type = 0; _type < PlaceNode.Count; _type++)
 		{
 			for (int _num = 0; _num < PlaceNode[_type].Count; _num++)
@@ -291,11 +341,18 @@ public class PlaceDataManager : Singleton<PlaceDataManager>
 				item.IsOpened = PlaceNode[_type][_num]["IsOpen"].AsBool;
 				item.IsSearched = false;
 				item.Evidences = new List<string>();
-
+				for (int i = 0; i < PlaceNode[_type][_num]["Evidence"].Count; i++)
+				{
+					evidence = PlaceNode[_type][_num]["Evidence"][i];
+					item.Evidences.Add(evidence);
+					print("Add Evidence on Place : [" + evidence + "] on [" 
+						+ item.Type + "_" + item.Index + "]");
+				}
 				m_PlaceDatas.Add(item);
+
+				item = null;
 			}
 		}
-		WriteData();
 		return;
 
 		#region prev

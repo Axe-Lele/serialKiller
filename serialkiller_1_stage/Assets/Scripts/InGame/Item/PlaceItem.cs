@@ -32,7 +32,8 @@ public class PlaceItem : MonoBehaviour
 	public void DataInitialize(int index)
 	{
 		m_Index = index;
-		GetName();
+		AddEvidences(PlaceDataManager.instance.GetEvidences(m_Type, m_Index));
+		SetName();
 	}
 
 	public void ShowLabel(bool b)
@@ -40,26 +41,62 @@ public class PlaceItem : MonoBehaviour
 		m_NameLabel.gameObject.SetActive(b);
 	}
 
-	public void GetName()
+	public void SetName()
 	{
 		m_PlaceName = gameObject.name;
-
-
-		if (m_Type != PlaceType.Case)
-		{
-			m_NameLabel.text = Localization.Get("Place_" + PlayDataManager.instance.m_StageName + "_" + m_PlaceName);
-			//print(m_NameLabel.text);
-		}
-		else
-		{
-			m_NameLabel.text = Localization.Get("CaseIndex" + m_CaseIndex);
-		}
+		m_NameLabel.text = Localization.Get("Place_" + PlayDataManager.instance.m_StageName + "_" + m_PlaceName);
 	}
 
 	public void SetCase(string str)
 	{
 		print("str : " + str);
 		m_CaseIndex = str;
+	}
+
+	public void AddEvidences(List<string> evidences)
+	{
+		if (evidences == null)
+			return;
+
+		m_EvidenceList.AddRange(evidences);
+	}
+
+	public void AddEvidence(string itemCode)
+	{
+		m_EvidenceList.Add(itemCode);
+	}
+
+	public void GetEvidences()
+	{
+		string eventName = string.Empty;
+		for (int i = 0; i < m_EvidenceList.Count; i++)
+		{
+			eventName = "AddEvidence-";
+			eventName += m_EvidenceList[i];
+			EventManager.instance.SetEventTemp(eventName);
+			PlaceDataManager.instance.RemoveEvidence(m_Type, m_Index, m_EvidenceList[i]);
+		}
+
+		m_EvidenceList.Clear();
+	}
+
+	public void RemoveEvidence(string itemCode)
+	{
+		if (m_EvidenceList.Count == 0)
+		{
+			print("[" + m_PlaceName + "] has no evidence.");
+			return;
+		}
+
+		for (int i = 0; i < m_EvidenceList.Count; i++)
+		{
+			if (m_EvidenceList[i].Equals(itemCode))
+				continue;
+
+			m_EvidenceList.RemoveAt(i);
+			return;
+		}
+		print("[" + m_PlaceName + "] has no [" + itemCode + "]");
 	}
 
 	public void AddCharacter(string str)
@@ -153,7 +190,10 @@ public class PlaceItem : MonoBehaviour
 				break;
 		}
 
+		SoundManager.instance.changeSFXVolume(1.0f);
+		SoundManager.instance.PlaySFX("footstep");
 		PlaceManager.instance.ClickPlaceItem(this, transform.localPosition);
+
 		print("click place item");
 	}
 

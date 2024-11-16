@@ -1,0 +1,506 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1564224257829152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4579967218922936}
+  - component: {fileID: 114757409462236200}
+  m_Layer: 0
+  m_Name: Character2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4579967218922936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564224257829152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114757409462236200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1564224257829152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 1ce43e2d9f7349d4fa6b9f952c9e0c45, type: 2}
+  mSprites:
+  - name: D10
+    x: 2858
+    y: 2729
+    width: 362
+    height: 676
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 81
+    paddingRight: 69
+    paddingTop: 92
+    paddingBottom: 0
+  - name: D11
+    x: 908
+    y: 568
+    width: 400
+    height: 708
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 55
+    paddingRight: 57
+    paddingTop: 60
+    paddingBottom: 0
+  - name: D12
+    x: 495
+    y: 2690
+    width: 412
+    height: 715
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 61
+    paddingRight: 39
+    paddingTop: 53
+    paddingBottom: 0
+  - name: D12_0
+    x: 495
+    y: 1974
+    width: 412
+    height: 715
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 61
+    paddingRight: 39
+    paddingTop: 53
+    paddingBottom: 0
+  - name: D12_2
+    x: 495
+    y: 1258
+    width: 412
+    height: 715
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 61
+    paddingRight: 39
+    paddingTop: 53
+    paddingBottom: 0
+  - name: D13
+    x: 952
+    y: 3416
+    width: 461
+    height: 680
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 29
+    paddingRight: 22
+    paddingTop: 88
+    paddingBottom: 0
+  - name: D15
+    x: 0
+    y: 1350
+    width: 478
+    height: 675
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 12
+    paddingRight: 22
+    paddingTop: 93
+    paddingBottom: 0
+  - name: D16
+    x: 3576
+    y: 2763
+    width: 357
+    height: 642
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 98
+    paddingRight: 57
+    paddingTop: 126
+    paddingBottom: 0
+  - name: D17
+    x: 3221
+    y: 2739
+    width: 354
+    height: 666
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 99
+    paddingRight: 59
+    paddingTop: 102
+    paddingBottom: 0
+  - name: D24
+    x: 495
+    y: 206
+    width: 228
+    height: 320
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 142
+    paddingRight: 142
+    paddingTop: 438
+    paddingBottom: 10
+  - name: D25
+    x: 1329
+    y: 1453
+    width: 323
+    height: 581
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 103
+    paddingRight: 86
+    paddingTop: 187
+    paddingBottom: 0
+  - name: D26
+    x: 0
+    y: 659
+    width: 458
+    height: 690
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 27
+    paddingRight: 27
+    paddingTop: 78
+    paddingBottom: 0
+  - name: D28
+    x: 908
+    y: 10
+    width: 319
+    height: 557
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 115
+    paddingRight: 78
+    paddingTop: 211
+    paddingBottom: 0
+  - name: D3
+    x: 495
+    y: 3406
+    width: 456
+    height: 690
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 29
+    paddingRight: 27
+    paddingTop: 78
+    paddingBottom: 0
+  - name: D3_0
+    x: 908
+    y: 2707
+    width: 420
+    height: 698
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 37
+    paddingRight: 55
+    paddingTop: 70
+    paddingBottom: 0
+  - name: D3_2
+    x: 908
+    y: 2008
+    width: 420
+    height: 698
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 37
+    paddingRight: 55
+    paddingTop: 70
+    paddingBottom: 0
+  - name: D40
+    x: 0
+    y: 2702
+    width: 465
+    height: 714
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 21
+    paddingRight: 26
+    paddingTop: 54
+    paddingBottom: 0
+  - name: D41
+    x: 1876
+    y: 3419
+    width: 459
+    height: 677
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 31
+    paddingRight: 22
+    paddingTop: 91
+    paddingBottom: 0
+  - name: D42
+    x: 2336
+    y: 3427
+    width: 450
+    height: 669
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 30
+    paddingRight: 32
+    paddingTop: 99
+    paddingBottom: 0
+  - name: D43
+    x: 2047
+    y: 2132
+    width: 343
+    height: 570
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 96
+    paddingRight: 73
+    paddingTop: 198
+    paddingBottom: 0
+  - name: D44
+    x: 0
+    y: 3417
+    width: 494
+    height: 679
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 18
+    paddingRight: 0
+    paddingTop: 89
+    paddingBottom: 0
+  - name: D45
+    x: 0
+    y: 21
+    width: 384
+    height: 637
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 64
+    paddingRight: 64
+    paddingTop: 131
+    paddingBottom: 0
+  - name: D6
+    x: 1666
+    y: 2120
+    width: 380
+    height: 582
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 84
+    paddingRight: 48
+    paddingTop: 186
+    paddingBottom: 0
+  - name: D6_2
+    x: 1329
+    y: 2035
+    width: 336
+    height: 667
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 103
+    paddingRight: 73
+    paddingTop: 101
+    paddingBottom: 0
+  - name: D7
+    x: 2787
+    y: 3436
+    width: 384
+    height: 660
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 53
+    paddingRight: 75
+    paddingTop: 108
+    paddingBottom: 0
+  - name: D7_0
+    x: 3172
+    y: 3436
+    width: 384
+    height: 660
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 53
+    paddingRight: 75
+    paddingTop: 108
+    paddingBottom: 0
+  - name: D7_2
+    x: 3557
+    y: 3436
+    width: 384
+    height: 660
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 53
+    paddingRight: 75
+    paddingTop: 108
+    paddingBottom: 0
+  - name: D7_3
+    x: 2089
+    y: 2745
+    width: 384
+    height: 660
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 53
+    paddingRight: 75
+    paddingTop: 108
+    paddingBottom: 0
+  - name: D7_4
+    x: 2474
+    y: 2745
+    width: 383
+    height: 660
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 54
+    paddingRight: 75
+    paddingTop: 108
+    paddingBottom: 0
+  - name: D8
+    x: 0
+    y: 2026
+    width: 483
+    height: 675
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 26
+    paddingRight: 3
+    paddingTop: 93
+    paddingBottom: 0
+  - name: D8_0
+    x: 1329
+    y: 2703
+    width: 379
+    height: 702
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 72
+    paddingRight: 61
+    paddingTop: 66
+    paddingBottom: 0
+  - name: D8_2
+    x: 1709
+    y: 2703
+    width: 379
+    height: 702
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 72
+    paddingRight: 61
+    paddingTop: 66
+    paddingBottom: 0
+  - name: D9
+    x: 1414
+    y: 3419
+    width: 461
+    height: 677
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 25
+    paddingRight: 26
+    paddingTop: 91
+    paddingBottom: 0
+  - name: D9_0
+    x: 908
+    y: 1277
+    width: 399
+    height: 730
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 50
+    paddingRight: 63
+    paddingTop: 38
+    paddingBottom: 0
+  - name: D9_2
+    x: 495
+    y: 527
+    width: 399
+    height: 730
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 50
+    paddingRight: 63
+    paddingTop: 38
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []

@@ -11,10 +11,10 @@ public enum NoteMode
 
 public enum NoteTap
 {
-	Case,
-	Dialog,
-	Evidence,
-	News
+	CASE,
+	DIALOG,
+	EVIDENCE,
+	NEWS
 }
 
 public enum CaseMode
@@ -86,7 +86,14 @@ public enum GameEventType
 	AddEvidence, // 증거물 획득
 	RemoveEvidence, // 증거물 삭제    
 	AddNews, // 새 뉴스
+			 /// <summary>
+			 /// 새로운 지역(Place)를 추가해줍니다.
+			 /// </summary>
 	AddArea, //새로운 지역 지역 제거
+
+	/// <summary>
+	/// 지역(Place)를 제거합니다.
+	/// </summary>
 	RemoveArea, //지역 제거
 	AddSelection, // 선택지 추가
 	RemoveSelection, // 선택지 삭제
@@ -94,13 +101,26 @@ public enum GameEventType
 	RemoveNpc, // Npc 삭제,
 	ChangeNpcState, // NPC의 상태 변경
 	AddSearch, // 장소에서 탐색 가능 여부 추가
-						 // Search, // 장소에서 탐색함. 탐색 가능 여부가 있어야지만 탐색 가능,
+			   // Search, // 장소에서 탐색함. 탐색 가능 여부가 있어야지만 탐색 가능,
 	Dialog, // 다음 대화
 	Case, // 사건 발생,
 	GameOver,//, 
 	AddNpcEvent,
 	RemoveNpcEvent,
-	AddCase
+	AddCase,
+	SwapEvidence,
+	SetEvidence, // 원하는 장소에 증거물을 배치
+	ShowCompulsion,
+	ShowEnding,
+
+	/// <summary>
+	/// "Case" 트리거를 작동시킵니다.
+	/// </summary>
+	StartCase,
+	/// <summary>
+	/// 디텍티브 보드 아이템을 언락합니다.
+	/// </summary>
+	UnlockDT,
 }
 
 public enum NpcState

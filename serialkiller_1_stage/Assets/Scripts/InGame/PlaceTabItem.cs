@@ -31,24 +31,10 @@ public class PlaceTabItem : MonoBehaviour
 
     public void Select()
     {
-        panel.characterContent.SetActive(type == 1);
-        panel.infoContent.SetActive(type == 0);
-        if (type == 1)
-        {
-            panel.profile.spriteName = content;
-            panel.profileContent.text = Localization.Get("Name_" + PlayDataManager.instance.m_StageName + "_" + content);
-        }
-        if (panel.selected != null)
-        {
-            panel.selected.bg.spriteName = "button_character_1";
-        }
-        bg.spriteName = "button_street_1";
-        panel.selected = this;
-    }
+        panel.m_NpcContentRoot.SetActive(type == 1);
+        panel.m_PlaceContentRoot.SetActive(type == 0);
 
-    // Update is called once per frame
-    void Update()
-    {
-
+        panel.m_SelectedItem = this;
+        panel.ShowDesc(type, content);
     }
 }

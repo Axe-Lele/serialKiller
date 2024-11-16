@@ -37,7 +37,7 @@ public class WorldUIManager : Singleton<WorldUIManager>
         if (isOpen)
         {
             m_NowOpenPanel = m_CityInfoPanel.gameObject;
-            WorldManager.instance.m_NowSelectCityIndex = item.m_Index.ToString();
+            WorldManager.instance.SetSelectedCity(item.m_Index.ToString());
         }
         else
         {

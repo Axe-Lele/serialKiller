@@ -36,6 +36,31 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A80",
 			"m_DialogIndex" : "27"
+		},
+		"5" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A83",
+			"m_DialogIndex" : "10"
+		},
+		"6" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A84",
+			"m_DialogIndex" : "10"
+		},
+		"7" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A90",
+			"m_DialogIndex" : "10"
+		},
+		"8" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A92",
+			"m_DialogIndex" : "10"
+		},
+		"9" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A95",
+			"m_DialogIndex" : "10"
 		}
 	},
 	"A1" : 
@@ -329,6 +354,11 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A26",
 			"m_DialogIndex" : "02"
+		},
+		"2" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A68",
+			"m_DialogIndex" : "05"
 		}
 	},	
 	"D3" : 
@@ -743,6 +773,11 @@
 		},
 		"44" : 
 		{
+			"m_Index" : "Evidence_Stage0_Main_B0",
+			"m_DialogIndex" : "78"
+		},
+		"45" : 
+		{
 			"m_Index" : "Event001",
 			"m_Selection" : ["0", "1"],
 			"m_DialogIndex" : "S0",
@@ -903,6 +938,14 @@
 		{
 			"m_Index" : "Evidence_Stage0_Main_A22",	
 			"m_DialogIndex" : "17"
+		}
+	},	
+	"D16" : 
+	{
+		"0" : 
+		{
+			"m_Index" : "Evidence_Stage0_Main_A18",
+			"m_DialogIndex" : "05"
 		}
 	},
 	"D17" : 

@@ -15,7 +15,7 @@ public class PlaceManager : Singleton<PlaceManager>
 	public GameObject CommandSuggest;
 	public GameObject m_TouchBackground;
 
-	private PlaceItem m_item;
+	private PlaceItem m_SelectedItem;
 	public string m_Mode;
 
 	public GameObject CommandSelectPanel;
@@ -124,23 +124,27 @@ public class PlaceManager : Singleton<PlaceManager>
 
 	public void ClickPlaceItem(PlaceItem item, Vector2 vec)
 	{
-		m_item = item;
-		m_Place = m_item.m_Type.ToString() + "_" + m_item.ReturnIndex();
+		m_SelectedItem = item;
+		m_Place = m_SelectedItem.m_Type.ToString() + "_" + m_SelectedItem.ReturnIndex();
 
 		m_PlacePanel.SetActive(true);
-		m_PlacePanel.GetComponent<PlacePanel>().Init(m_item);
+		m_PlacePanel.GetComponent<PlacePanel>().Init(m_SelectedItem);
 
 	}
 
 	public void ClickBackground()
 	{
 		print("ClickBackground");
+
 		m_PlacePanel.SetActive(false);
 		CommandDialog.SetActive(false);
 		CommandSearch.SetActive(false);
 		CommandSuggest.SetActive(false);
 		CommandSelectPanel.SetActive(false);
-		//    m_TouchBackground.SetActive(false);
+
+		m_PlacePanel.GetComponent<PlacePanel>().m_MapRoot.SetActive(true);
+		m_PlacePanel.GetComponent<PlacePanel>().m_NewsRoot.SetActive(true);
+		m_PlacePanel.GetComponent<PlacePanel>().m_Checker.SetActive(false);
 	}
 
 	public void ClickCommandDialog()
@@ -155,16 +159,18 @@ public class PlaceManager : Singleton<PlaceManager>
 	/// </summary>
 	public void ClickCommandSearch()
 	{
-		print("Place Event(" + m_Place + ") : Search / " + PlaceDataManager.instance.CanSearched(m_Place));
-		if (PlaceDataManager.instance.CanSearched(m_Place))
+		print("Place Event(" + m_Place + ") : Search / " + PlaceDataManager.instance.CanSearch(m_Place));
+		if (PlaceDataManager.instance.CanSearch(m_Place))
 		{
-			SystemTextManager.instance.InputText(Localization.Get("System_Text_Already_Search"));
+			EventManager.instance.SetSearchEvent(m_Place);
+			//EventDataManager.instance.SwapSearchEventData(m_Place, true);
+			m_SelectedItem.GetEvidences();
+
+			//PlaceDataManager.instance.ControlPlaceIsSearched(m_Place, true);
 		}
 		else
 		{
-			EventManager.instance.SetSearchEvent(m_Place);
-			EventDataManager.instance.SwapSearchEventData(m_Place, true);
-			PlaceDataManager.instance.ControlPlaceIsSearched(m_Place, true);
+			SystemTextManager.instance.InputText(Localization.Get("System_Text_Already_Search"));
 		}
 	}
 
@@ -175,14 +181,13 @@ public class PlaceManager : Singleton<PlaceManager>
 		ShowSelectCharacterList();
 	}
 
-
 	public void ShowSelectCharacterList()
 	{
-		int person = m_item.m_CharacterList.Count;
+		int person = m_SelectedItem.m_CharacterList.Count;
 		CommandSelectPanel.SetActive(true);
 		for (int i = 0; i < person; i++)
 		{
-			m_CharacterListInCommandSelect[i].Setting(m_item.m_CharacterList[i]);
+			m_CharacterListInCommandSelect[i].Setting(m_SelectedItem.m_CharacterList[i]);
 			m_CharacterListInCommandSelect[i].gameObject.SetActive(true);
 		}
 
@@ -256,16 +261,15 @@ public class PlaceManager : Singleton<PlaceManager>
 	{
 		m_PlacePanel.SetActive(false);
 		CommandSelectPanel.SetActive(false);
-		for (int i = 0; i < m_item.m_CharacterList.Count; i++)
+		for (int i = 0; i < m_SelectedItem.m_CharacterList.Count; i++)
 		{
 			m_CharacterListInCommandSelect[i].gameObject.SetActive(false);
 		}
 	}
 
-
-
 	public void ClickFace(string target)
 	{
+		ClickBackground();
 		print("mode : " + m_Mode + " / index : " + target);
 		switch (m_Mode)
 		{
@@ -277,10 +281,10 @@ public class PlaceManager : Singleton<PlaceManager>
 			case "Suggest":
 				GameManager.instance.m_NoteMode = NoteMode.Suggest;
 				SuggestManager.instance.SetTarget(target);
-				InGameUIManager.instance.ControlNotePopup();
+				InGameUIManager.instance.ShowNote();
+				//InGameUIManager.instance.ControlNotePopup();
 				break;
 		}
-		ClickBackground();
 		HideSelectCharacterList();
 	}
 
@@ -308,6 +312,42 @@ public class PlaceManager : Singleton<PlaceManager>
 	public string ReturnPlace()
 	{
 		return m_Place;
+	}
+
+	public PlaceItem GetPlace(PlaceType type, int index)
+	{
+		PlaceItem item = null;
+
+		switch (type)
+		{
+			case PlaceType.Default:
+				break;
+
+			case PlaceType.Home:
+				item = m_HomeList[index];
+				break;
+
+			case PlaceType.Company:
+				item = m_CompanyList[index];
+				break;
+
+			case PlaceType.Extra:
+				item = m_ExtraPlaceList[index];
+				break;
+
+			case PlaceType.Case:
+				item = m_CasePlaceList[index];
+				break;
+
+			case PlaceType.Road:
+				// non-used
+				break;
+
+			default:
+				break;
+		}
+
+		return item;
 	}
 
 	public void OnMouseOverDialogCommand()

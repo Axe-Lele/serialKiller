@@ -63,21 +63,18 @@ public class TitleManager : MonoBehaviour {
         m_TextMoveFlag = true;
         
     }
-    
-    public void OnClick()
-    {
-        if (m_IsClick == true)
-        {
-            return;
-        }
 
-        if (m_TextMoveFlag == false)
-        {
-            return;
-        }
+	public void Start()
+	{
+		SoundManager.instance.changeBGMVolume(1f);
+		SoundManager.instance.ChangeBGM("title", true);
+	}
 
-        m_IsClick = true;
-        SceneManager.LoadScene(1);
+	public void OnClick()
+	{
+		SoundManager.instance.changeBGMVolume(0.1f);
+		SoundManager.instance.ChangeBGM("normalending", true);
+		SceneManager.LoadScene("WorldMap");
 
     }
 

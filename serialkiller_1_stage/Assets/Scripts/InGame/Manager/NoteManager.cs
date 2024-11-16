@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class NoteManager : Singleton<NoteManager>
 {
+	public GameObject m_MapParent;
+	public GameObject m_NewsPanel;
+
 	// 전체
 	public NoteItem[] m_Btns;
 	public GameObject[] m_BG;
@@ -23,6 +26,8 @@ public class NoteManager : Singleton<NoteManager>
 	public int m_SuggestModeDetailIndex;
 	public int m_WarrantModeIndex;
 	public int m_WarrantModeDetailIndex;
+
+	public GameObject m_Checker;
 
 	// 사건 탭
 	public List<CaseItemInNote> m_CaseItemList;
@@ -109,138 +114,245 @@ public class NoteManager : Singleton<NoteManager>
 
 	public void SelectNote()
 	{
-		print("zczczxczcz");
 		SelectedNoteTab(m_NoteTabIndex);
 	}
 
-	public void SetNote()
+	public void CloseNote()
 	{
-		// 열었을 때 보일 노트
-		int m_DetailIndex = 0;
-		if (GameManager.instance.m_NoteMode == NoteMode.None)
-		{
-			m_NoteTabIndex = m_NoteModeIndex;
-			m_DetailIndex = m_NoteModeDetailIndex;
-		}
-		else if (GameManager.instance.m_NoteMode == NoteMode.Suggest)
-		{
-			m_NoteTabIndex = m_SuggestModeIndex;
-			m_DetailIndex = m_SuggestModeDetailIndex;
-		}
-		else if (GameManager.instance.m_NoteMode == NoteMode.Warrant)
-		{
-			m_NoteTabIndex = m_WarrantModeIndex;
-			m_DetailIndex = m_WarrantModeDetailIndex;
-		}
-		else if (GameManager.instance.m_NoteMode == NoteMode.SelectCase)
-		{
-			m_NoteTabIndex = 0;
-			m_DetailIndex = 0;
-		}
-
-		// 필요없는 애들은 제외
-		if (GameManager.instance.m_NoteMode == NoteMode.SelectCase)
-		{
-			for (int i = 0; i < m_Btns.Length; i++)
-			{
-				m_Btns[i].gameObject.SetActive(false);
-			}
-		}
-		else if (GameManager.instance.m_NoteMode == NoteMode.Warrant || GameManager.instance.m_NoteMode == NoteMode.Suggest)
-		{
-			m_Btns[0].gameObject.SetActive(false);
-			for (int i = 1; i < m_Btns.Length; i++)
-			{
-				m_Btns[i].gameObject.SetActive(true);
-			}
-		}
-		else
-		{
-			for (int i = 0; i < m_Btns.Length; i++)
-			{
-				m_Btns[i].gameObject.SetActive(true);
-			}
-		}
-
-		// 탭 선택
-		SelectedNoteTab(m_NoteTabIndex);
-
-		switch (m_NoteTabIndex)
-		{
-			case (int)NoteTap.Case:
-				if (m_CaseItemList.Count > 0)
-				{
-					SelectReset();
-					SelectCase(m_DetailIndex);
-					m_CaseItemList[m_DetailIndex].Select();
-				}
-				break;
-
-			case (int)NoteTap.Dialog:
-				if (m_DialogItemList.Count > 0)
-				{
-					SelectReset();
-					SelectDialog(m_DetailIndex);
-					m_DialogItemList[m_DetailIndex].Select();
-
-				}
-				break;
-
-			case (int)NoteTap.Evidence:
-				if (m_EvidenceItemList.Count > 0)
-				{
-					SelectReset();
-					ChangeEvidenceInfoUI(m_DetailIndex);
-					m_EvidenceItemList[m_DetailIndex].Select();
-				}
-				break;
-
-			case (int)NoteTap.News:
-				if (m_NewsItemList.Count > 0)
-				{
-					SelectReset();
-					SelectNews(m_DetailIndex);
-					m_NewsItemList[m_DetailIndex].Select();
-				}
-				break;
-		}
+		m_MapParent.SetActive(true);
+		m_NewsPanel.SetActive(true);
 	}
 
-	public void SelectedNoteTab(int index)
+	public void ShowNoteNews()
 	{
-		m_NoteTabIndex = index;
-		for (int i = 0; i < m_BG.Length; i++)
-		{
-			if (i == index)
-			{
-				m_Btns[i].GetComponent<NoteItem>().ActiveSprite();
-				m_BG[i].SetActive(true);
-				m_Tabs[i].SetActive(true);
-			}
-			else
-			{
-				m_Btns[i].GetComponent<NoteItem>().UnactiveSrptie();
-				m_BG[i].SetActive(false);
-				m_Tabs[i].SetActive(false);
-			}
-		}
+		m_MapParent.SetActive(false);
+		m_NewsPanel.SetActive(false);
+
+		GameManager.instance.m_NoteMode = NoteMode.None;
+		SelectedNoteTab((int)NoteTap.NEWS);
+
+		m_NoteNewsManager.SelectedNewsItem(0);
+	}
+
+	public void ShowNote()
+	{
+		SetNote();
+		return; 
+
+		/*
+		m_MapParent.SetActive(false);
+		m_NewsPanel.SetActive(false);
 
 		switch (GameManager.instance.m_NoteMode)
 		{
 			case NoteMode.None:
-				m_NoteModeIndex = index;
 				break;
+
 			case NoteMode.Suggest:
-				m_SuggestModeIndex = index;
+
+				ShowSuggestNote();
 				break;
+
 			case NoteMode.Warrant:
-				m_WarrantModeIndex = index;
+				ShowWarrantNote();
+				break;
+
+			case NoteMode.SelectCase:
+				ShowSelectCaseNote();
+				break;
+
+			default:
 				break;
 		}
+		*/
+	}
+
+	#region Show NoteMode
+	/*
+	private void ShowSuggestNote()
+	{
+		int m_DetailIndex = 0;
+
+		m_NoteTabIndex = m_SuggestModeIndex;
+		m_DetailIndex = m_SuggestModeDetailIndex;
+
+		m_Btns[0].gameObject.SetActive(false);
+		for (int i = 1; i < m_Btns.Length; i++)
+		{
+			m_Btns[i].gameObject.SetActive(true);
+		}
+
+		for (int i = 0; i < m_NoteDialogManager.m_DetailItemList.Count; i++)
+		{
+			m_NoteDialogManager.m_DetailItemList[i].m_IsSelected = false;
+		}
+		for (int i = 0; i < m_NoteEvidenceManager.m_EvidenceItemList.Count; i++)
+		{
+			m_NoteEvidenceManager.m_EvidenceItemList[i].m_IsSelected = false;
+		}
+		for (int i = 0; i < m_NoteNewsManager.m_ItemList.Count; i++)
+		{
+			m_NoteNewsManager.m_ItemList[i].m_IsSelected = false;
+		}
+
+		SelectedNoteTab(m_NoteTabIndex);
+
+		if (m_DialogItemList.Count > 0)
+		{
+			SelectReset();
+			SelectDialog(m_DetailIndex);
+			m_DialogItemList[m_DetailIndex].Select();
+		}
+	}
+	private void ShowWarrantNote()
+	{
+		int m_DetailIndex = 0;
+
+		m_NoteTabIndex = m_WarrantModeIndex;
+		m_DetailIndex = m_WarrantModeDetailIndex;
+
+		m_Btns[0].gameObject.SetActive(false);
+		for (int i = 1; i < m_Btns.Length; i++)
+		{
+			m_Btns[i].gameObject.SetActive(true);
+		}
+
+		SelectedNoteTab(m_NoteTabIndex);
+
+		// show note-dialog
+		if (m_DialogItemList.Count > 0)
+		{
+			SelectReset();
+			SelectDialog(m_DetailIndex);
+			m_DialogItemList[m_DetailIndex].Select();
+		}
+	}
+	private void ShowSelectCaseNote()
+	{
+		print("show selectcase note");
+		int m_DetailIndex = 0;
+
+		m_NoteTabIndex = 0;
+		m_DetailIndex = 0;
+
+		for (int i = 0; i < m_Btns.Length; i++)
+		{
+			m_Btns[i].gameObject.SetActive(false);
+		}
+		m_Btns[0].gameObject.SetActive(true);
+
+		SelectedNoteTab(m_NoteTabIndex);
+
+		if (m_CaseItemList.Count > 0)
+		{
+			for (int i = 0; i < m_CaseItemList.Count; i++)
+			{
+				m_CaseItemList[i].UnSelect();
+			}
+
+			m_CaseItemList[m_DetailIndex].Select();
+		}
+	}
+	*/
+	#endregion
+
+	public void SetNote()
+	{
+		m_MapParent.SetActive(false);
+		m_NewsPanel.SetActive(false);
+
+		for (int i = 0; i < m_Btns.Length; i++)
+			m_Btns[i].gameObject.SetActive(false);
+
+		switch (GameManager.instance.m_NoteMode)
+		{
+			case NoteMode.None:
+				m_NoteTabIndex = (int)NoteTap.CASE;
+				m_Btns[(int)NoteTap.CASE].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.DIALOG].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.EVIDENCE].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.NEWS].gameObject.SetActive(true);
+				m_NoteCaseManager.ShowCase(true);
+				break;
+
+			case NoteMode.Suggest:
+				m_NoteTabIndex = (int)NoteTap.DIALOG;
+				m_Btns[(int)NoteTap.DIALOG].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.EVIDENCE].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.NEWS].gameObject.SetActive(true);
+
+				break;
+
+			case NoteMode.Warrant:
+				m_NoteTabIndex = (int)NoteTap.DIALOG;
+				m_Btns[(int)NoteTap.DIALOG].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.EVIDENCE].gameObject.SetActive(true);
+				m_Btns[(int)NoteTap.NEWS].gameObject.SetActive(true);
+				break;
+
+			case NoteMode.SelectCase:
+				m_NoteTabIndex = (int)NoteTap.CASE;
+				m_Btns[(int)NoteTap.CASE].gameObject.SetActive(true);
+				break;
+
+			default:
+				break;
+		}
+		SelectedNoteTab(m_NoteTabIndex);
+	}
+	
+	public void SelectedNoteTab(int index)
+	{
+		m_NoteTabIndex = index;
+		m_Checker.transform.SetParent(m_Btns[index].transform);
+		m_Checker.transform.localPosition = Vector3.zero;
+		m_Checker.SetActive(true);
+
+		m_NoteCaseManager.ShowCase(false);
+		m_NoteDialogManager.ShowDialog(false);
+		m_NoteNewsManager.ShowNewsPanel(false);
+		m_NoteEvidenceManager.ShowEvidence(false);
+
+		#region non-used
+		//for (int i = 0; i < m_BG.Length; i++)
+		//{
+		//	if (i == index)
+		//	{
+		//		m_Btns[i].GetComponent<NoteItem>().ActiveSprite();
+		//		m_BG[i].SetActive(true);
+		//		m_Tabs[i].SetActive(true);
+		//	}
+		//	else
+		//	{
+		//		if (i == 0)
+		//			continue;
+
+		//		m_Btns[i].GetComponent<NoteItem>().UnactiveSrptie();
+		//		m_BG[i].SetActive(false);
+		//		m_Tabs[i].SetActive(false);
+		//	}
+		//}
+
+		//switch (GameManager.instance.m_NoteMode)
+		//{
+		//	case NoteMode.None:
+		//		m_NoteModeIndex = index;
+		//		break;
+		//	case NoteMode.Suggest:
+		//		m_SuggestModeIndex = index;
+		//		break;
+		//	case NoteMode.Warrant:
+		//		m_WarrantModeIndex = index;
+		//		break;
+		//}
+		#endregion
 
 		switch (index)
 		{
-			case (int)NoteTap.Case:
+			case (int)NoteTap.CASE:
+				m_NoteCaseManager.ShowCase(true);
+				break;
+
 				m_CaseScrollView.ResetPosition();
 				m_MainCaseScrollView.ResetPosition();
 				m_SideCaseScrollView.ResetPosition();
@@ -257,7 +369,14 @@ public class NoteManager : Singleton<NoteManager>
 				}
 				break;
 
-			case (int)NoteTap.Dialog:
+			case (int)NoteTap.DIALOG:
+				for (int i = 0; i < m_NoteDialogManager.m_DetailItemList.Count; i++)
+				{
+					m_NoteDialogManager.m_DetailItemList[i].m_IsSelected = false;
+				}
+				m_NoteDialogManager.ShowDialog(true);
+				break;
+
 				m_DialogScrollView.ResetPosition();
 				m_DialogDetailScrollView.ResetPosition();
 
@@ -270,7 +389,14 @@ public class NoteManager : Singleton<NoteManager>
 					m_AlarmEmptyLabel.gameObject.SetActive(false);
 				break;
 
-			case (int)NoteTap.Evidence:
+			case (int)NoteTap.EVIDENCE:
+				for (int i = 0; i < m_NoteEvidenceManager.m_EvidenceItemList.Count; i++)
+				{
+					m_NoteEvidenceManager.m_EvidenceItemList[i].m_IsSelected = false;
+				}
+				m_NoteEvidenceManager.ShowEvidence(true);
+				return;
+
 				m_EvidenceScrollView.ResetPosition();
 				m_EvidenceDetailScrollView.ResetPosition();
 
@@ -293,7 +419,14 @@ public class NoteManager : Singleton<NoteManager>
 				}
 				break;
 
-			case (int)NoteTap.News:
+			case (int)NoteTap.NEWS:
+				for (int i = 0; i < m_NoteNewsManager.m_ItemList.Count; i++)
+				{
+					m_NoteNewsManager.m_ItemList[i].m_IsSelected = false;
+				}
+				m_NoteNewsManager.ShowNewsPanel(true);
+				return;
+
 				m_NewsScrollView.ResetPosition();
 				m_NewsDetailScrollView.ResetPosition();
 				if (m_NewsItemList.Count == 0)
@@ -318,7 +451,7 @@ public class NoteManager : Singleton<NoteManager>
 
 		for (int i = 0; i < m_CaseItemList.Count; i++)
 		{
-			if (m_CaseItemList[i].m_CaseIndex.CompareTo(caseIndex) == 0)
+			if (m_CaseItemList[i].m_Index.CompareTo(caseIndex) == 0)
 			{
 				_rvalue = i;
 				break;
@@ -327,60 +460,16 @@ public class NoteManager : Singleton<NoteManager>
 		return _rvalue;
 	}
 
-	public int InputCase(CaseMode mode, string index)
+	[GetComponent]
+	public NoteCaseManager m_NoteCaseManager;
+	public int InputCase(CaseMode mode, string itemCode)
 	{
-		CaseItemInNote item = Instantiate(m_OriginalCaseItem);
-		item.Setting(m_CaseItemList.Count, index);
-		item.transform.parent = m_CaseTable.transform;
-		item.transform.localScale = Vector3.one;
-		m_CaseItemList.Add(item);
-		item.gameObject.SetActive(true);
-
-		m_CaseTable.enabled = true;
-		m_CaseScrollBar.value = 0f;
-
-		return m_CaseItemList.Count - 1;
+		return m_NoteCaseManager.InputItem(mode, itemCode);
 	}
 
-	public void SelectCaseItem(CaseMode mode, string caseIndex)
+	public void SelectCase(CaseMode mode, string itemCode)
 	{
-
-	}
-
-	public void SelectCase(CaseMode mode, string caseIndex)
-	{
-		for (int i = 0; i < m_CaseItemList.Count; i++)
-		{
-			m_CaseItemList[i].UnSelect();
-		}
-
-		string s = "Case_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + caseIndex;
-
-		// 사건 라벨 변경
-		switch (mode)
-		{
-			case CaseMode.Main:
-				m_CaseMainInfoLabel.text = Localization.Get(s);
-				if (m_CaseIllust.gameObject.activeInHierarchy == false)
-					m_CaseIllust.gameObject.SetActive(true);
-
-				m_CaseTab[(int)CaseMode.Main].gameObject.SetActive(true);
-				m_CaseTab[(int)CaseMode.Side].gameObject.SetActive(false);
-				break;
-
-			case CaseMode.Side:
-				m_CaseSideInfoLabel.text = Localization.Get(s);
-				m_CaseTab[(int)CaseMode.Main].gameObject.SetActive(false);
-				m_CaseTab[(int)CaseMode.Side].gameObject.SetActive(true);
-				break;
-
-			default:
-				break;
-		}
-
-		int _caseItemIndex = GetCaseItemIndex(caseIndex);
-		if (_caseItemIndex != -1)
-			m_CaseItemList[_caseItemIndex].Selected();
+		m_NoteCaseManager.SelectedCaseItem(mode, itemCode);
 		//m_CaseIllust.spriteName = "Case_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + index + "_Sprite";
 	}
 
@@ -395,9 +484,9 @@ public class NoteManager : Singleton<NoteManager>
 
 		for (int i = 0; i < m_CaseItemList.Count; i++)
 		{
-			m_CaseItemList[i].m_BG.spriteName = "button_character_off";
+			m_CaseItemList[i].m_ButtonSprite.spriteName = "button_character_off";
 		}
-		m_CaseItemList[itemIndex].m_BG.spriteName = "button_character_on";
+		m_CaseItemList[itemIndex].m_ButtonSprite.spriteName = "button_character_on";
 
 		switch (GameManager.instance.m_NoteMode)
 		{
@@ -413,31 +502,22 @@ public class NoteManager : Singleton<NoteManager>
 		}
 	}
 
+	/// <summary>
+	/// 사건정보 강제 등록. 관련 이벤트가 발생하지 않는다.
+	/// </summary>
+	/// <param name="mode">{CaseMode}</param>
+	/// <param name="eventCode">{CaseIndex}</param>
+	public void ForcedInputCase(int mode, string itemCode)
+	{
+		m_NoteCaseManager.ForcedInputItem(mode, itemCode);
+	}
+
+	[GetComponent]
+	public NoteDialogManager m_NoteDialogManager;
+
 	public void InputDialog(string target)
 	{
-		bool b = false;
-		for (int i = 0; i < m_DialogItemList.Count; i++)
-		{
-			if (m_DialogItemList[i].ReturnIndex() == target)
-			{
-				b = true;
-				break;
-			}
-		}
-
-		if (b == false)
-		{
-			DialogItem item = Instantiate(m_OriginalDialogItem);
-			item.Setting(target);
-			item.transform.parent = m_DialogTable.transform;
-			item.transform.localScale = Vector3.one;
-			m_DialogItemList.Add(item);
-			item.gameObject.SetActive(true);
-
-			item = null;
-		}
-		m_DialogTable.enabled = true;
-		m_DialogScrollBar.value = 0f;
+		m_NoteDialogManager.InputDialog(target);
 	}
 
 	public void RemoveDialog(string target)
@@ -448,107 +528,44 @@ public class NoteManager : Singleton<NoteManager>
 	public void SelectDialog(int i)
 	{
 		ShowDetailDialogList(m_DialogItemList[i].ReturnIndex());
-
 	}
 
 	public void ShowDetailDialogList(string target)
 	{
-
-		int c = DialogDataManager.instance.ReturnCharacterIndex(target);
-		int listcount = DialogDataManager.instance.m_DialogDataItemList[c].m_DialogIndex.Count;
-
-		print("c : " + c + " / lc : " + listcount);
-		for (int i = 0; i < m_DialogItemList.Count; i++)
-		{
-			m_DialogItemList[i].UnSelect();
-		}
-
-		for (int i = 0; i < m_DialogDetailItemList.Count; i++)
-		{
-			m_DialogDetailItemList[i].gameObject.SetActive(false);
-		}
-
-		if (m_DialogDetailItemList.Count >= listcount)
-		{
-			for (int i = 0; i < listcount; i++)
-			{
-				m_DialogDetailItemList[i].Setting(target, DialogDataManager.instance.m_DialogDataItemList[c].m_DialogIndex[i]);
-				m_DialogDetailItemList[i].gameObject.SetActive(true);
-			}
-		}
-		else
-		{
-			for (int i = 0; i < m_DialogDetailItemList.Count; i++)
-			{
-				m_DialogDetailItemList[i].Setting(target, DialogDataManager.instance.m_DialogDataItemList[c].m_DialogIndex[i]);
-				m_DialogDetailItemList[i].gameObject.SetActive(true);
-			}
-
-			for (int i = m_DialogDetailItemList.Count; i < listcount; i++)
-			{
-				DialogDetailItem item = Instantiate(m_OriginalDialogDetailItem);
-				item.Setting(target, DialogDataManager.instance.m_DialogDataItemList[c].m_DialogIndex[i]);
-				item.transform.parent = m_DialogDetailTable.transform;
-				item.transform.localScale = Vector3.one;
-				m_DialogDetailItemList.Add(item);
-				item.gameObject.SetActive(true);
-			}
-
-			m_DialogDetailTable.enabled = true;
-			m_DialogDetailScrollBar.value = 0f;
-		}
-
-		int index = 0;
-		for (int i = 0; i < m_DialogItemList.Count; i++)
-		{
-			if (m_DialogItemList[i].ReturnIndex() == target)
-			{
-				index = i;
-				break;
-			}
-		}
-
-		switch (GameManager.instance.m_NoteMode)
-		{
-			case NoteMode.None:
-				m_NoteModeDetailIndex = index;
-				break;
-			case NoteMode.Suggest:
-				m_SuggestModeDetailIndex = index;
-				break;
-			case NoteMode.Warrant:
-				m_WarrantModeDetailIndex = index;
-				break;
-		}
-		m_DialogDetailScrollView.ResetPosition();
+		m_NoteDialogManager.SelectedDialogItem(target);
 	}
+
+	[GetComponent]
+	public NoteEvidenceManager m_NoteEvidenceManager;
 
 	public void InputEvidence(EvidenceDataItem i)
 	{
-		EvidenceItem item = Instantiate(m_OriginalEvidenceItem);
-		item.Init(i);
-		item.transform.parent = m_EvidenceTable.transform;
-		item.transform.localScale = Vector3.one;
-		m_EvidenceItemList.Add(item);
-		item.gameObject.SetActive(true);
-
-		m_EvidenceTable.enabled = true;
-		m_EvidenceScrollBar.value = 0f;
+		m_NoteEvidenceManager.InputEvidence(i);
 	}
 
 	public void RemoveEvidence(string index)
 	{
+		m_NoteEvidenceManager.RemoveEvidence(index);
+		return;
+
+		#region non-used
 		print("remove item : " + index);
 		for (int i = 0; i < m_EvidenceItemList.Count; i++)
 		{
-			print("i : " + i + " / name : " + m_EvidenceItemList[i].ReturnItem().m_EvidenceName);
-			if (m_EvidenceItemList[i].ReturnItem().m_EvidenceName == index)
+			print("i : " + i + " / name : " + m_EvidenceItemList[i].ReturnItem().m_ItemCode);
+			if (m_EvidenceItemList[i].ReturnItem().m_ItemCode == index)
 			{
 				Destroy(m_EvidenceItemList[i].gameObject);
 				m_EvidenceItemList.RemoveAt(i);
 				break;
 			}
 		}
+		#endregion
+	}
+
+	public void BannedEvidence(string itemCode)
+	{
+		m_NoteEvidenceManager.BannedEvidence(itemCode);
 	}
 
 	public void SelectedEvidenceItem(int i)
@@ -560,19 +577,7 @@ public class NoteManager : Singleton<NoteManager>
 	{
 
 	}
-
-	public void SwapEvidence(string index, EvidenceDataItem item)
-	{
-		for (int i = 0; i < m_EvidenceItemList.Count; i++)
-		{
-			if (m_EvidenceItemList[i].name == index)
-			{
-				m_EvidenceItemList[i].Init(item);
-				break;
-			}
-		}
-	}
-
+	
 	public void ChangeEvidenceInfoUI(int i)
 	{
 		ChangeEvidenceInfoUI(m_EvidenceItemList[i].ReturnItem());
@@ -580,18 +585,22 @@ public class NoteManager : Singleton<NoteManager>
 
 	public void ChangeEvidenceInfoUI(EvidenceDataItem item)
 	{
+		m_NoteEvidenceManager.ChangeEvidenceInfoUI(item);
+		return;
+
+		#region non-used
 		for (int i = 0; i < m_EvidenceItemList.Count; i++)
 		{
 			m_EvidenceItemList[i].UnSelect();
-			if (m_EvidenceItemList[i].m_EveidenceName.Equals(item.m_EvidenceName))
+			if (m_EvidenceItemList[i].m_EveidenceName.Equals(item.m_ItemCode))
 			{
 				m_EvidenceItemList[i].ActivateButton();
-				print("SelectEvidence : " + item.m_EvidenceName);
+				print("SelectEvidence : " + item.m_ItemCode);
 			}
 		}
 
-		string title = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_EvidenceName + "_Title");
-		string content = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_EvidenceName + "_Content");
+		string title = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_ItemCode + "_Title");
+		string content = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_ItemCode + "_Content");
 		if (GameManager.instance.m_NoteMode == NoteMode.Suggest)
 		{
 			m_AnalyzedBtn.gameObject.SetActive(false);
@@ -616,7 +625,7 @@ public class NoteManager : Singleton<NoteManager>
 				m_AnalyzedLabel.text = Localization.Get("System_Text_Note_Analyzed_Possible");
 				m_AnalyzedLabel.color = Color.white;
 
-				m_AnalyzedTimeLabel.text = string.Format(Localization.Get("System_Text_Note_Evidence_RemainTime"), EvidenceDataManager.instance.ReturnCoolTime(item.m_EvidenceName, "AnalyzedTime"));
+				m_AnalyzedTimeLabel.text = string.Format(Localization.Get("System_Text_Note_Evidence_RemainTime"), EvidenceDataManager.instance.ReturnCoolTime(item.m_ItemCode, "AnalyzedTime"));
 			}
 			else if (item.m_IsAnalyzed == true && item.m_ResultAnalyzed == true)
 			{
@@ -642,7 +651,7 @@ public class NoteManager : Singleton<NoteManager>
 				m_MatchedLabel.text = Localization.Get("System_Text_Note_Matched_Possible");
 				m_MatchedLabel.color = Color.white;
 
-				m_MatchedTimeLabel.text = string.Format(Localization.Get("System_Text_Note_Evidence_RemainTime"), EvidenceDataManager.instance.ReturnCoolTime(item.m_EvidenceName, "MatchedTime"));
+				m_MatchedTimeLabel.text = string.Format(Localization.Get("System_Text_Note_Evidence_RemainTime"), EvidenceDataManager.instance.ReturnCoolTime(item.m_ItemCode, "MatchedTime"));
 			}
 			else
 			{
@@ -657,13 +666,13 @@ public class NoteManager : Singleton<NoteManager>
 			if (item.m_ResultAnalyzed == true)
 			{
 				m_AnalyzedBtn.gameObject.SetActive(false);
-				if (item.m_Alter == true)
+				if (item.m_IsChanged == true)
 				{
-					content = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_EvidenceName + "_Content_Alter");
+					content = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_ItemCode + "_Content_Alter");
 				}
 				else
 				{
-					content += Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_EvidenceName + "_Add");
+					content += Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_ItemCode + "_Add");
 				}
 
 				print("이미 분석이 끝났다.");
@@ -672,7 +681,7 @@ public class NoteManager : Singleton<NoteManager>
 
 		//m_EvidenceTitle.text = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + item.m_EvidenceName + "_Title");
 		m_EvidenceDataItem = item;
-		m_EvidenceIllust.spriteName = "Evidence_" + PlayDataManager.instance.m_StageName + "_" + item.m_EvidenceName;
+		m_EvidenceIllust.spriteName = "Evidence_" + PlayDataManager.instance.m_StageName + "_" + item.m_ItemCode;
 		m_EvidenceTitle.text = title;
 		m_EvidenceContent.text = content;
 
@@ -705,34 +714,27 @@ public class NoteManager : Singleton<NoteManager>
 		}
 
 		//m_AnalyzedTimeLabel.text = item.an    m_MatchedTimeLabel
+		#endregion
 	}
 
 	public void EvidenceAnalyzed()
 	{
-		InGameUIManager.instance.ControlNotePopup();
-		InGameUIManager.instance.ControlLaboratoryPanel();
-		LaboratoryManager.instance.ShowAnalyzedUI();
-		LaboratoryManager.instance.SetAnalyzedItem(m_EvidenceDataItem.m_EvidenceName);
-
-
-		print("EvidenceAnalyzed");
+		m_NoteEvidenceManager.EvidenceAnalyzed();
 	}
 
 	public void EvidenceMatched()
 	{
-		InGameUIManager.instance.ControlNotePopup();
-		InGameUIManager.instance.ControlLaboratoryPanel();
-		LaboratoryManager.instance.SelectMatchedPopup();
-		LaboratoryManager.instance.InputMatchedItem(m_EvidenceDataItem.m_EvidenceName);
-
-		print("EvidenceMatched");
+		m_NoteEvidenceManager.EvidenceMatched();
 	}
 
-
-
-	public void AddReadNewsList(int date, string index)
+	[GetComponent]
+	public NoteNewsManager m_NoteNewsManager;
+	public void AddReadNewsList(int date, string itemCode)
 	{
-		print("date : " + date + " / index : " + index);
+		m_NoteNewsManager.InputItem(date, itemCode);
+		return;
+
+		print("date : " + date + " / index : " + itemCode);
 
 		bool b = false;
 		for (int i = 0; i < m_NewsItemList.Count; i++)
@@ -762,7 +764,7 @@ public class NoteManager : Singleton<NoteManager>
 		go.transform.parent = m_NewsTable.transform;
 		go.transform.localScale = Vector2.one;
 		go.transform.localPosition = Vector2.zero;
-		go.Setting(date, index, m_NewsItemList.Count, 1);
+		go.Setting(date, itemCode, m_NewsItemList.Count, 1);
 		m_NewsItemList.Add(go);
 
 		m_NewsTable.enabled = true;
@@ -773,10 +775,13 @@ public class NoteManager : Singleton<NoteManager>
 
 	public void SelectNews(int index)
 	{
+		m_NoteNewsManager.SelectedNewsItem(index);
+		return;
+
 		print("Select News index : " + index);
 		//m_NewsIllust.spriteName = "News_Illust_" + m_NewsItemList[index].m_NewsIndex;
-		m_NewsTitleLabel.text = Localization.Get("News_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + m_NewsItemList[index].m_NewsIndex + "_Title");
-		m_NewsContentLabel.text = Localization.Get("News_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + m_NewsItemList[index].m_NewsIndex + "_Content");
+		m_NewsTitleLabel.text = Localization.Get("News_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + m_NewsItemList[index].m_ItemCode + "_Title");
+		m_NewsContentLabel.text = Localization.Get("News_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + m_NewsItemList[index].m_ItemCode + "_Content");
 		if (m_NewsIllust.gameObject.activeInHierarchy == false)
 		{
 			m_NewsIllust.gameObject.SetActive(true);
@@ -784,9 +789,11 @@ public class NoteManager : Singleton<NoteManager>
 
 		for (int i = 0; i < m_NewsItemList.Count; i++)
 		{
-			m_NewsItemList[index].SeletedSprite.spriteName = "button_character_off";
+			m_NewsItemList[i].SeletedSprite.spriteName = "button_character_off";
 		}
 		m_NewsItemList[index].SeletedSprite.spriteName = "button_character_on";
+
+		m_NewsItemList[index].m_IsSelected = true;
 
 		switch (GameManager.instance.m_NoteMode)
 		{
@@ -848,11 +855,11 @@ public class NoteManager : Singleton<NoteManager>
 			m_CaseItemList[i].UnSelect();
 		}
 		/*
-		// 사건 디테일
-		m_CaseIllust.spriteName = "";
-		m_CaseLabel.text = "";
-		m_SideCaseLabel.text = "";
-		*/
+// 사건 디테일
+m_CaseIllust.spriteName = "";
+m_CaseLabel.text = "";
+m_SideCaseLabel.text = "";
+*/
 		// 대화 탭
 		for (int i = 0; i < m_DialogItemList.Count; i++)
 		{
@@ -872,21 +879,21 @@ public class NoteManager : Singleton<NoteManager>
 		}
 
 		/*// 증거물 디테일
-		m_EvidenceContent.text = "";
-		m_EvidenceIllust.spriteName = "";
-		m_AnalyzedBtn.gameObject.SetActive(false);
-		m_MatchedBtn.gameObject.SetActive(false);
-		*/
+m_EvidenceContent.text = "";
+m_EvidenceIllust.spriteName = "";
+m_AnalyzedBtn.gameObject.SetActive(false);
+m_MatchedBtn.gameObject.SetActive(false);
+*/
 		// 뉴스 탭
 		for (int i = 0; i < m_NewsItemList.Count; i++)
 		{
 			m_NewsItemList[i].UnSelect();
 		}
 		/*
-		// 뉴스 디테일
+// 뉴스 디테일
 
-		m_NewsContentLabel.text = "";
-		m_NewsIllust.spriteName = "";
-		*/
+m_NewsContentLabel.text = "";
+m_NewsIllust.spriteName = "";
+*/
 	}
 }

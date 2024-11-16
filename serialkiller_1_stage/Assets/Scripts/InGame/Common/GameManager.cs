@@ -3,6 +3,7 @@ using SimpleJSON;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using DetectiveBoard;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -12,8 +13,6 @@ public class GameManager : Singleton<GameManager>
 	public int m_RemainderTimeCheckLimit = 360; // 잉여 행동력을 체크하는 리미트
 	public int m_RemainderTimeCheckSum = 60; // 잉여 행동력을 더할건데 그에 대한 최소 리미트
 	private int m_StartTime = 540; // 다음 날로 넘어갈 시 시작하는 시간. 분 단위.
-
-
 
 	/// </summary>
 	public InGameDialogManager m_DialogManager;
@@ -70,6 +69,8 @@ public class GameManager : Singleton<GameManager>
 	private float m_DragSpeed = 10f;
 	//    public bool m_IsSuggest;
 
+	public bool m_IsFirst = true;
+
 	private void Awake()
 	{
 		if (PlayerPrefs.GetString("Language") == "한국어")
@@ -91,6 +92,24 @@ public class GameManager : Singleton<GameManager>
 		DataLoad();
 		m_LoadingManager.LoadingComplete();
 		yield return new WaitForSeconds(0.1f);
+
+		// 범인 세팅
+		// 유력 용의자가 있고 유력 용의자가 범인인 스테이지를 클리어하지 않았을 경우
+		if (m_PowerfulSuspect.Length > 0)
+		{
+			Debug.Log("0");
+            StageDataManager.instance.m_CriminalCode = DetectiveManager.instance.m_CaseIndex;
+            //StageDataManager.instance.m_CriminalCode = 1;
+            //StageDataManager.instance.m_CriminalCode = node["m_PowerfulSuspect"][UnityEngine.Random.Range(0, m_PowerfulSuspect.Length)].AsInt;
+        }
+		else
+		{
+			Debug.Log("1");
+			StageDataManager.instance.m_CriminalCode = DetectiveManager.instance.m_CaseIndex;
+            //StageDataManager.instance.m_CriminalCode = 1;
+            //StageDataManager.instance.m_CriminalCode = /*UnityEngine.Random.Range(0, m_SuspectCount)*/0;
+        }
+
 		InGameUIManager.instance.ControlMainUIBar();
 		StageDataManager.instance.LoadGameData();
 		PlaceDataManager.instance.LoadPlaceData();
@@ -100,14 +119,14 @@ public class GameManager : Singleton<GameManager>
 		SelectionDataManager.instance.LoadSelectionData();
 		EvidenceDataManager.instance.LoadEvidenceData();
 		DialogDataManager.instance.LoadDialogData();
+		LaboratoryDataManager.instance.LoadLaboratoryData();
 
 		DateSetting();
 		PropertySetting();
-		bool _isFirst = (StageDataManager.instance.m_CriminalCode == -1);
-		if (_isFirst)
-		{
+
+		//bool _isFirst = (StageDataManager.instance.m_CriminalCode == -1);
+		if (m_IsFirst)
 			DataInitialize();
-		}
 		PlaceManager.instance.DataInitialize();
 		WarrantManager.instance.DataInitialize();
 
@@ -121,9 +140,14 @@ public class GameManager : Singleton<GameManager>
 
 		EventDataManager.instance.StartEvent(StageDataManager.instance.m_PastDay);
 
-		if(_isFirst)
+		if (m_IsFirst)
 			EventManager.instance.SetStartEvent();
 
+
+		string bgm = string.Format("stage{0}", DetectiveManager.instance.m_StageIndex.ToString());
+		Debug.Log(bgm);
+		SoundManager.instance.ChangeBGM(bgm, false);
+		SoundManager.instance.changeBGMVolume(0.5f);
 		//m_DialogManager.StartDialogInGame(DialogType.Start, "Suspect0", "0");
 	}
 
@@ -159,19 +183,6 @@ public class GameManager : Singleton<GameManager>
 
 	private void DataInitialize()
 	{
-		// 범인 세팅
-		// 유력 용의자가 있고 유력 용의자가 범인인 스테이지를 클리어하지 않았을 경우
-		if (m_PowerfulSuspect.Length > 0)
-		{
-			StageDataManager.instance.m_CriminalCode = /*StageInfoManager.instance.m_CriminalCode.ToInt()*/0;
-			//StageDataManager.instance.m_CriminalCode = node["m_PowerfulSuspect"][UnityEngine.Random.Range(0, m_PowerfulSuspect.Length)].AsInt;
-		}
-		else
-		{
-			StageDataManager.instance.m_CriminalCode = /*StageInfoManager.instance.m_CriminalCode.ToInt()*/0;
-			//StageDataManager.instance.m_CriminalCode = /*UnityEngine.Random.Range(0, m_SuspectCount)*/0;
-		}
-
 		m_NumberOfEventsAssinged = node["m_Suspect"][StageDataManager.instance.m_CriminalCode.ToString()]["m_NumberOfEventsAssinged"].AsInt;
 		m_CaseCount = node["m_Suspect"][StageDataManager.instance.m_CriminalCode.ToString()]["m_CaseCount"].AsInt;
 		print("criminal : " + StageDataManager.instance.m_CriminalCode);
@@ -185,6 +196,7 @@ public class GameManager : Singleton<GameManager>
 		for (int i = 0; i < m_CaseCount; i++)
 		{
 			int value = -1;
+			// 랜덤 이벤트
 			if (CaseManager.instance.ReturnOrder(StageDataManager.instance.m_CriminalCode.ToString(), i.ToString()) == "random")
 			{
 				value = UnityEngine.Random.Range(0, m_CaseList.Count);
@@ -192,6 +204,7 @@ public class GameManager : Singleton<GameManager>
 				//StageDataManager.instance.m_CaseList.Add(m_CaseList[value].ToString());
 				m_CaseList.RemoveAt(value);
 			}
+			// 메인 이벤트
 			else
 			{
 				value = int.Parse(CaseManager.instance.ReturnOrder(StageDataManager.instance.m_CriminalCode.ToString(), i.ToString()));
@@ -242,6 +255,7 @@ public class GameManager : Singleton<GameManager>
 		m_NowDateTime = m_NowDateTime.AddDays(StageDataManager.instance.m_PastDay);
 		// 시작 시간 세팅
 		m_NowTime = m_StartTime;
+		print("m_StartTime : " + m_StartTime);
 
 		// 행동에 필요한 행동력 세팅
 		m_NeedStamina = new int[Enum.GetValues(typeof(UserActionType)).Length];
@@ -249,7 +263,7 @@ public class GameManager : Singleton<GameManager>
 		{
 			m_NeedStamina[i] = 60;
 		}
-		InGameUIManager.instance.MainUIInitialize(m_NowDateTime.Month, m_NowDateTime.Day, m_NowTime);
+		InGameUIManager.instance.MainUIInitialize(m_NowDateTime.Month, m_NowDateTime.Day, m_StartTime);
 	}
 
 	private void PropertySetting()
@@ -259,6 +273,7 @@ public class GameManager : Singleton<GameManager>
 
 	public void Rest()
 	{
+		print("rest");
 		// 남은 시간이 너무 많이 남아있으면 체크
 		if (m_RemainderTimeCheckLimit <= StageDataManager.instance.m_Stamina)
 		{
@@ -282,10 +297,13 @@ public class GameManager : Singleton<GameManager>
 		InGameUIManager.instance.RefreshTime(m_NowTime);
 		EventDataManager.instance.StartEvent(StageDataManager.instance.m_PastDay);
 
+
+		print("setting B : " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 		NpcDataManager.instance.ActSetting();
+		NpcDataManager.instance.ActNpc();
+		print("setting A : " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 
-
-		PlayDataManager.instance.Save();
+		//PlayDataManager.instance.Save();
 
 		//*나중에 세이브 필요할 때 이 부분만 주석 처리 해제
 		StageDataManager.instance.Save();
@@ -294,11 +312,15 @@ public class GameManager : Singleton<GameManager>
 		EvidenceDataManager.instance.Save();
 		PlaceDataManager.instance.Save();
 		EventDataManager.instance.Save();
+		print("save B : " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 		NpcDataManager.instance.Save();
+		print("save A : " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 		DialogDataManager.instance.Save();
 		LaboratoryDataManager.instance.Save();
 
 		//EventDataManager.instance.CloseEvent(StageDataManager.instance.m_PastDay);d
+
+		DetectiveDataManager.instance.Save();
 	}
 
 	public void UserAction(UserActionType t)

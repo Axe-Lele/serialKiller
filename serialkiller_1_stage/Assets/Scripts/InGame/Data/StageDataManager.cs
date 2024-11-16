@@ -13,15 +13,14 @@ public class StageDataManager : Singleton<StageDataManager>
 
     StageData data;
     private string filePath;
-
     public int m_PastDay;
     public int m_Stamina;
     public int m_CriminalCode = -1;
     public int m_RemainStamina;
     public int m_RemainCheckCount;
-    //public List<string> m_CaseList;
-    //public List<CaseDataItem> m_CaseDataItemList;
-    public List<string> m_CheckCaseList;
+	//public List<string> m_CaseList;
+	public List<CaseDataItem> m_CaseDataItemList;
+	public List<string> m_CheckCaseList;
 
     /// <summary>
     ///  이 밑은 저장 안 함
@@ -115,7 +114,7 @@ public class StageDataManager : Singleton<StageDataManager>
     {
         m_PastDay = 0;
         m_Stamina = GameManager.instance.m_FullStamina;
-        m_CriminalCode = -1;
+        //m_CriminalCode = -1;
         m_RemainStamina = 0;
         m_RemainCheckCount = 0;
     }

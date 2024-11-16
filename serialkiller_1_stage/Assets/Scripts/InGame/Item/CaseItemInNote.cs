@@ -3,52 +3,90 @@ using System.Collections;
 
 public class CaseItemInNote : MonoBehaviour
 {
-	public string m_CaseIndex;
-    public UILabel m_TitleLabel;
-    public UILabel m_ContentLabel;
-    public int m_Index;
-    private CaseMode m_Mode;
-    public UISprite m_BG;
-    private string m_BGName;
+	public bool m_IsSelected = false;
+	
+	public string m_Index;
 
-    public Sprite[] bgSpriteArr;
+	public UILabel m_ButtonLabel;
+	public UISprite m_ButtonSprite;
+	private CaseMode m_Mode;
 
-    public void Setting(int i, string str)
-    {
-        m_BGName = "Note_Case_ListBtn";
-        m_Index = i;
-        m_CaseIndex = str;
-        //m_TitleLabel.text = Localization.Get("CaseIndex" + i);
-        
-		m_ContentLabel.text = Localization.Get("CaseIndex" + m_CaseIndex);
-        //m_Label.text = Localization.Get("Case_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + m_CaseIndex + "_Title");
-    }
+	//public Sprite[] bgSpriteArr;
+	//private string m_BGName;
+	
+	/// <param name="i"></param>
+	/// <param name="mode"></param>
+	/// <param name="caseItemCode">0, 1, 2</param>
+	public void Setting(int i, CaseMode mode, string caseItemCode)
+	{
+		//m_BGName = "Note_Case_ListBtn";
+		//m_TitleLabel.text = Localization.Get("CaseIndex" + i);
+		m_Index = caseItemCode;
+		m_Mode = mode;
 
-    public void UnSelect()
-    {
-        m_BG.spriteName = "button_character_off";
-    }
+		m_ButtonLabel.text
+			= Localization.Get("Place_" + PlayDataManager.instance.m_StageName + "_Case_" + caseItemCode);
+		//m_Label.text = Localization.Get("Case_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + m_CaseIndex + "_Title");
+	}
 
-    public void Selected()
-    {
-        m_BG.spriteName = "button_character_on";
-    }
+	public void UnSelect()
+	{
+		m_IsSelected = false;
+		m_ButtonSprite.spriteName = "button";
+	}
+
+	public void Selected()
+	{
+		print("selected");
+		m_IsSelected = true;
+		m_ButtonSprite.spriteName = "button_check";
+	}
 
 	public void Select()
 	{
-        NoteManager.instance.SelectCase(m_Mode, m_CaseIndex);
+		switch (GameManager.instance.m_NoteMode)
+		{
+			case NoteMode.None:
+				NoteManager.instance.SelectCase(m_Mode, m_Index);
+				m_IsSelected = true;
+				break;
 
-        if (GameManager.instance.m_NoteMode == NoteMode.Suggest)
-        {
-            SuggestManager.instance.CaseSetting(m_Mode, m_CaseIndex);
-        }
-        else if (GameManager.instance.m_NoteMode == NoteMode.SelectCase)
-        {
-            WarrantManager.instance.CaseSetting(m_Mode, m_CaseIndex);
-        }
+			case NoteMode.Suggest:
+				if (m_IsSelected)
+				{
+					SuggestManager.instance.Suggest();
+					m_IsSelected = false;
+				}
+				else
+				{
+					NoteManager.instance.SelectCase(m_Mode, m_Index);
+					SuggestManager.instance.CaseSetting(m_Mode, m_Index);
+					m_IsSelected = true;
+				}
+				break;
 
-        //m_BG.spriteName = m_BGName + "_Selected";
 
-        m_BG.spriteName = "button_character_on";
-    }
+			case NoteMode.Warrant:
+				break;
+
+			case NoteMode.SelectCase:
+				if (m_IsSelected)
+				{
+					print("submit case");
+					WarrantManager.instance.SubmitCase("Case", m_Index);
+					m_IsSelected = false;
+				}
+				else
+				{
+					NoteManager.instance.SelectCase(m_Mode, m_Index);
+					m_IsSelected = true;
+				}
+				break;
+
+			default:
+				break;
+		}
+
+		m_ButtonSprite.spriteName = "button_check";
+	}
 }

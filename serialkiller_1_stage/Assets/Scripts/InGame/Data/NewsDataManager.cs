@@ -59,6 +59,8 @@ public class NewsDataManager : Singleton<NewsDataManager>
 
 	private void ReadData()
 	{
+		return;
+
 		m_NewsItemList = new List<NewsDataItem>();
 
 		for (int i = 0; i < newsdata.m_NewsItemList.Length; i++)

@@ -13,8 +13,10 @@ public class WorldDialogManager : DialogManager
     }
 
     protected override void Close()
-    {
-        m_DialogPopup.SetActive(false);
+	{
+		base.Close();
+
+		m_DialogPopup.SetActive(false);
     }
 
     protected override void TypingEnd()
@@ -23,17 +25,19 @@ public class WorldDialogManager : DialogManager
         {
             StopAllCoroutines();
 
-            m_TextLabel.text = m_CompleteText;
+			m_NowTextLabel.text = m_CompleteText;
 
             m_IsTypingFlag = false;
         }
         else
         {
             if (m_TotalBlockCount - 1 > m_BlockIndex)
-            {
-                m_BlockIndex++;
-                Set();
-            }
+			{
+				SoundManager.instance.changeSFXVolume(1.0f);
+				SoundManager.instance.PlaySFX("dialog_jump");
+
+				NextTyping();
+			}
             else
             {
                 switch (m_Type)

@@ -9,6 +9,7 @@ using SimpleJSON;
 using System.Security.Cryptography;
 public class LaboratoryDataManager : Singleton<LaboratoryDataManager>
 {
+	[SerializeField]
 	LaboratoryData laboratoryData;
 	private string filePath;
 
@@ -36,7 +37,7 @@ public class LaboratoryDataManager : Singleton<LaboratoryDataManager>
 		m_MatchItemA = new List<string>();
 		m_MatchItemB = new List<string>();
 		m_MatchResult = new List<bool>();
-		
+
 		for (int i = 0; i < m_MatchedList.Length; i++)
 		{
 			m_MatchedList[i] = string.Empty;
@@ -54,9 +55,9 @@ public class LaboratoryDataManager : Singleton<LaboratoryDataManager>
 
 	public bool ContainAnalyzedIndexList(string itemCode)
 	{
-		for(int i = 0; i < m_AnalyzedIndexList.Length; i++)
+		for (int i = 0; i < m_AnalyzedIndexList.Length; i++)
 		{
-			if(m_AnalyzedIndexList[i].Equals(itemCode))
+			if (m_AnalyzedIndexList[i].Equals(itemCode))
 			{
 				return true;
 			}
@@ -89,6 +90,26 @@ public class LaboratoryDataManager : Singleton<LaboratoryDataManager>
 		m_MatchItemA.Add(a);
 		m_MatchItemB.Add(b);
 		m_MatchResult.Add(result);
+	}
+
+	public int HasMatched(string a, string b)
+	{
+		for (int i = 0; i < m_MatchItemA.Count; i++)
+		{
+			if (m_MatchItemA[i].Equals(a))
+			{
+				if (m_MatchItemB[i].Equals(b))
+					return i;
+			}
+
+			else if (m_MatchItemA[i].Equals(b))
+			{
+				if (m_MatchItemB[i].Equals(a))
+					return i;
+			}
+		}
+
+		return -1;
 	}
 
 	public void LoadLaboratoryData()
@@ -147,14 +168,17 @@ public class LaboratoryDataManager : Singleton<LaboratoryDataManager>
 		for (int i = 0; i < m_AnalyzedIndexList.Length; i++)
 		{
 			m_AnalyzedIndexList[i] = laboratoryData.m_AnalyzedIndexList[i];
-			if (m_AnalyzedIndexList[i] != null || m_AnalyzedIndexList[i] != "")
-			{
-				LaboratoryManager.instance.AddAnalyzedItemList(m_AnalyzedIndexList[i]);
-			}
+			//if (m_AnalyzedIndexList[i] != null && m_AnalyzedIndexList[i] != "")
+			//{
+			//	LaboratoryManager.instance.AddAnalyzedItemList(m_AnalyzedIndexList[i]);
+			//}
 		}
 
 		if (m_IsStartMatched == true)
 		{
+			if (m_MatchedList == null)
+				m_MatchedList = new string[2];
+
 			for (int i = 0; i < 2; i++)
 			{
 				m_MatchedList[i] = laboratoryData.m_MatchedList[i];
@@ -175,7 +199,7 @@ public class LaboratoryDataManager : Singleton<LaboratoryDataManager>
 
 	private void DataInitialize()
 	{
-		LaboratoryNode = JSONNode.Parse(LaboratoryTextAsset.text);
+		//LaboratoryNode = JSONNode.Parse(LaboratoryTextAsset.text);
 	}
 
 

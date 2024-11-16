@@ -2,6 +2,14 @@
 using System;
 using System.Collections;
 
+public enum UIPopupFlag
+{
+	Close,
+	Open,
+	ForceOpen,
+	ForceClose
+}
+
 public class InGameUIManager : Singleton<InGameUIManager>
 {
 	//public UILabel DateLabel;
@@ -77,6 +85,8 @@ public class InGameUIManager : Singleton<InGameUIManager>
 	public UISpriteAnimation DayBlock1;
 	public UISpriteAnimation DayBlock2;
 
+	public GameObject[] LeftBtnBackgrounds;
+	public UISprite[] LeftBtnSpt;
 
 	private void Awake()
 	{
@@ -89,13 +99,16 @@ public class InGameUIManager : Singleton<InGameUIManager>
 
 	public void Rest()
 	{
+		print("Rest B : " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 		GameManager.instance.Rest();
+		print("Rest A : " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 	}
 
 	public void Throw()
 	{
-		print("UserAction");
+		print("Throw B: " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 		GameManager.instance.UserAction(UserActionType.Dialog);
+		print("Throw A: " + NpcDataManager.instance.m_NpcItemList[17].m_NpcEventCode);
 	}
 
 	public void MainUIInitialize(int month, int day, int time)
@@ -261,7 +274,7 @@ public class InGameUIManager : Singleton<InGameUIManager>
 
 		m_IsMainUIBarMoveFlag = true;
 
-		MainUIBarPopupTweenPosition.duration = 0.2f;
+		//MainUIBarPopupTweenPosition.duration = 0.2f;
 
 		if (MainUIBarBtn.activeSelf)
 		{
@@ -288,7 +301,10 @@ public class InGameUIManager : Singleton<InGameUIManager>
 	}
 
 	private IEnumerator HideMainUIBar()
-	{
+    {
+        MainUIBarBtn.SetActive(true);
+        yield break;
+
 		MainUIBarPopupTweenPosition.from = m_MainUIBarGoalPosition;
 		MainUIBarPopupTweenPosition.to = m_MainUIBarInitPosition;
 		MainUIBarPopupTweenPosition.ResetToBeginning();
@@ -296,33 +312,140 @@ public class InGameUIManager : Singleton<InGameUIManager>
 
 		yield return new WaitForSeconds(0.2f);
 
-		MainUIBarBtn.SetActive(true);
 		m_IsMainUIBarMoveFlag = false;
 	}
 
-	public void OpenNote()
+	public void ControlNotePanel()
 	{
-		GameManager.instance.m_NoteMode = NoteMode.None;
+		if (MainUIBar_NotePopup.activeSelf)
+		{
+			LeftBtnSpt[2].spriteName = "detectivenote";
+			LeftBtnBackgrounds[2].SetActive(false);
+		}
+		else
+		{
+			LeftBtnSpt[2].spriteName = "detectivenote_check";
+			LeftBtnBackgrounds[2].SetActive(true);
+		}
 
 		ControlNotePopup();
 	}
 
-	public void ControlNotePopup()
+	public void ShowNewsNote()
 	{
+		MainUIBar_NotePopup.SetActive(true);
+		GameManager.instance.m_NoteMode = NoteMode.None;
+
 		if (MainUIBar_NotePopup.activeSelf)
 		{
-			MainUIBar_NotePopup.SetActive(false);
-			if (GameManager.instance.m_NoteMode == NoteMode.Warrant || GameManager.instance.m_NoteMode == NoteMode.SelectCase)
-			{
-				ControlWarrantPopup();
-			}
-			else if (GameManager.instance.m_NoteMode == NoteMode.Suggest)
-			{
-
-			}
+			LeftBtnSpt[2].spriteName = "detectivenote";
+			LeftBtnBackgrounds[2].SetActive(false);
 		}
 		else
 		{
+			LeftBtnSpt[2].spriteName = "detectivenote_check";
+			LeftBtnBackgrounds[2].SetActive(true);
+		}
+
+		NoteManager.instance.ShowNoteNews();
+	}
+
+	public void Main_ShowNote()
+	{
+		GameManager.instance.m_NoteMode = NoteMode.None;
+
+		ShowNote();
+	}
+
+	public void ShowNote()
+	{
+		MainUIBar_NotePopup.SetActive(true);
+
+		switch (GameManager.instance.m_NoteMode)
+		{
+			case NoteMode.None:
+				if (!MainUIBar_NotePopup.activeSelf)
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote";
+					LeftBtnBackgrounds[2].SetActive(false);
+				}
+				else
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote_check";
+					LeftBtnBackgrounds[2].SetActive(true);
+				}
+				break;
+
+			case NoteMode.Suggest:
+				if (!MainUIBar_NotePopup.activeSelf)
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote";
+					LeftBtnBackgrounds[2].SetActive(false);
+				}
+				else
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote_check";
+					LeftBtnBackgrounds[2].SetActive(true);
+				}
+				break;
+
+			case NoteMode.Warrant:
+				if (!MainUIBar_NotePopup.activeSelf)
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote";
+					LeftBtnBackgrounds[2].SetActive(false);
+				}
+				else
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote_check";
+					LeftBtnBackgrounds[2].SetActive(true);
+				}
+				break;
+
+			case NoteMode.SelectCase:
+				if (!MainUIBar_NotePopup.activeSelf)
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote";
+					LeftBtnBackgrounds[2].SetActive(false);
+				}
+				else
+				{
+					LeftBtnSpt[2].spriteName = "detectivenote_check";
+					LeftBtnBackgrounds[2].SetActive(true);
+				}
+				break;
+		}
+
+
+		NoteManager.instance.ShowNote();
+	}
+
+	public void ControlNotePopup()
+	{
+		print(MainUIBar_NotePopup.activeSelf);
+		if (MainUIBar_NotePopup.activeSelf)
+		{
+			LeftBtnSpt[2].spriteName = "detectivenote";
+			LeftBtnBackgrounds[2].SetActive(false);
+
+			NoteManager.instance.CloseNote();
+			MainUIBar_NotePopup.SetActive(false);
+			if (GameManager.instance.m_NoteMode == NoteMode.Warrant || GameManager.instance.m_NoteMode == NoteMode.SelectCase)
+			{
+				ControlWarrantPopup(UIPopupFlag.ForceOpen);
+			}
+			else if (GameManager.instance.m_NoteMode == NoteMode.Suggest)
+			{
+				SuggestManager.instance.m_Item = string.Empty;
+				SuggestManager.instance.m_Target = string.Empty;
+			}
+			GameManager.instance.m_NoteMode = NoteMode.None;
+		}
+		else
+		{
+			LeftBtnSpt[2].spriteName = "detectivenote_check";
+			LeftBtnBackgrounds[2].SetActive(true);
+
 			NoteManager.instance.SetNote();
 			NoteManager.instance.ControlNoteUI();
 			NoteManager.instance.SelectNote();
@@ -334,14 +457,24 @@ public class InGameUIManager : Singleton<InGameUIManager>
 	{
 		if (MainUIBar_AnalysisPopup.activeSelf)
 		{
+			LeftBtnSpt[1].spriteName = "csi";
+			LeftBtnBackgrounds[1].SetActive(false);
 			MainUIBar_AnalysisPopup.SetActive(false);
 			LaboratoryManager.instance.ControlLaboratoryUI(false);
 		}
 		else
 		{
+			LeftBtnSpt[1].spriteName = "csi_check";
+			LeftBtnBackgrounds[1].SetActive(true);
 			MainUIBar_AnalysisPopup.SetActive(true);
 			LaboratoryManager.instance.ControlLaboratoryUI(true);
 		}
+	}
+
+	public void ShowNewsPanel()
+	{
+		if (!NewsPopup.activeSelf)
+			NewsPopup.SetActive(true);
 	}
 
 	public void ControlNewsPopup()
@@ -404,15 +537,45 @@ public class InGameUIManager : Singleton<InGameUIManager>
 		MainUIBar_PoliceCommand.SetActive(false);
 	}
 
-	public void ControlWarrantPopup()
+	public void ClickedWarrantButton()
 	{
-		if (WarrantPopup.activeSelf)
+		this.ControlWarrantPopup(UIPopupFlag.Open);
+	}
+
+	public void ControlWarrantPopup(UIPopupFlag flag)
+	{
+		switch (flag)
 		{
-			WarrantPopup.SetActive(false);
-		}
-		else
-		{
-			WarrantPopup.SetActive(true);
+			case UIPopupFlag.Close:
+				LeftBtnSpt[0].spriteName = "warrant";
+				LeftBtnBackgrounds[0].SetActive(false);
+				WarrantPopup.SetActive(false);
+				WarrantManager.instance.SetActivePanel(false);
+				break;
+
+			case UIPopupFlag.Open:
+				LeftBtnSpt[0].spriteName = "warrant_check";
+				LeftBtnBackgrounds[0].SetActive(true);
+				WarrantPopup.SetActive(true);
+				WarrantManager.instance.SetActivePanel(true);
+				break;
+
+			case UIPopupFlag.ForceOpen:
+				LeftBtnSpt[0].spriteName = "warrant_check";
+				LeftBtnBackgrounds[0].SetActive(true);
+				WarrantPopup.SetActive(true);
+				WarrantManager.instance.ForcedOpenPanel();
+				break;
+
+			case UIPopupFlag.ForceClose:
+				LeftBtnSpt[0].spriteName = "warrant_check";
+				LeftBtnBackgrounds[0].SetActive(false);
+				WarrantPopup.SetActive(false);
+				WarrantManager.instance.ForcedClosePanel();
+				break;
+
+			default:
+				break;
 		}
 	}
 
@@ -505,9 +668,12 @@ public class InGameUIManager : Singleton<InGameUIManager>
 			for (int i = 0; i < person; i++)
 			{
 				temp[i] = PlaceManager.instance.m_HomeList[index].m_CharacterList[i];
-				m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
-				m_CharacterListInPlace[i].spriteName = temp[i];
-				m_CharacterListInPlace[i].gameObject.SetActive(true);
+				if (m_CharacterListInPlace[i] != null)
+				{
+					m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
+					m_CharacterListInPlace[i].spriteName = temp[i];
+					m_CharacterListInPlace[i].gameObject.SetActive(true);
+				}
 			}
 		}
 		else if (type == PlaceType.Company)
@@ -517,9 +683,12 @@ public class InGameUIManager : Singleton<InGameUIManager>
 			for (int i = 0; i < person; i++)
 			{
 				temp[i] = PlaceManager.instance.m_CompanyList[index].m_CharacterList[i];
-				m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
-				m_CharacterListInPlace[i].spriteName = temp[i];
-				m_CharacterListInPlace[i].gameObject.SetActive(true);
+				if (m_CharacterListInPlace[i] != null)
+				{
+					m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
+					m_CharacterListInPlace[i].spriteName = temp[i];
+					m_CharacterListInPlace[i].gameObject.SetActive(true);
+				}
 			}
 		}
 		else if (type == PlaceType.Extra)
@@ -529,9 +698,12 @@ public class InGameUIManager : Singleton<InGameUIManager>
 			for (int i = 0; i < person; i++)
 			{
 				temp[i] = PlaceManager.instance.m_ExtraPlaceList[index].m_CharacterList[i];
-				m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
-				m_CharacterListInPlace[i].spriteName = temp[i];
-				m_CharacterListInPlace[i].gameObject.SetActive(true);
+				if (m_CharacterListInPlace[i] != null)
+				{
+					m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
+					m_CharacterListInPlace[i].spriteName = temp[i];
+					m_CharacterListInPlace[i].gameObject.SetActive(true);
+				}
 			}
 		}
 		else if (type == PlaceType.Case)
@@ -541,9 +713,12 @@ public class InGameUIManager : Singleton<InGameUIManager>
 			for (int i = 0; i < person; i++)
 			{
 				temp[i] = PlaceManager.instance.m_CasePlaceList[index].m_CharacterList[i];
-				m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
-				m_CharacterListInPlace[i].spriteName = temp[i];
-				m_CharacterListInPlace[i].gameObject.SetActive(true);
+				if (m_CharacterListInPlace[i] != null)
+				{
+					m_CharacterListInPlace[i].atlas = NpcDataManager.instance.ReturnAtlas(temp[i]);
+					m_CharacterListInPlace[i].spriteName = temp[i];
+					m_CharacterListInPlace[i].gameObject.SetActive(true);
+				}
 			}
 		}
 		else

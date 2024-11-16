@@ -31,6 +31,8 @@ public class SystemTextManager : Singleton<SystemTextManager>
         if (m_Flag)
             return;
 
+		SoundManager.instance.changeSFXVolume(1.0f);
+		SoundManager.instance.PlaySFX("systemmagase");
         StartCoroutine(StartShowText());
     }
 

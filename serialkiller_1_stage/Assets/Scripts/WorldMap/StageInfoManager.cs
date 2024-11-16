@@ -10,199 +10,246 @@ using System.Security.Cryptography;
 
 public class StageInfoManager : Singleton<StageInfoManager>
 {
-    [Header("Binary Data")]
-    private WorldStageData data;
-    private string filePath;
-    private JSONNode CityNode;
-    public TextAsset CityTextAsset;
+	[Header("Binary Data")]
+	private WorldStageData data;
+	private string filePath;
+	private JSONNode CityNode;
+	public TextAsset CityTextAsset;
 
-    [Header("Data Field")]
-    public GameObject m_CityItem_Origin;
-    public List<CityData> m_CityDatas;
+	[Header("Data Field")]
+	public GameObject m_CityItem_Origin;
+	public List<CityData> m_CityDatas;
 
-    [Header("Ingame Param")]
-    public GameObject m_CityItemRoot;
-    public UIGrid m_CityItemsGrid;
-    public List<GameObject> m_CityItems;
+	[Header("Ingame Param")]
+	public GameObject m_CityItemRoot;
+	public List<GameObject> m_CityItems;
+	public List<GameObject> m_CityParents;
+	public List<GameObject> m_CityChecks;
+	public List<UISprite> m_CitySprites;
 
-    [SerializeField]
-    private string[] m_StageIdxs;
-    public string m_StageIdx
-    {
-        get
-        {
-            return m_StageIdxs[0];
-        }
-    }
-    public string m_CriminalCode
-    {
-        get
-        {
-            return m_StageIdxs[1];
-        }
-    }
+	private void Awake()
+	{
+		filePath = Application.persistentDataPath + "/data20.bin";
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(this);
+		CityTextAsset = Resources.Load<TextAsset>("Data/WorldMap/WorldMap_Stage");
+		CityNode = JSONNode.Parse(CityTextAsset.text);
 
-        filePath = Application.persistentDataPath + "/data20.bin";
+		//CreateCity();
+	}
 
-        CityTextAsset = Resources.Load<TextAsset>("Data/WorldMap/WorldMap_Stage");
-        CityNode = JSONNode.Parse(CityTextAsset.text);
+	public void LoadData()
+	{
+		// Load Savedata
+		if (GlobalMethod.instance.ReturnFileExist(filePath))
+		{
+			BinaryDeserialize();
+			ReadData();
+		}
+		else
+		{
+			CreateData();
+			ReadData();
+		}
+	}
 
-        //CreateCity();
-    }
+	public void Init()
+	{
+		CreateCity();
+	}
 
-    public void LoadData()
-    {
-        // Load Savedata
-        if (GlobalMethod.instance.ReturnFileExist(filePath))
-        {
-            BinaryDeserialize();
-            ReadData();
-        }
-        else
-        {
-            CreateData();
-            ReadData();
-        }
-    }
+	private void CreateCity()
+	{
+		if (m_CityItems == null)
+			m_CityItems = new List<GameObject>();
 
-    public void Init()
-    {
-        CreateCity();
-    }
+		// Create Items
+		GameObject _item = null;
+		for (int i = 0; i < m_CityDatas.Count; i++)
+		{
+			_item = Instantiate(m_CityItem_Origin, m_CityItemRoot.transform);
+			StageItem _info = _item.GetComponent<StageItem>();
+			_info.m_Index = i;
+			_info.m_IsUnlock = m_CityDatas[i].IsOpen;
 
-    private void CreateCity()
-    {
-        if (m_CityItems == null)
-            m_CityItems = new List<GameObject>();
+			m_CityItems.Add(_item);
+			if (m_CityParents[i] != null)
+			{
+				_item.transform.SetParent(m_CityParents[i].transform);
+				_item.transform.localPosition = Vector3.zero;
+				Vector3 pos = _item.transform.position;
+				_item.transform.parent = m_CityItemRoot.transform;
+				_item.transform.position = pos;
+			}
 
-        // Create Items
-        GameObject _item = null;
-        for (int i = 0; i < CityNode.Count; i++)
-        {
-            _item = Instantiate(m_CityItem_Origin, m_CityItemRoot.transform);
-            StageItem _info = _item.GetComponent<StageItem>();
-            _info.m_Index = i;
-            _info.isUnlock = CityNode[i]["IsOpen"].AsBool;
+			_info.Init();
+		}
+	}
 
-            m_CityItems.Add(_item);
-            _info.Init();
-        }
+	public string GetUnlockIndex(int index)
+	{
+		string rvalue = string.Empty;
 
-        m_CityItemsGrid.Reposition();
-    }
+		for (int i = 0; i < m_CityDatas.Count; i++)
+		{
+			if (m_CityDatas[i].Index != index)
+				continue;
 
-    public void SetInfo(string[] stageIdx)
-    {
-        m_StageIdxs = stageIdx;
-    }
+			for (int j = 0; j < m_CityDatas[i].UnlockIndexes.Length; j++)
+			{
+				rvalue += "\n";
+				rvalue += Localization.Get(string.Format("Text_World_Lock_{0}", m_CityDatas[i].UnlockIndexes[j]));
 
-    public bool GetCityIsOpen()
-    {
-        return false;
-    }
-    
+			}
+			return rvalue;
+		}
 
-    #region Data
-    /// <summary>
-    /// ingame param -> data
-    /// </summary>
-    private void WriteData()
-    {
-        data = new WorldStageData();
-        data.Cities = new List<CityData>();
-        CityData _item = null;
-        for (int cityIdx = 0; cityIdx < data.Cities.Count; cityIdx++)
-        {
-            _item = new CityData();
-            _item.Index = m_CityDatas[cityIdx].Index;
-            _item.IsOpen = m_CityDatas[cityIdx].IsOpen;
-            _item.IsOpenStage = new bool[m_CityDatas[cityIdx].IsOpenStage.Length];
-            for (int stageIdx = 0; stageIdx < m_CityDatas[cityIdx].IsOpenStage.Length; stageIdx++)
-            {
-                _item.IsOpenStage[stageIdx] = m_CityDatas[cityIdx].IsOpenStage[stageIdx];
-            }
-            data.Cities.Add(_item);
-            _item = null;
-        }
+		return string.Empty;
+	}
 
-        BinarySerialize(data);
-    }
+	public bool GetCityIsOpen(int index)
+	{
+		for (int i = 0; i < m_CityDatas.Count; i++)
+		{
+			if (m_CityDatas[i].Index != index)
+				continue;
 
-    /// <summary>
-    /// data -> ingame param
-    /// </summary>
-    private void ReadData()
-    {
-        m_CityDatas = new List<CityData>();
-        CityData _item = null;
-        for (int cityIdx = 0; cityIdx < data.Cities.Count; cityIdx++)
-        {
-            _item = new CityData();
-            _item.Index = data.Cities[cityIdx].Index;
-            _item.IsOpen = data.Cities[cityIdx].IsOpen;
-            _item.IsOpenStage = new bool[data.Cities[cityIdx].IsOpenStage.Length];
-            for (int stageIdx = 0; stageIdx < data.Cities[cityIdx].IsOpenStage.Length; stageIdx++)
-            {
-                _item.IsOpenStage[stageIdx] = data.Cities[cityIdx].IsOpenStage[stageIdx];
-            }
-            m_CityDatas.Add(data.Cities[cityIdx]);
-            _item = null;
-        }
-    }
+			return m_CityDatas[i].IsOpen;
+		}
+		return false;
+	}
 
-    /// <summary>
-    /// json -> data
-    /// </summary>
-    private void CreateData()
-    {
-        print("Create WorldInfo Data");
-        data = new WorldStageData();
-        data.Cities = new List<CityData>();
+	public int GetCaseCount(int index)
+	{
+		for (int i = 0; i < m_CityDatas.Count; i++)
+		{
+			if (m_CityDatas[i].Index != index)
+				continue;
 
-        CityData _item;
-        for (int cityIdx = 0; cityIdx < CityNode.Count; cityIdx++)
-        {
-            _item = new CityData();
-            _item.Index = CityNode[cityIdx].AsInt;
-            _item.IsOpen = CityNode[cityIdx]["IsOpen"].AsBool;
-            _item.IsOpenStage = new bool[CityNode[cityIdx].Count - 1];
-            for (int stageIdx = 1; stageIdx < CityNode[cityIdx].Count; stageIdx++)
-            {
-                _item.IsOpenStage[stageIdx - 1] = CityNode[cityIdx][stageIdx]["IsOpen"].AsBool;
-            }
-            data.Cities.Add(_item);
-        }
+			return m_CityDatas[i].IsOpenStage.Length;
+		}
+		return 0;
+	}
 
-        BinarySerialize(data);
-    }
+	#region Data
+	/// <summary>
+	/// ingame param -> data
+	/// </summary>
+	private void WriteData()
+	{
+		data = new WorldStageData();
+		data.Cities = new List<CityData>();
+		CityData _item = null;
+		for (int i = 0; i < data.Cities.Count; i++)
+		{
+			_item = new CityData();
+			_item.Index = m_CityDatas[i].Index;
+			_item.IsOpen = m_CityDatas[i].IsOpen;
+			_item.IsOpenStage = new bool[m_CityDatas[i].IsOpenStage.Length];
 
-    public void BinarySerialize(WorldStageData data)
-    {
-        BinaryFormatter formatter = new BinaryFormatter();
-        FileStream stream;
-        if (GlobalMethod.instance.ReturnFileExist(filePath))
-        {
-            stream = new FileStream(filePath, FileMode.Open);
-        }
-        else
-        {
-            stream = new FileStream(filePath, FileMode.Create);
-        }
-        formatter.Serialize(stream, data);
-        stream.Close();
-    }
+			for (int stageIdx = 0; stageIdx < m_CityDatas[i].IsOpenStage.Length; stageIdx++)
+			{
+				_item.IsOpenStage[stageIdx] = m_CityDatas[i].IsOpenStage[stageIdx];
+			}
 
-    private void BinaryDeserialize()
-    {
-        BinaryFormatter formatter = new BinaryFormatter();
-        FileStream stream = new FileStream(filePath, FileMode.Open);
-        WorldStageData d = (WorldStageData)formatter.Deserialize(stream);
-        data = d;
-        stream.Close();
-    }
-    #endregion
+			_item.UnlockIndexes = new string[m_CityDatas[i].UnlockIndexes.Length];
+			for (int j = 0; j < m_CityDatas[i].UnlockIndexes.Length; j++)
+			{
+				_item.UnlockIndexes[j] = m_CityDatas[i].UnlockIndexes[j];
+			}
+			data.Cities.Add(_item);
+			_item = null;
+		}
+
+		BinarySerialize(data);
+	}
+
+	/// <summary>
+	/// data -> ingame param
+	/// </summary>
+	private void ReadData()
+	{
+		m_CityDatas = new List<CityData>();
+		CityData _item = null;
+		for (int ci = 0; ci < data.Cities.Count; ci++)
+		{
+			_item = new CityData();
+			_item.Index = data.Cities[ci].Index;
+			_item.IsOpen = data.Cities[ci].IsOpen;
+			_item.IsOpenStage = new bool[data.Cities[ci].IsOpenStage.Length];
+			for (int si = 0; si < data.Cities[ci].IsOpenStage.Length; si++)
+			{
+				_item.IsOpenStage[si] = data.Cities[ci].IsOpenStage[si];
+			}
+
+			_item.UnlockIndexes = new string[data.Cities[ci].UnlockIndexes.Length];
+			for (int ui = 0; ui < data.Cities[ci].UnlockIndexes.Length; ui++)
+			{
+				_item.UnlockIndexes[ui] = data.Cities[ci].UnlockIndexes[ui];
+			}
+
+			m_CityDatas.Add(data.Cities[ci]);
+			_item = null;
+		}
+	}
+
+	/// <summary>
+	/// json -> data
+	/// </summary>
+	private void CreateData()
+	{
+		print("Create WorldInfo Data");
+		data = new WorldStageData();
+		data.Cities = new List<CityData>();
+
+		CityData _item;
+		for (int cityIdx = 0; cityIdx < CityNode.Count; cityIdx++)
+		{
+			_item = new CityData();
+			_item.Index = cityIdx;
+			_item.IsOpen = CityNode[cityIdx]["IsOpen"].AsBool;
+			_item.IsOpenStage = new bool[CityNode[cityIdx].Count - 2];
+			_item.IsFirstStage = new bool[CityNode[cityIdx].Count - 2];
+			for (int stageIdx = 2; stageIdx < CityNode[cityIdx].Count; stageIdx++)
+			{
+				_item.IsOpenStage[stageIdx - 2] = CityNode[cityIdx][stageIdx]["IsOpen"].AsBool;
+			}
+
+			_item.UnlockIndexes = new string[CityNode[cityIdx]["Unlock"].Count];
+			for (int ui = 0; ui < CityNode[cityIdx]["Unlock"].Count; ui++)
+			{
+				JSONNode node = CityNode[cityIdx]["Unlock"];
+				_item.UnlockIndexes[ui] = node[ui];
+			}
+
+			data.Cities.Add(_item);
+		}
+
+		BinarySerialize(data);
+	}
+
+	public void BinarySerialize(WorldStageData data)
+	{
+		BinaryFormatter formatter = new BinaryFormatter();
+		FileStream stream;
+		if (GlobalMethod.instance.ReturnFileExist(filePath))
+		{
+			stream = new FileStream(filePath, FileMode.Open);
+		}
+		else
+		{
+			stream = new FileStream(filePath, FileMode.Create);
+		}
+		formatter.Serialize(stream, data);
+		stream.Close();
+	}
+
+	private void BinaryDeserialize()
+	{
+		BinaryFormatter formatter = new BinaryFormatter();
+		FileStream stream = new FileStream(filePath, FileMode.Open);
+		WorldStageData d = (WorldStageData)formatter.Deserialize(stream);
+		data = d;
+		stream.Close();
+	}
+	#endregion
 }

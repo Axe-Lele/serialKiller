@@ -38,7 +38,7 @@ public class InGameKeyboardManager : Singleton<InGameKeyboardManager>
             }
             else if (InGameUIManager.instance.WarrantPopup.activeInHierarchy)
             {
-                InGameUIManager.instance.ControlWarrantPopup();
+                InGameUIManager.instance.ControlWarrantPopup(UIPopupFlag.Close);
             }
             else if (InGameUIManager.instance.ExitPopup.activeInHierarchy)
             {

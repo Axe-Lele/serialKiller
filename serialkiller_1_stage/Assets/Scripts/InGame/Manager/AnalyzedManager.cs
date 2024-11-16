@@ -11,7 +11,7 @@ public class AnalyzedManager : MonoBehaviour
 	public UILabel m_RemainTimeLabel;
 	public LaboratoryItem m_NowSelectedItem;
 
-	public GameObject m_ShowNoItem;
+	public GameObject m_HasNoItemPanel;
 
 	public LaboratoryItem[] m_ReserveItemList;
 	public List<LaboratoryItem> m_ItemList;
@@ -34,11 +34,11 @@ public class AnalyzedManager : MonoBehaviour
 	{
 		if (m_ItemList.Count == 0)
 		{
-			m_ShowNoItem.SetActive(isOpen);
+			m_HasNoItemPanel.SetActive(isOpen);
 		}
 		else
 		{
-			m_ShowNoItem.SetActive(false);
+			m_HasNoItemPanel.SetActive(false);
 		}
 
 		m_ParentTr.SetActive(isOpen);
@@ -128,6 +128,17 @@ public class AnalyzedManager : MonoBehaviour
 			m_AnalyzedButtonIcon.spriteName = m_IconAnalysis;
 		}
 	}
+
+    public void SelectedItem(string itemCode)
+    {
+        for(int i = 0; i < m_ItemList.Count; i++)
+        {
+            if(m_ItemList[i].GetItemCode() == itemCode)
+            {
+                SelectedItem(m_ItemList[i]);
+            }
+        }
+    }
 
 	public void SelectedItem(LaboratoryItem selectedItem)
 	{
@@ -305,7 +316,6 @@ public class AnalyzedManager : MonoBehaviour
 		}
 	}
 
-
 	public void CheckAnalyzed(int time)
 	{
 		print("CheckAnalyzed : " + time + ", index : " + LaboratoryDataManager.instance.ReturnAnalyzedIIndexList(0));
@@ -320,15 +330,19 @@ public class AnalyzedManager : MonoBehaviour
 				LaboratoryDataManager.instance.m_AnalyzedRemainTime = 0;
 
 				string item = LaboratoryDataManager.instance.ReturnAnalyzedIIndexList(0);
-				print("item : " + item + " / remainTime : " + remaintime);
+				print("item : " + item + " / remainTime : " + remaintime +"/ Alter : " 
+					+ EvidenceDataManager.instance.ReturnEvidenceItem(item).m_IsChanged);
 				if (item == null || item == string.Empty)
 					return;
 
-				if (EvidenceDataManager.instance.ReturnEvidenceItem(item).m_Alter == true)
+				string str = string.Format(Localization.Get("System_Text_CompleteAnalzed"), m_AnalyzedItemName);
+				SystemTextManager.instance.InputText(str);
+
+				EvidenceDataItem data = EvidenceDataManager.instance.ReturnEvidenceItem(item);
+				if (data.m_IsChanged == true)
 				{
-					// EvidenceDataManager.instance.SwapEvidence(EvidenceDataManager.instance.ReturnEvidenceItem(item).m_EvidenceName,EvidenceDataManager.instance.ReturnEvidenceItem(item).m_AlterName);
-					EvidenceDataManager.instance.InputEvidence(EvidenceDataManager.instance.ReturnEvidenceItem(item).m_AlterName);
-					EvidenceDataManager.instance.RemoveEvidence(item);
+					print("IsSwaped : " + data.m_IsChanged);
+					EventManager.instance.SetEventTemp("SwapEvidence-" + data.m_ItemCode + "_0");
 				}
 				else
 				{
@@ -344,11 +358,6 @@ public class AnalyzedManager : MonoBehaviour
 						break;
 					}
 				}
-
-				//m_AnalyzedStateLabel.text = Localization.Get("Text_Analysis_Ready");
-
-				string str = string.Format(Localization.Get("System_Text_CompleteAnalzed"), m_AnalyzedItemName);
-				SystemTextManager.instance.InputText(str);
 
 				m_ReserveItemList[0].Reset();
 

@@ -60,6 +60,33 @@ public class NpcDataManager : Singleton<NpcDataManager>
 		}
 	}
 
+	public void SetMeet(string itemCode, bool isMeet)
+	{
+		for (int i = 0; i < m_NpcItemList.Count; i++)
+		{
+			if (m_NpcItemList[i].m_Index != itemCode)
+				continue;
+
+			m_NpcItemList[i].m_IsMeet = isMeet;
+			return;
+		}
+
+		print(itemCode + " : Don't find That Npc");
+	}
+
+	public bool IsMeet(string itemCode)
+	{
+		for (int i = 0; i < m_NpcItemList.Count; i++)
+		{
+			if (m_NpcItemList[i].m_Index == itemCode)
+			{
+				return m_NpcItemList[i].m_IsMeet;
+			}
+		}
+
+		return false;
+	}
+
 	/*public void ActNpc()
 	{
 			string time = (GameManager.instance.ReturnNowTime() / 60).ToString();
@@ -110,6 +137,7 @@ public class NpcDataManager : Singleton<NpcDataManager>
 			}
 	}*/
 
+	// 매 시간마다 호출됩니다.
 	public void ActNpc()
 	{
 		List<int> m_ActList = new List<int>();
@@ -119,9 +147,11 @@ public class NpcDataManager : Singleton<NpcDataManager>
 		{
 			if (m_NpcItemList[i].NpcState == NpcState.Dead || m_NpcItemList[i].NpcState == NpcState.Missing)
 			{
+				// 사망 또는 실종
 			}
 			else if (m_NpcItemList[i].NpcState == NpcState.Alive && m_NpcItemList[i].m_Index.Contains("N") == false && m_NpcItemList[i].m_Index.Contains("P") == false)
 			{
+				// 생존 + 고정 NPC가 아님(조수)
 				m_ActList.Clear();
 
 				for (int k = 0; k < m_NpcActList[i].Count; k++)
@@ -129,7 +159,7 @@ public class NpcDataManager : Singleton<NpcDataManager>
 					int m_StartTime = m_NpcActList[i][k].m_StartHour * 60 + m_NpcActList[i][k].m_StartMinute;
 					int m_EndTime = m_NpcActList[i][k].m_EndHour * 60 + m_NpcActList[i][k].m_EndMinute;
 
-					print("i : " + i + " / start : " + m_StartTime + " / end : " + m_EndTime + " / current : " + m_CurrentTime);
+					//print("i : " + i + " / start : " + m_StartTime + " / end : " + m_EndTime + " / current : " + m_CurrentTime);
 
 					if (m_StartTime <= m_CurrentTime && m_EndTime >= m_CurrentTime)
 					{
@@ -141,16 +171,16 @@ public class NpcDataManager : Singleton<NpcDataManager>
 
 				if (m_ActList.Count == 1)
 				{
-					print(" list count is 1");
+					//print(" list count is 1");
 					str = m_NpcActList[i][m_ActList[0]].m_Position;
 				}
 				else if (m_ActList.Count == 0)
 				{
-					print(" list count is 0");
+					//print(" list count is 0");
 				}
 				else if (m_ActList.Count > 1)
 				{
-					print(" list count is 1 over");
+					//print(" list count is 1 over");
 					int index = 0;
 					int order = m_NpcActList[i][m_ActList[0]].m_Order;
 					for (int k = 1; k < m_ActList.Count; k++)
@@ -160,11 +190,10 @@ public class NpcDataManager : Singleton<NpcDataManager>
 							index = m_ActList[k];
 						}
 					}
-					print("count : " + m_ActList.Count + " / index :  " + index + " / [] : ");
 
 					str = m_NpcActList[i][index].m_Position;
-					print("str : " + str);
 				}
+
 
 				if (str != null)
 				{
@@ -176,16 +205,16 @@ public class NpcDataManager : Singleton<NpcDataManager>
 					{
 						if (m_NpcItemList[i].m_Home != -1)
 						{
-							string temp = "0_" + m_NpcItemList[i].m_Home;
-							ChangeNpcPosition(i, temp);
+							str = "0_" + m_NpcItemList[i].m_Home;
+							ChangeNpcPosition(i, str);
 						}
 					}
 					else if (str.Contains("Company"))
 					{
 						if (m_NpcItemList[i].m_Company != -1)
 						{
-							string temp = "1_" + m_NpcItemList[i].m_Company;
-							ChangeNpcPosition(i, temp);
+							str = "1_" + m_NpcItemList[i].m_Company;
+							ChangeNpcPosition(i, str);
 						}
 					}
 					else if (str.Contains("Missing"))
@@ -194,8 +223,7 @@ public class NpcDataManager : Singleton<NpcDataManager>
 						ChangeNpcPosition(i, str);
 					}
 				}
-
-				print("npc : " + m_NpcItemList[i].m_Index + " / act : " + str);
+				//print("count : " + m_ActList.Count + " / index :  " + m_NpcItemList[i].Name + " / " + str);
 			}
 		}
 	}
@@ -242,12 +270,14 @@ public class NpcDataManager : Singleton<NpcDataManager>
 				string _order = string.Empty;
 
 				// specialEventCountOfDay = 통상 이벤트를 제외한 하루 동안 해야할 스케쥴 갯수
-				int specialEventCountOfDay = m_NpcItemList[i].m_NpcEventCode.Count;
-				if (specialEventCountOfDay > 0)
+				bool specialEventCountOfDay = m_NpcItemList[i].m_NpcEventCode.Length != 0;
+				if (specialEventCountOfDay)
 				{
-					for (int _scheduleIndex = 0; _scheduleIndex < m_NpcItemList[i].m_NpcEventCode.Count; _scheduleIndex++)
+					_order = m_NpcItemList[i].m_NpcEventCode;
+					for (int _scheduleIndex = 0
+						; _scheduleIndex < NpcScheduleNode[_npcIndex][_type][_criminalcode][_order][_dayOfWeek].Count
+						; _scheduleIndex++)
 					{
-						_order = m_NpcItemList[i].m_NpcEventCode[_scheduleIndex];
 
 						NpcActItem item = new NpcActItem();
 
@@ -275,6 +305,9 @@ public class NpcDataManager : Singleton<NpcDataManager>
 		string _criminalcode = StageDataManager.instance.m_CriminalCode.ToString();
 		string _dayOfWeek = GameManager.instance.ReturnDayOfWeek();
 		string _npcIndex = string.Empty;
+
+		if (m_NpcItemList[i].m_Index == "D9")
+			print("D9");
 
 		//print("i : " + i + " / name : " + m_NpcItemList[i].m_Index + " / state : " + m_NpcItemList[i].m_Company);
 		if (m_NpcItemList[i].NpcState == NpcState.Dead
@@ -313,14 +346,15 @@ public class NpcDataManager : Singleton<NpcDataManager>
 			string _order = string.Empty;
 
 			// specialEventCountOfDay = 통상 이벤트를 제외한 하루 동안 해야할 스케쥴 갯수
-			int specialEventCountOfDay = m_NpcItemList[i].m_NpcEventCode.Count;
-			if (specialEventCountOfDay > 0)
+			bool specialEventCountOfDay = m_NpcItemList[i].m_NpcEventCode.Length != 0;
+			if (specialEventCountOfDay)
 			{
-				print("NPC : " + _npcIndex + ", special event count : " + m_NpcItemList[i].m_NpcEventCode.Count);
-				for (int _scheduleIndex = 0; _scheduleIndex < m_NpcItemList[i].m_NpcEventCode.Count; _scheduleIndex++)
+				print("NPC : " + _npcIndex + ", special event Code : " + m_NpcItemList[i].m_NpcEventCode);
+				_order = m_NpcItemList[i].m_NpcEventCode;
+				for (int _scheduleIndex = 0
+					; _scheduleIndex < NpcScheduleNode[_npcIndex][_type][_criminalcode][_order][_dayOfWeek].Count
+					; _scheduleIndex++)
 				{
-					_order = m_NpcItemList[i].m_NpcEventCode[_scheduleIndex];
-
 					NpcActItem item = new NpcActItem();
 
 					print("npcIndex : " + _npcIndex + " / type : " + _type + " / Criminal : " + _criminalcode);
@@ -357,8 +391,16 @@ public class NpcDataManager : Singleton<NpcDataManager>
 	{
 		print("add event / npc : " + npcname + " / evet : " + eventcode);
 		int num = GetNpcIndex(npcname);
-		m_NpcItemList[num].m_NpcEventCode.Add(eventcode);
-		m_NpcItemList[num].m_NpcEventCode.Sort();
+
+		if (m_NpcItemList[num].m_NpcEventCode.Length == 0)
+		{
+			m_NpcItemList[num].m_NpcEventCode = eventcode;
+		}
+
+		else if (m_NpcItemList[num].m_NpcEventCode.ToInt() < eventcode.ToInt())
+		{
+			m_NpcItemList[num].m_NpcEventCode = eventcode;
+		}
 
 		ActSetting(npcname);
 	}
@@ -366,23 +408,14 @@ public class NpcDataManager : Singleton<NpcDataManager>
 	public void RemoveNpcEvent(string npcname, string eventcode)
 	{
 		print("remove event / npc : " + npcname + " / evet : " + eventcode);
-		int index = -1;
 		int num = GetNpcIndex(npcname);
-		for (int i = 0; i < m_NpcItemList[num].m_NpcEventCode.Count; i++)
+		
+		if (m_NpcItemList[num].m_NpcEventCode == eventcode)
 		{
-			if (m_NpcItemList[num].m_NpcEventCode[i] == eventcode)
-			{
-				index = i;
-				break;
-			}
-		}
-
-		if (index != -1)
-		{
-			m_NpcItemList[num].m_NpcEventCode.RemoveAt(index);
-			m_NpcItemList[num].m_NpcEventCode.Sort();
+			m_NpcItemList[num].m_NpcEventCode = string.Empty;
 			print("success to delete event " + eventcode + " in " + npcname);
 		}
+
 		ActSetting(npcname);
 	}
 
@@ -404,17 +437,21 @@ public class NpcDataManager : Singleton<NpcDataManager>
 
 	public void ChangeNpcPosition(int index, string point)
 	{
-		//print("index : " + index + " / point : " + point + " / len : " + m_NpcItemList[index].NpcPosition);
 		string prevPoint;
 		string[] temp;
 		prevPoint = m_NpcItemList[index].NpcPosition;
 
-		print("index : " + m_NpcItemList[index].Name + "(" + m_NpcItemList[index].m_Index + ") / point : " + point + " / prev : " + prevPoint
-				+ " / isInit : " + m_NpcItemList[index].m_IsInit);
+		//print("index : " + m_NpcItemList[index].Name + "(" + m_NpcItemList[index].m_Index + ") / point : " + point + " / prev : " + prevPoint
+		//		+ " / isInit : " + m_NpcItemList[index].m_IsInit);
+
+		if (m_NpcItemList[index].m_Index == "D1")
+			prevPoint = prevPoint;
 
 		// 최초 초기화
 		if (m_NpcItemList[index].m_IsInit == false)
 		{
+			//print("[Init]index : " + index + " / point : " + point + " / len : " + m_NpcItemList[index].NpcPosition);
+
 			if (point.Contains("_"))
 			{
 				temp = point.Split('_');
@@ -438,8 +475,8 @@ public class NpcDataManager : Singleton<NpcDataManager>
 			else if (point == "Missing")
 			{
 				print("index : " + index);
+				m_NpcItemList[index].NpcPosition = point;
 			}
-			//m_NpcItemList[index].NpcPosition = point;
 
 			if (m_NpcItemList[index].m_Index == GlobalValue.instance.m_DialogTarget)
 			{
@@ -450,29 +487,10 @@ public class NpcDataManager : Singleton<NpcDataManager>
 		}
 		else if (prevPoint != point)
 		{
-			/*if (point.Contains("_"))
-{
-	temp = point.Split('_');
-	switch (temp[0])
-	{
-	case "0":
-		PlaceManager.instance.m_HomeList[int.Parse(temp[1])].AddCharacter(m_NpcItemList[index].m_Index);
-		break;
-	case "1":
-		PlaceManager.instance.m_CompanyList[int.Parse(temp[1])].AddCharacter(m_NpcItemList[index].m_Index);
-		break;
-	case "2":
-		PlaceManager.instance.m_ExtraPlaceList[int.Parse(temp[1])].AddCharacter(m_NpcItemList[index].m_Index);
-		break;
-	}
-	m_NpcItemList[index].NpcPosition = point;
-}
-else if(point  == "Missing")
-{
-	print("index : " + index);
-}
-*/
-			if (m_NpcItemList[index].NpcPosition != null)
+			print("[Move]index : " + index + " / point : " + point + " / len : " + m_NpcItemList[index].NpcPosition);
+
+			if (m_NpcItemList[index].NpcPosition != null
+				|| m_NpcItemList[index].NpcPosition != "Missing")
 			{
 				temp = m_NpcItemList[index].NpcPosition.Split('_');
 				switch (temp[0])
@@ -515,8 +533,8 @@ else if(point  == "Missing")
 			else if (point == "Missing")
 			{
 				print("index : " + index);
+				m_NpcItemList[index].NpcPosition = point;
 			}
-			//m_NpcItemList[index].NpcPosition = point;
 
 			if (m_NpcItemList[index].m_Index == GlobalValue.instance.m_DialogTarget)
 			{
@@ -617,23 +635,14 @@ else if(point  == "Missing")
 	}
 
 
+
 	private void WriteData()
 	{
 		data = new NpcData();
 		data.m_NpcItem = new List<NpcItem>();
 		for (int i = 0; i < m_NpcItemList.Count; i++)
 		{
-			m_NpcItemList[i].m_IsInit = false;
-
 			data.m_NpcItem.Add(m_NpcItemList[i]);
-			data.m_NpcItem[i].m_NpcEventCode = new List<string>();
-			if (m_NpcItemList[i].m_NpcEventCode.Count > 0)
-			{
-				for (int k = 0; k < m_NpcItemList[i].m_NpcEventCode.Count; k++)
-				{
-					data.m_NpcItem[i].m_NpcEventCode.Add(m_NpcItemList[i].m_NpcEventCode[k]);
-				}
-			}
 		}
 
 		BinarySerialize(data);
@@ -648,16 +657,8 @@ else if(point  == "Missing")
 			m_NpcItemList[i].Job = ReturnJobName(m_NpcItemList[i].m_Index);
 			m_NpcItemList[i].CompanyName = ReturnCompanyName(m_NpcItemList[i].m_Index);
 
-			m_NpcItemList[i].m_NpcEventCode = new List<string>();
-
-			if (data.m_NpcItem[i].m_NpcEventCode.Count > 0)
-			{
-				for (int k = 0; k < data.m_NpcItem[i].m_NpcEventCode.Count; k++)
-				{
-					m_NpcItemList[i].m_NpcEventCode.Add(data.m_NpcItem[i].m_NpcEventCode[k]);
-				}
-			}
-			print("i : " + i + " / com : " + m_NpcItemList[i].m_Company);
+			m_NpcItemList[i].m_NpcEventCode = data.m_NpcItem[i].m_NpcEventCode;
+			//print("i : " + i + " / com : " + m_NpcItemList[i].m_Company);
 		}
 	}
 
@@ -710,7 +711,7 @@ else if(point  == "Missing")
 			item.m_Company = NpcNode[i]["m_Company"].AsInt;
 			item.m_Home = NpcNode[i]["m_Home"].AsInt;
 
-			item.m_NpcEventCode = new List<string>();
+			item.m_NpcEventCode = string.Empty;
 
 			item.Name = ReturnName(item.m_Index);
 			item.Job = ReturnJobName(item.m_Index);
@@ -754,6 +755,7 @@ else if(point  == "Missing")
 
 }
 
+[Serializable]
 public class NpcActItem
 {
 	public int m_StartHour;

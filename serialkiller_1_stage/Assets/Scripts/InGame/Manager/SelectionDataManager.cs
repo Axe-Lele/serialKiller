@@ -21,9 +21,9 @@ public class SelectionDataManager : Singleton<SelectionDataManager>
 	private void Awake()
 	{
 		if (m_IsWorld)
-			filePath = Application.persistentDataPath + "/data03_W.bin";
+			filePath = Application.persistentDataPath + "/data10.bin";
 		else
-			filePath = Application.persistentDataPath + "/data03_S.bin";
+			filePath = Application.persistentDataPath + "/data03.bin";
 
 		m_SelectionDataItemList = new List<SelectionDataItem>();
 	}

@@ -78,7 +78,7 @@ public class SelectionManager : Singleton<SelectionManager> {
         
         if (GlobalMethod.instance.ReturnSceneName().Contains("Stage"))
         {
-            GameManager.instance.m_DialogManager.StartDialogInGame(DialogType.Selection, target, index);
+            GameManager.instance.m_DialogManager.StartDialogInGame(DialogType.Selection, target, index, "Selection");
             if (SelectionDataManager.instance.ReturnCheckRead(target, index) == false)
             {
                 int m_TargetIndex = SelectionDataManager.instance.ReturnCharacterIndex(target);
@@ -90,7 +90,7 @@ public class SelectionManager : Singleton<SelectionManager> {
         {
             //WorldManager - 헤어짐 대사 처리
             print("1");
-            WorldManager.instance.m_NowSelectStageIndex = index;
+            WorldManager.instance.SetSelectedCase(index);
             WorldManager.instance.m_DialogManager.StartDialogInWorld(DialogType.End, target, index);
         }
         SelectionPopup.SetActive(false);

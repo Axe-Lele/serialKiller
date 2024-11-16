@@ -39,7 +39,6 @@
 			"A74": [ "SwapEvidence-A59_0" ],
 			"A75": [ "SwapEvidence-A68_0" ],
 			"A76": [ "SystemMessage-067" ],
-			"A76": [ "SystemMessage-073" ],
 			"A78": [ "SwapEvidence-A96_0" ],
 			"A84": [ "SwapEvidence-A89_0" ],
 			"A89": [ "SwapEvidence-A84_0" ],
@@ -48,10 +47,10 @@
 			"A96": [ "SwapEvidence-A77_0" ],
 			"A97": [ "SystemMessage-085" ],
 			"A98": [  ],
-			"A99": [ "SwapEvidence-B0_0" ],
-			"A100": [ "SystemMessage-88" ],
-			"B0": [ "SwapEvidence-A99_0" ],
-			"B1": [ "SystemMessage-088" ]
+			"A99": [ "SwapEvidence-B0_1" , "SwapEvidence-B1_0" ],
+			"A100": [ "SystemMessage-088" ],
+			"B0": [  ],
+			"B1": [  ]
 		},
 		"1": {
 			"10": ["AddCase-3"],
@@ -83,6 +82,7 @@
 		"D1_2": ["ShowEnding-D1_2"],
 		"D9_0": ["Dialog-D13_52"],
 		"D13_0": ["Dialog-D13_51"],
+		"D17_0": ["Dialog-D9_79" ],
 		"Bad": ["Dialog-D13_50"]
 	},
 
@@ -197,7 +197,11 @@
 		"087": [ "RemoveEvidence-A94" , "AddEvidence-A99" ],
 		"088": [ "ShowCompulsion-D31_S0" , "RemoveEvidence-A99" , "RemoveEvidence-A100", "RemoveEvidence-B0", "RemoveEvidence-B1", "AddEvidence-A101", "AddEvidence-B2" ],
 		"089": [ "AddArea-Home_5" , "AddSelection-D16_01" ],
-		"098": [  ],
+		"090": [ "SwapEvidence-A99_0" , "SwapEvidence-B0_0" ],
+		"091": [ "Dialog-D17_13" , "AddEvidence-A102"  ],
+		"092": [ "Dialog-D17_15" ],
+		"093": [ "Dialog-D42_10" ],
+		"094": [ "AddEvidence-A103" ],
 		"099": []
 	},
 	"Search": {
@@ -711,13 +715,15 @@
 				"57": [ "SystemMessage-036" ],
 				"58": [ "SystemMessage-036" ],
 				"59": [ "SystemMessage-038" ],
-				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" , "AddArea-Extra_4", "AddSelection-D10_42", "AddNpcEvent-D42_0" , "AddSelection-D42_01" ],
+				"64": [ "AddArea-Home_4" , "AddSelection-D9_40" , "AddArea-Extra_4", "AddNpcEvent-D42_0" , "AddSelection-D42_01" ],
 				"70": [ "SystemMessage-042" ],
 				"71": [ "SystemMessage-042" ],
 				"72": [ "AddArea-Company_3" , "AddEvidence-A25" , "AddSelection-A1_70", "SetEvidence-Company_3+A79"],
 				"73": [ "SystemMessage-036" ],
 				"74": [ "AddSelection-A1_42" ],
 				"76": [ "RemoveSelection-D9_76", "AddSelection-D10_11" ],
+				"78": [ "SystemMessage-090" ],
+				"79": [ "SystemMessage-092" ],
 				"S0": [ ],
 				"S00": [ "SystemMessage-037" ],
 				"S01": [ "AddArea-Company_0", "AddSelection-D4_00", "AddSelection-D5_00" ],
@@ -806,7 +812,11 @@
 		},
 		"D16": {
 			"0": {
-				"01": [ "RemoveSelection-D16_01" , "AddSelection-D16_02" ]
+				"01": [ "RemoveSelection-D16_01" , "AddSelection-D16_02" ],
+				"02": [ "RemoveSelection-D16_02" , "AddSelection-D16_03" ],
+				"03": [ "RemoveSelection-D16_03" , "AddSelection-D16_04" ],
+				"04": [ "RemoveSelection-D16_04" , "SystemMessage-094" ],
+				"05": [ "SystemMessage-091" ]
 			},
 			"1": {
 				"10": [ "AddSelection-D16_11" , "AddSelection-D16_20" , "RemoveSelection-D16_10"],
@@ -822,7 +832,8 @@
 				"06": [  ],
 				"07": ["SystemMessage-083" ],
 				"10": ["SystemMessage-086" ],
-				"12": ["SystemMessage-087" ]
+				"12": ["SystemMessage-087" ],
+				"15": ["SystemMessage-093" ]
 			},
 			"1": {
 				"10": [ ],
@@ -958,6 +969,13 @@
 		"D41": {
 			"0": {
 				"02": [ "SystemMessage-072" ]
+			},
+			"1": {
+			}
+		},
+		"D42": {
+			"0": {
+				"10": [ "ShowEnding-D17_0" ]
 			},
 			"1": {
 			}

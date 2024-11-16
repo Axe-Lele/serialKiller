@@ -1,0 +1,519 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1806948596090194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4974447719481642}
+  - component: {fileID: 114192008327385896}
+  m_Layer: 0
+  m_Name: Character1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4974447719481642
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806948596090194}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114192008327385896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806948596090194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d0c51bb0b6e93049af5e88f93826e3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 702a60965f877c5499491a5794f3fa4b, type: 2}
+  mSprites:
+  - name: A0
+    x: 2506
+    y: 2157
+    width: 402
+    height: 563
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 59
+    paddingRight: 51
+    paddingTop: 205
+    paddingBottom: 0
+  - name: A0_0
+    x: 2343
+    y: 2721
+    width: 360
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 79
+    paddingRight: 73
+    paddingTop: 96
+    paddingBottom: 0
+  - name: A0_2
+    x: 2704
+    y: 2721
+    width: 360
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 79
+    paddingRight: 73
+    paddingTop: 96
+    paddingBottom: 0
+  - name: A0_3
+    x: 3065
+    y: 2721
+    width: 360
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 79
+    paddingRight: 73
+    paddingTop: 96
+    paddingBottom: 0
+  - name: A0_4
+    x: 3426
+    y: 2721
+    width: 360
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 79
+    paddingRight: 73
+    paddingTop: 96
+    paddingBottom: 0
+  - name: A1
+    x: 3365
+    y: 3404
+    width: 457
+    height: 692
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 28
+    paddingRight: 27
+    paddingTop: 76
+    paddingBottom: 0
+  - name: A1_0
+    x: 2410
+    y: 3407
+    width: 482
+    height: 689
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 22
+    paddingRight: 8
+    paddingTop: 79
+    paddingBottom: 0
+  - name: A1_2
+    x: 0
+    y: 3409
+    width: 493
+    height: 687
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 15
+    paddingTop: 81
+    paddingBottom: 0
+  - name: A1_4
+    x: 0
+    y: 2721
+    width: 493
+    height: 687
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 4
+    paddingRight: 15
+    paddingTop: 81
+    paddingBottom: 0
+  - name: A2
+    x: 0
+    y: 2019
+    width: 482
+    height: 701
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 29
+    paddingRight: 1
+    paddingTop: 67
+    paddingBottom: 0
+  - name: A2_0
+    x: 0
+    y: 1317
+    width: 482
+    height: 701
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 29
+    paddingRight: 1
+    paddingTop: 67
+    paddingBottom: 0
+  - name: A2_2
+    x: 0
+    y: 615
+    width: 482
+    height: 701
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 29
+    paddingRight: 1
+    paddingTop: 67
+    paddingBottom: 0
+  - name: C0
+    x: 954
+    y: 2026
+    width: 396
+    height: 694
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 54
+    paddingRight: 62
+    paddingTop: 74
+    paddingBottom: 0
+  - name: C0_0
+    x: 954
+    y: 1331
+    width: 396
+    height: 694
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 54
+    paddingRight: 62
+    paddingTop: 74
+    paddingBottom: 0
+  - name: C0_2
+    x: 954
+    y: 636
+    width: 396
+    height: 694
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 54
+    paddingRight: 62
+    paddingTop: 74
+    paddingBottom: 0
+  - name: C1
+    x: 494
+    y: 2710
+    width: 459
+    height: 683
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 26
+    paddingRight: 27
+    paddingTop: 85
+    paddingBottom: 0
+  - name: C1_0
+    x: 494
+    y: 1246
+    width: 421
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 42
+    paddingRight: 49
+    paddingTop: 37
+    paddingBottom: 0
+  - name: C1_2
+    x: 494
+    y: 514
+    width: 421
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 42
+    paddingRight: 49
+    paddingTop: 37
+    paddingBottom: 0
+  - name: C1_4
+    x: 494
+    y: 1978
+    width: 421
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 42
+    paddingRight: 49
+    paddingTop: 37
+    paddingBottom: 0
+  - name: C2
+    x: 1351
+    y: 1989
+    width: 375
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 75
+    paddingTop: 37
+    paddingBottom: 0
+  - name: C2_0
+    x: 1351
+    y: 1257
+    width: 375
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 75
+    paddingTop: 37
+    paddingBottom: 0
+  - name: C2_2
+    x: 1351
+    y: 525
+    width: 375
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 75
+    paddingTop: 37
+    paddingBottom: 0
+  - name: C2_4
+    x: 1727
+    y: 1989
+    width: 375
+    height: 731
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 75
+    paddingTop: 37
+    paddingBottom: 0
+  - name: D1
+    x: 2103
+    y: 2157
+    width: 402
+    height: 563
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 59
+    paddingRight: 51
+    paddingTop: 205
+    paddingBottom: 0
+  - name: D1_0
+    x: 1727
+    y: 1316
+    width: 331
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 119
+    paddingTop: 96
+    paddingBottom: 0
+  - name: D1_2
+    x: 1727
+    y: 643
+    width: 331
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 119
+    paddingTop: 96
+    paddingBottom: 0
+  - name: D1_4
+    x: 2103
+    y: 1484
+    width: 331
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 62
+    paddingRight: 119
+    paddingTop: 96
+    paddingBottom: 0
+  - name: D2
+    x: 954
+    y: 2721
+    width: 462
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 27
+    paddingRight: 23
+    paddingTop: 96
+    paddingBottom: 0
+  - name: D2_0
+    x: 1417
+    y: 2721
+    width: 462
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 27
+    paddingRight: 23
+    paddingTop: 96
+    paddingBottom: 0
+  - name: D2_2
+    x: 1880
+    y: 2721
+    width: 462
+    height: 672
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 27
+    paddingRight: 23
+    paddingTop: 96
+    paddingBottom: 0
+  - name: D4
+    x: 2893
+    y: 3404
+    width: 471
+    height: 692
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 15
+    paddingRight: 26
+    paddingTop: 76
+    paddingBottom: 0
+  - name: D4_0
+    x: 494
+    y: 3394
+    width: 478
+    height: 702
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 13
+    paddingRight: 21
+    paddingTop: 66
+    paddingBottom: 0
+  - name: D4_2
+    x: 973
+    y: 3394
+    width: 478
+    height: 702
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 13
+    paddingRight: 21
+    paddingTop: 66
+    paddingBottom: 0
+  - name: D4_3
+    x: 1452
+    y: 3394
+    width: 478
+    height: 702
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 13
+    paddingRight: 21
+    paddingTop: 66
+    paddingBottom: 0
+  - name: D4_4
+    x: 1931
+    y: 3394
+    width: 478
+    height: 702
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 13
+    paddingRight: 21
+    paddingTop: 66
+    paddingBottom: 0
+  - name: D5
+    x: 0
+    y: 14
+    width: 382
+    height: 600
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 58
+    paddingRight: 72
+    paddingTop: 168
+    paddingBottom: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+  mCoordinates: 0
+  sprites: []

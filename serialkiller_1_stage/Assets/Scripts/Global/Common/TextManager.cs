@@ -9,20 +9,20 @@ public class TextManager : MonoBehaviour {
 		set{_instance = value;}
 	}
 
-    protected float typingSpeed = 0.025f;
+    protected float typingSpeed = 0.05f;
 
   
     //public UIPanel textPanel;
 	public UILabel textLabel;
     public TweenAlpha ta;
 	protected string s;
-    protected string tempStr;
+    protected string m_TempText;
 
 	protected int count, len, findStartNum, findEndNum;
 
     protected int index;
     protected bool isProgress = false;
-    protected bool isFinished = false;
+    protected bool m_IsPlayingFlag = false;
     protected bool isReady = false;
 	protected bool isNextFlag;
 
@@ -63,13 +63,16 @@ public class TextManager : MonoBehaviour {
 
     public virtual bool ReturnIsProgress()
     {
-        return isFinished;
+        return m_IsPlayingFlag;
     }
 
     protected IEnumerator ShowPanel()
     {
         print("showpanel");
-        yield return new WaitForSeconds(0.5f);
+		SoundManager.instance.changeSFXVolume(1.0f);
+		SoundManager.instance.PlaySFX("systemmagase");
+		SoundManager.instance.PlaySFX("dialog_ing", true);
+		yield return new WaitForSeconds(0.5f);
         isReady = false;
         StartCoroutine( Typing());
     }
@@ -77,9 +80,11 @@ public class TextManager : MonoBehaviour {
     protected virtual IEnumerator Typing()
     {
         print("typing");
-        isFinished = true;
+        m_IsPlayingFlag = true;
 
-		while (isFinished)
+		count = 0;
+
+		while (m_IsPlayingFlag)
         {
             textLabel.text = s.Substring(0, count);
 
@@ -91,15 +96,17 @@ public class TextManager : MonoBehaviour {
             else
             {
                 textLabel.text = s;
-             //   TypingFinish();
-            }
-        }
-    }
+				m_IsPlayingFlag = false;
+			}
+		}
+		SoundManager.instance.StopSFXByName("dialog_ing");
+	}
 
    
     protected virtual void HidePanel()
 	{
-        StopAllCoroutines();
+		SoundManager.instance.StopSFXByName("dialog_ing");
+		StopAllCoroutines();
 
         ta.from = 1f;
         ta.to = 0f;
@@ -113,7 +120,7 @@ public class TextManager : MonoBehaviour {
 	public void Finished()
 	{
 
-		isFinished = false;
+		m_IsPlayingFlag = false;
 
 	}
 

@@ -11,10 +11,15 @@ public class EventManager : Singleton<EventManager>
 	[SerializeField]
 	private JSONNode EventNode;
 	public TextAsset EventTextAsset;
+	private string m_NowEvent;
 	private List<string> EventTemp;
 	private List<string> m_EndEvent;
 	private string m_DelayTemp = "";
 	private int m_EventCount;
+	private string m_CriminalCode
+	{
+		get { return StageDataManager.instance.m_CriminalCode.ToString(); }
+	}
 	private void Awake()
 	{
 		EventNode = JSONNode.Parse(EventTextAsset.text);
@@ -32,7 +37,106 @@ public class EventManager : Singleton<EventManager>
 		{
 			EventTemp.Add(EventNode["Start"][StageDataManager.instance.m_CriminalCode.ToString()][i]);
 		}
-		ApplyEvent();
+
+		if (m_EventCount != 0)
+			ApplyEvent();
+	}
+
+	public void SetEventTemp(List<string> eventTemps)
+	{
+		EventTemp.Clear();
+		m_EventCount = 0;
+
+		if (eventTemps != null && eventTemps.Count > 0)
+		{
+			EventTemp.AddRange(eventTemps);
+			m_EventCount = eventTemps.Count;
+		}
+
+		if (m_EventCount > 0)
+		{
+			ApplyEvent();
+		}
+		else
+		{
+			return;
+		}
+	}
+	public void SetEventTemp(string eventTemp)
+	{
+		EventTemp.Clear();
+		m_EventCount = 0;
+
+		if (!string.IsNullOrEmpty(eventTemp))
+		{
+			EventTemp.Add(eventTemp);
+			m_EventCount++;
+		}
+
+		if (m_EventCount > 0)
+		{
+			ApplyEvent();
+		}
+		else
+		{
+			return;
+		}
+	}
+
+	public void InsertEvent(string category, string s)
+	{
+		InsertEvent(m_NowEventIndex, category, s);
+	}
+
+	public void InsertEvent(int index, string category, string s)
+	{
+		int eventCount = 0;
+		bool isGetItem = (category == "GetItem");
+
+		if (isGetItem)
+		{
+			eventCount = EventNode[category][StageDataManager.instance.m_CriminalCode.ToString()][s].Count;
+		}
+		else
+		{
+			eventCount = EventNode[category][s].Count;
+		}
+
+		if (eventCount <= 0)
+			return;
+
+		if (isGetItem)
+		{
+			for (int i = eventCount; i > 0; i--)
+				EventTemp.Insert(index + 1, EventNode[category][m_CriminalCode][s][i - 1]);
+		}
+		else
+		{
+			for (int i = eventCount; i > 0; i--)
+				EventTemp.Insert(index + 1, EventNode[category][s][i - 1]);
+		}
+	}
+
+	public void AddEvent(string category, params string[] s)
+	{
+		int len = s.Length;
+		JSONNode node;
+
+		if (len <= 0)
+			return;
+
+		node = EventNode[category][s[0]];
+
+		if (len > 1)
+			for (int i = 1; i < len; i++)
+				node = node[s[i]];
+
+		int addEventCount = node.Count;
+		for (int i = 0; i < addEventCount; i++)
+		{
+			EventTemp.Add(node[i]);
+			m_EventCount++;
+		}
 	}
 
 	/// <summary>
@@ -42,39 +146,31 @@ public class EventManager : Singleton<EventManager>
 	/// <param name="s">범인 인덱스</param>
 	public void SetEvent(string category, string s)
 	{
-		//print("category : " + category + " / s : " + s);
-		EventTemp.Clear();
-		m_EventCount = 0;
+		bool isGetItem = (category == "GetItem");
 
-		if (category == "GetItem")
+		print("category : " + category + " / s : " + s);
+		if (isGetItem)
 		{
 			m_EventCount = EventNode[category][StageDataManager.instance.m_CriminalCode.ToString()][s].Count;
 		}
 		else
 		{
+			m_EventCount = 0;
+			EventTemp.Clear();
 			m_EventCount = EventNode[category][s].Count;
 		}
 
-		if (m_EventCount > 0)
-		{
-			// 실행해야하는 이벤트 인덱스
+		if (m_EventCount <= 0)
+			return;
+
+		if (isGetItem)
 			for (int i = 0; i < m_EventCount; i++)
-			{
-				if (category == "GetItem")
-				{
-					EventTemp.Add(EventNode[category][StageDataManager.instance.m_CriminalCode.ToString()][s][i]);
-				}
-				else
-				{
-					EventTemp.Add(EventNode[category][s][i]);
-				}
-			}
-			ApplyEvent();
-		}
+				EventTemp.Add(EventNode[category][StageDataManager.instance.m_CriminalCode.ToString()][s][i]);
 		else
-		{
-			//print("category : " + category + " / index : " + s + " has not event");
-		}
+			for (int i = 0; i < m_EventCount; i++)
+				EventTemp.Add(EventNode[category][s][i]);
+
+		ApplyEvent();
 	}
 
 	public void SetEvent(string category, string s1, string s2)
@@ -83,7 +179,7 @@ public class EventManager : Singleton<EventManager>
 		m_EventCount = 0;
 
 		m_EventCount = EventNode[category][s1][s2].Count;
-		//print("category : " + category + " / s1 : " + s1 + " / s2 : " + s2);
+		print("category : " + category + " / s1 : " + s1 + " / s2 : " + s2);
 		if (m_EventCount > 0)
 		{
 			for (int i = 0; i < m_EventCount; i++)
@@ -132,7 +228,7 @@ public class EventManager : Singleton<EventManager>
 			{
 				m_DelayTemp = EventNode[category][s1][s2][i];
 			}
-			//    ApplyEvent();
+			ApplyEvent();
 		}
 		else
 		{
@@ -221,17 +317,18 @@ public class EventManager : Singleton<EventManager>
 		}
 	}
 
+	public int m_NowEventIndex = 0;
 	private void ApplyEvent()
 	{
-		for (int i = 0; i < EventTemp.Count; i++)
+		for (m_NowEventIndex = 0; m_NowEventIndex < EventTemp.Count; m_NowEventIndex++)
 		{
-			if (string.Compare(EventTemp[i], string.Empty) == 0)
+			if (string.Compare(EventTemp[m_NowEventIndex], string.Empty) == 0)
 				continue;
 
 			//Debug.LogWarning("app : " + EventTemp[i]);
-			string[] str = EventTemp[i].Split('-');
+			string[] str = EventTemp[m_NowEventIndex].Split('-');
 			string[] temp;
-			print(i + " : " + str[0] + " / 1 : " + str[1]);
+			Debug.Log(m_NowEventIndex + " : " + (GameEventType)Enum.Parse(typeof(GameEventType), str[0]) + " / 1 : " + str[1]);
 			switch ((GameEventType)Enum.Parse(typeof(GameEventType), str[0]))
 			{
 				case GameEventType.AddArea:
@@ -246,16 +343,45 @@ public class EventManager : Singleton<EventManager>
 					PlaceDataManager.instance.ControlPlaceIsOpened((PlaceType)Enum.Parse(typeof(PlaceType), temp[0]), int.Parse(temp[1]), false);
 					break;
 
+				case GameEventType.StartCase:
+					// 이벤트 경험 여부 확인
+					temp = str[1].Split('_');
+					if (EventDataManager.instance.HasSeenStartCaseEvent(temp[0], temp[1]))
+					{
+						Debug.Log(string.Format("Has been this Event - {0}", EventTemp[m_NowEventIndex]));
+						continue;
+					}
+
+					/// 이벤트가 즉시 발동해야하나?(InsertEvent)
+					/// 아니면 나중에 발동해야하나?(AddEvent)
+					/// 모든 이벤트 종료후 새롭게 발동해야하나?(DelayEvent)
+					this.AddEvent("Case", StageDataManager.instance.m_CriminalCode.ToString(), temp[1]);
+
+					// 세이브/로드용 이벤트 데이터 등록
+					EventDataManager.instance.InputStartCaseEvent(temp[0], temp[1]);
+					break;
+
 				case GameEventType.AddNews:
 					EventDataManager.instance.InputNewsEventData(NewsManager.instance.ReturnNewsDate(str[1]), str[1]);
 					//EventDataManager.instance.InputEventData(StageDataManager.instance.m_CaseDataItemList[count].NewsDate, str[1], (int)GameEventType.AddNews, "");
 					break;
 
+				/// AddCase : 탐정수첩 - 사건정보 추가
 				case GameEventType.AddCase:
-					NoteManager.instance.InputCase(CaseMode.Main, str[1]);
+					// 이벤트 경험 여부 확인
+					if (EventDataManager.instance.HasSeenAddCaseEvent((int)CaseMode.Main, str[1]))
+					{
+						Debug.Log(string.Format("Has been this Event - {0}", EventTemp[m_NowEventIndex]));
+						continue;
+					}
+
 					SystemTextManager.instance.InputText(Localization.Get("System_Text_RefreshCaseList"));
+					NoteManager.instance.InputCase(CaseMode.Main, str[1]);
 					NoteManager.instance.SelectCase(CaseMode.Main, str[1]);
 					NoteManager.instance.SelectedNoteTab(0);
+
+					// 세이브/로드용 이벤트 데이터 등록
+					EventDataManager.instance.InputAddCaseEventData((int)CaseMode.Main, str[1]);
 					break;
 
 				case GameEventType.AddSelection:
@@ -269,7 +395,9 @@ public class EventManager : Singleton<EventManager>
 					break;
 
 				case GameEventType.SystemMessage:
+					Debug.Log("Show SystemMessage[" + str[1] + "]");
 					GameManager.instance.m_SystemMessageManager.ShowSystemMessage(str[1]);
+					EventDataManager.instance.InputSystemMessage(str[1]);
 					break;
 
 				case GameEventType.AddEvidence:
@@ -278,6 +406,12 @@ public class EventManager : Singleton<EventManager>
 
 				case GameEventType.AddSearch:
 					EventDataManager.instance.InputSearchEventData(str[1]);
+					break;
+
+				case GameEventType.SetEvidence:
+					temp = str[1].Split('+');
+
+					PlaceDataManager.instance.AddEvidence(temp[0], temp[1]);
 					break;
 
 				case GameEventType.Case:
@@ -302,8 +436,8 @@ public class EventManager : Singleton<EventManager>
 					}
 					else if (temp[1] == "Missing")
 					{
-						NpcDataManager.instance.ChangeNpcState(int.Parse(temp[1]), NpcState.Missing);
-						NpcDataManager.instance.ChangeNpcPosition(NpcDataManager.instance.GetNpcIndex(temp[1]), "Missing");
+						NpcDataManager.instance.ChangeNpcState(temp[0], NpcState.Missing);
+						NpcDataManager.instance.ChangeNpcPosition(NpcDataManager.instance.GetNpcIndex(temp[0]), "Missing");
 					}
 					else
 					{
@@ -314,22 +448,49 @@ public class EventManager : Singleton<EventManager>
 
 				case GameEventType.GameOver:
 					temp = str[1].Split('_');
-					EndingManager.instance.SetEnding("2", str[1]);
+					//EndingManager.instance.SetEnding("2", str[1]);
 					break;
 
 				case GameEventType.AddNpcEvent:
+					EventDataManager.instance.InputNpcEvent(str[1], true);
 					temp = str[1].Split('_');
 					NpcDataManager.instance.AddNpcEvent(temp[0], temp[1]);
+					NpcDataManager.instance.ActNpc();
 					break;
 
 				case GameEventType.RemoveNpcEvent:
+					EventDataManager.instance.InputNpcEvent(str[1], false);
 					temp = str[1].Split('_');
 					NpcDataManager.instance.RemoveNpcEvent(temp[0], temp[1]);
+					NpcDataManager.instance.ActNpc();
 					break;
 
 				case GameEventType.RemoveSelection:
 					temp = str[1].Split('_');
 					SelectionDataManager.instance.RemoveSelection(temp[0], temp[1]);
+					break;
+
+				case GameEventType.RemoveEvidence:
+					EvidenceDataManager.instance.RemoveEvidence(str[1]);
+					break;
+
+				case GameEventType.SwapEvidence:
+					temp = str[1].Split('_');
+					EvidenceDataManager.instance.SwapEvidence(temp[0], temp[1].ToInt());
+					break;
+
+				case GameEventType.ShowCompulsion:
+					temp = str[1].Split('_');
+					SuggestManager.instance.ShowSelectionEvent(temp[0]
+															, string.Format("Event_{0}", temp[1]));
+					break;
+
+				case GameEventType.ShowEnding:
+					EndingManager.instance.SetEnding(str[1]);
+					break;
+
+				case GameEventType.UnlockDT:
+					DetectiveManager.instance.UnlockItem(str[1]);
 					break;
 			}
 		}

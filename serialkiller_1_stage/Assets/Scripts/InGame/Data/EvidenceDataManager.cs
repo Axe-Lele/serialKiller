@@ -29,12 +29,49 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		EvidenceNode = JSONNode.Parse(EvidenceTextAsset.text);
 	}
 
+	public List<UIAtlas> m_AtlasList;
+
+	private UIAtlas GetAtlas(string code)
+	{
+		int p = 0;
+		for (int i = 0; i < m_EvidenceList.Count; i++)
+		{
+			if (m_EvidenceList[i].m_ItemCode == code)
+			{
+				p = m_EvidenceList[i].m_AtlasIndex;
+				break;
+			}
+		}
+		return m_AtlasList[p];
+	}
+
+	/// <summary>
+	/// 
+	/// </summary>
+	/// <param name="sprite"></param>
+	/// <param name="spriteType">sprite Type : Evidence, Character, etc...</param>
+	/// <param name="spriteName">spritename</param>
+	public void SetSprite(ref UISprite sprite, string spriteType, string spriteName)
+	{
+		sprite.atlas = AtlasManager.instance.GetAtlas(spriteType, spriteName);
+		sprite.spriteName = spriteName;
+	}
+
 	public void GetAllEvidence()
 	{
-		for (int i = 0; i < 15; i++)
+		for (int i = 0; i < 16; i++)
 		{
 			InputEvidence(string.Format("A{0}", i), true);
+			EventManager.instance.SetEvent("GetItem", string.Format("A{0}", i));
 		}
+		for (int i = 0; i < 3; i++)
+		{
+			InputEvidence(string.Format("0{0}", i), true);
+			EventManager.instance.SetEvent("GetItem", string.Format("0{0}", i));
+		}
+
+		InputEvidence("T0", true);
+		EventManager.instance.SetEvent("GetItem", "T0");
 	}
 
 	public void LoadEvidenceData()
@@ -55,15 +92,16 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		for (int i = 0; i < m_EvidenceList.Count; i++)
 		{
 			EvidenceDataItem item = new EvidenceDataItem();
-			item.m_EvidenceName = m_EvidenceList[i].m_EvidenceName;
+			item.m_AtlasIndex = m_EvidenceList[i].m_AtlasIndex;
+			item.m_ItemCode = m_EvidenceList[i].m_ItemCode;
 			item.m_EvidenceState = m_EvidenceList[i].m_EvidenceState;
 			item.m_StartTime = m_EvidenceList[i].m_StartTime;
 			item.m_IsAnalyzed = m_EvidenceList[i].m_IsAnalyzed;
 			item.m_ResultAnalyzed = m_EvidenceList[i].m_ResultAnalyzed;
 			item.m_IsMathced = m_EvidenceList[i].m_IsMathced;
 			item.m_MatchTarget = m_EvidenceList[i].m_MatchTarget;
-			item.m_Alter = m_EvidenceList[i].m_Alter;
-			item.m_AlterName = m_EvidenceList[i].m_AlterName;
+			item.m_IsChanged = m_EvidenceList[i].m_IsChanged;
+			item.m_SwapItemCode = m_EvidenceList[i].m_SwapItemCode;
 			item.m_MatchedEvidenceName = new List<string>();//  string[m_EvidenceList[i].m_MatchedEvidenceName.Count];
 			item.m_ResultMatched = new List<bool>(); //bool[m_EvidenceList[i].m_ResultMatched.Length];
 
@@ -90,15 +128,16 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		{
 
 			EvidenceDataItem item = new EvidenceDataItem();
-			item.m_EvidenceName = evidencedata.m_EvidenceList[i].m_EvidenceName;
+			item.m_AtlasIndex = evidencedata.m_EvidenceList[i].m_AtlasIndex;
+			item.m_ItemCode = evidencedata.m_EvidenceList[i].m_ItemCode;
 			item.m_EvidenceState = evidencedata.m_EvidenceList[i].m_EvidenceState;
 			item.m_StartTime = evidencedata.m_EvidenceList[i].m_StartTime;
 			item.m_IsAnalyzed = evidencedata.m_EvidenceList[i].m_IsAnalyzed;
 			item.m_ResultAnalyzed = evidencedata.m_EvidenceList[i].m_ResultAnalyzed;
 			item.m_IsMathced = evidencedata.m_EvidenceList[i].m_IsMathced;
 			item.m_MatchTarget = evidencedata.m_EvidenceList[i].m_MatchTarget;
-			item.m_Alter = evidencedata.m_EvidenceList[i].m_Alter;
-			item.m_AlterName = evidencedata.m_EvidenceList[i].m_AlterName;
+			item.m_IsChanged = evidencedata.m_EvidenceList[i].m_IsChanged;
+			item.m_SwapItemCode = evidencedata.m_EvidenceList[i].m_SwapItemCode;
 			item.m_MatchedEvidenceName = new List<string>();// string[evidencedata.m_EvidenceList[i].m_MatchedEvidenceName.Length];
 			item.m_ResultMatched = new List<bool>();// bool[evidencedata.m_EvidenceList[i].m_ResultMatched.Length];
 
@@ -126,12 +165,12 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 
 			if (item.m_IsAnalyzed && item.m_ResultAnalyzed == false)
 			{
-				LaboratoryManager.instance.AddAnalyzedItemList(item.m_EvidenceName);
+				LaboratoryManager.instance.AddAnalyzedItemList(item.m_ItemCode);
 			}
 
 			if (item.m_IsMathced)
 			{
-				LaboratoryManager.instance.AddMatchedItemList(item.m_EvidenceName);
+				LaboratoryManager.instance.AddMatchedItemList(item.m_ItemCode);
 			}
 
 			item = null;
@@ -144,16 +183,25 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		if (ReturnHaveEvidence(evidence) == false)
 		{
 			EvidenceDataItem item = new EvidenceDataItem();
-			item.m_EvidenceName = evidence;
+			item.m_AtlasIndex = EvidenceNode["Evidence"][evidence]["AtlasIndex"].AsInt;
+			item.m_ItemCode = evidence;
 			item.m_EvidenceState = "None";
 			item.m_StartTime = new DateTime();
 			item.m_IsAnalyzed = EvidenceNode["Evidence"][evidence]["IsAnalyzed"].AsBool;
 			item.m_ResultAnalyzed = false;
 			item.m_IsMathced = EvidenceNode["Evidence"][evidence]["IsMatched"].AsBool;
-			item.m_Alter = EvidenceNode["Evidence"][evidence]["IsChange"].AsBool;
-			if (item.m_Alter == true)
+			item.m_IsChanged = EvidenceNode["Evidence"][evidence]["IsChange"].AsBool;
+			item.m_IsEnable = true;
+			if (item.m_IsChanged == true)
 			{
-				item.m_AlterName = EvidenceNode["Evidence"][evidence]["Swap"];
+				if (EvidenceNode["Evidence"][evidence]["Swap"] == null)
+				{
+					item.m_SwapItemCode = string.Empty;
+				}
+				else
+				{
+					item.m_SwapItemCode = EvidenceNode["Evidence"][evidence]["Swap"];
+				}
 			}
 			item.m_MatchTarget = "";
 
@@ -161,14 +209,12 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 			item.m_ResultMatched = new List<bool>();
 
 			m_EvidenceList.Add(item);
-
 			NoteManager.instance.InputEvidence(item);
+
 			string evidencename = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + evidence + "_Title");
 			SystemTextManager.instance.InputText(string.Format(Localization.Get("System_Text_AddEvidence"), evidencename));
 			//print("ev : " + evidencename);
 
-			if (!isTest)
-				EventManager.instance.SetEvent("GetItem", evidence);
 			/*if (evidence == "A10")
 			{
 					NoteManager.instance.InputCase("3");
@@ -195,35 +241,47 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 	{
 		if (ReturnHaveEvidence(evidence) == false)
 		{
-			EvidenceDataItem item = new EvidenceDataItem();
-			item.m_EvidenceName = evidence;
-			item.m_EvidenceState = "None";
-			item.m_StartTime = new DateTime();
-			item.m_IsAnalyzed = EvidenceNode["Evidence"][evidence]["IsAnalyzed"].AsBool;
-			item.m_ResultAnalyzed = false;
-			item.m_IsMathced = EvidenceNode["Evidence"][evidence]["IsMatched"].AsBool;
-			item.m_Alter = EvidenceNode["Evidence"][evidence]["IsChange"].AsBool;
-			if (item.m_Alter == true)
+			EvidenceDataItem item = new EvidenceDataItem()
 			{
-				item.m_AlterName = EvidenceNode["Evidence"][evidence]["Swap"];
-			}
-			item.m_MatchTarget = "";
+				m_AtlasIndex = EvidenceNode["Evidence"][evidence]["AtlasIndex"].AsInt,
+				m_ItemCode = evidence,
+				m_EvidenceState = "None",
 
-			item.m_MatchedEvidenceName = new List<string>();
-			item.m_ResultMatched = new List<bool>();
+				m_StartTime = new DateTime(),
+
+				m_IsAnalyzed = EvidenceNode["Evidence"][evidence]["IsAnalyzed"].AsBool,
+				m_ResultAnalyzed = false,
+
+				m_IsMathced = EvidenceNode["Evidence"][evidence]["IsMatched"].AsBool,
+
+				m_IsChanged = EvidenceNode["Evidence"][evidence]["IsChange"].AsBool,
+				m_SwapItemCode = string.Empty,
+
+				m_IsEnable = true,
+
+				m_MatchTarget = string.Empty,
+				m_MatchedEvidenceName = new List<string>(),
+				m_ResultMatched = new List<bool>()
+			};
+
+			if(EvidenceNode["Evidence"][evidence]["IsChange"] != null)
+			{
+				item.m_IsChanged = EvidenceNode["Evidence"][evidence]["IsChange"].AsBool;
+			}
+
+			if (item.m_IsChanged == true)
+			{
+				item.m_SwapItemCode = EvidenceNode["Evidence"][evidence]["Swap"];
+			}
 
 			m_EvidenceList.Add(item);
 
 			NoteManager.instance.InputEvidence(item);
 			string evidencename = Localization.Get("Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + evidence + "_Title");
 			SystemTextManager.instance.InputText(string.Format(Localization.Get("System_Text_AddEvidence"), evidencename));
-			//print("ev : " + evidencename);
 
-			EventManager.instance.SetEvent("GetItem", evidence);
-			/*if (evidence == "A10")
-			{
-					NoteManager.instance.InputCase("3");
-			}*/
+			EventManager.instance.InsertEvent("GetItem", evidence);
+
 			if (item.m_IsAnalyzed && item.m_ResultAnalyzed == false)
 			{
 				LaboratoryManager.instance.AddAnalyzedItemList(evidence);
@@ -284,7 +342,7 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		if (ReturnHaveEvidence(evidence) == true)
 		{
 			m_EvidenceList[ReturnEvidenceIndex(evidence)].m_ResultAnalyzed = b;
-			EventManager.instance.SetDelayEvent("Analysis", StageDataManager.instance.m_CriminalCode.ToString(), evidence);
+			//EventManager.instance.SetDelayEvent("Analysis", StageDataManager.instance.m_CriminalCode.ToString(), evidence);
 			//EventManager.instance.SetEvent("Analysis",StageDataManager.instance.m_CriminalCode.ToString(), evidence);
 		}
 		else
@@ -293,29 +351,22 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		}
 	}
 
+	public void SwapEvidence(string evidence1, int swapIdx)
+	{
+		//print("Swap Evidence : " + evidence1 + " <> " + evidence1 + "_" + swapIdx);
+		string evidence2 = EvidenceNode["Evidence"][evidence1]["Swap"][swapIdx];
+		SwapEvidence(evidence1, evidence2);
+	}
+
 	public void SwapEvidence(string evidence1, string evidence2)
 	{
 		if (ReturnHaveEvidence(evidence1) == true)
 		{
-			//기존에 있던 evidence1를 없앤다
-			m_EvidenceList.RemoveAt(ReturnEvidenceIndex(evidence1));
+			print("Swap Evidence : " + evidence1 + " <> " + evidence2);
+			InputEvidence(evidence2);
+			BannedEvidence(evidence1);
 
-			// 새로운 evidencedataitem을 만들어서 넣는다.
-			EvidenceDataItem item = new EvidenceDataItem();
-			item.m_EvidenceName = evidence2;
-			item.m_EvidenceState = "None";
-			item.m_StartTime = new DateTime();
-			item.m_IsAnalyzed = EvidenceNode["Evidence"][evidence2]["IsAnalyzed"].AsBool;
-			item.m_ResultAnalyzed = false;
-			item.m_IsMathced = EvidenceNode["Evidence"][evidence2]["IsMatched"].AsBool;
-			item.m_Alter = EvidenceNode["Evidence"][evidence2]["IsChange"].AsBool;
-			item.m_MatchTarget = "";
-
-			item.m_MatchedEvidenceName = new List<string>();
-			item.m_ResultMatched = new List<bool>();
-
-			m_EvidenceList[ReturnEvidenceIndex(evidence1)] = item;
-			NoteManager.instance.SwapEvidence(evidence1, item);
+			EventManager.instance.InsertEvent("GetItem", evidence2);
 		}
 		else
 		{
@@ -324,13 +375,22 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 
 	}
 
+	public void BannedEvidence(string itemCode)
+	{
+		EvidenceDataItem data = ReturnEvidenceItem(itemCode);
+
+		data.m_IsEnable = false;
+
+		NoteManager.instance.BannedEvidence(itemCode);
+	}
+
 	public bool ReturnHaveEvidence(string evidence)
 	{
 		bool b = false;
 
 		for (int i = 0; i < m_EvidenceList.Count; i++)
 		{
-			if (m_EvidenceList[i].m_EvidenceName == evidence)
+			if (m_EvidenceList[i].m_ItemCode == evidence)
 			{
 				b = true;
 				break;
@@ -344,7 +404,7 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		int index = -1;
 		for (int i = 0; i < m_EvidenceList.Count; i++)
 		{
-			if (m_EvidenceList[i].m_EvidenceName == evidence)
+			if (m_EvidenceList[i].m_ItemCode == evidence)
 			{
 				index = i;
 				break;
@@ -373,7 +433,7 @@ public class EvidenceDataManager : Singleton<EvidenceDataManager>
 		EvidenceDataItem item = null;
 		for (int i = 0; i < m_EvidenceList.Count; i++)
 		{
-			if (m_EvidenceList[i].m_EvidenceName == evidence)
+			if (m_EvidenceList[i].m_ItemCode == evidence)
 			{
 				item = m_EvidenceList[i];
 				break;

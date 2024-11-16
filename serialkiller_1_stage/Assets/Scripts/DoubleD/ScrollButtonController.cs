@@ -14,11 +14,11 @@ public class ScrollButtonController : MonoBehaviour
 	public float m_ItemHeight, m_ItemWidth;
 	public GameObject m_UpButton, m_DownButton;
 
-	private Vector2 m_StartOffset;
-	private int m_DefaultShowItemCount;
-	private Vector2 m_PanelSize;
+	public Vector2 m_StartOffset;
+	public int m_DefaultShowItemCount;
+	public Vector2 m_PanelSize;
 	// Use this for initialization
-	private void Awake()
+	private void Start()
 	{
 		if (m_ScrollView == null)
 		{
@@ -48,6 +48,8 @@ public class ScrollButtonController : MonoBehaviour
 		m_StartOffset = m_ScrollView.panel.clipOffset;
 		m_PanelSize = m_ScrollView.panel.GetViewSize();
 		m_DefaultShowItemCount = Mathf.FloorToInt(m_PanelSize.y / m_ItemHeight);
+
+		CheckSCV();
 	}
 
 	private void Update()
@@ -62,20 +64,31 @@ public class ScrollButtonController : MonoBehaviour
 		int _itemCount = m_Grid.transform.childCount;
 		print(_itemCount);
 
+		if (_itemCount < m_DefaultShowItemCount)
+		{
+			m_UpButton.SetActive(false);
+			m_DownButton.SetActive(false);
+			return;
+		}
+
+		print(m_StartOffset.y + (_itemCount - m_DefaultShowItemCount - 1) * -m_ItemHeight + m_ItemHeight * 0.5f);
 		if (_constraint.y > m_StartOffset.y + -m_ItemHeight / 2f)
 		{
 			print(_constraint.y);
 			print("Cannot Up Scroll");
 			m_UpButton.SetActive(false);
+			m_DownButton.SetActive(true);
 		}
-		else if (_constraint.y < m_StartOffset.y + (_itemCount - m_DefaultShowItemCount - 1) * -m_ItemHeight - m_ItemHeight * 0.5f)
+		else if (_constraint.y < m_StartOffset.y + (_itemCount - m_DefaultShowItemCount - 1) * -m_ItemHeight + m_ItemHeight * 0.5f)
 		{
 			print(_constraint.y);
 			print("Cannot Down Scroll");
+			m_UpButton.SetActive(true);
 			m_DownButton.SetActive(false);
 		}
 		else
 		{
+			print(m_StartOffset.y + (_itemCount - m_DefaultShowItemCount - 1) * -m_ItemHeight - m_ItemHeight * 0.5f);
 			m_UpButton.SetActive(true);
 			m_DownButton.SetActive(true);
 		}

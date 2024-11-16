@@ -3,13 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using SimpleJSON;
 
-public class WarrantManager : Singleton<WarrantManager> {
-
+public class WarrantManager : Singleton<WarrantManager>
+{
+    [Header("TextAsset")]
     public TextAsset m_WarrantTextAsset;
-    public UILabel m_SearchLabel;
+
+    [Header("Root")]
+    public GameObject m_MapRoot;
+    public GameObject m_NewsBannerRoot;
+    public GameObject m_UiLeftRoot;
+    public GameObject m_UiRightRoot;
+    public GameObject m_UiSelectedMsgbox;
+
+    [Header("Item")]
+    public WarrantNpcItem m_OriginalNpcItem;
     public List<WarrantNpcItem> m_NpcItemList;
     private List<NpcItem> m_NpcItemListSort;
-    public WarrantNpcItem m_OriginalNpcItem;
+
+    public UILabel m_SearchLabel;
     public UIGrid m_NpcTable;
     public UIScrollView m_NpcScrollView;
     public UIScrollBar m_NpcScrollBar;
@@ -24,7 +35,7 @@ public class WarrantManager : Singleton<WarrantManager> {
     private string m_ItemIndex;
 
     public string[] m_EvidenceList;
-    private int m_SelectEvidenceIndex;
+    [SerializeField] private int m_SelectEvidenceIndex;
 
     private string m_NpcCode;
     private string m_CaseIndex;
@@ -33,6 +44,55 @@ public class WarrantManager : Singleton<WarrantManager> {
 
     private string m_EndingIllust;
     private string m_EndingName;
+
+    public Transform m_DisableParent;
+    public GameObject m_Checker;
+
+
+    private void Awake()
+    {
+        m_SelectEvidenceIndex = 0;
+        for (int i = 0; i < m_EvidenceItemList.Length; i++)
+        {
+            m_EvidenceItemList[i].m_Index = i;
+        }
+    }
+
+    public void SetActivePanel(bool isOpen)
+    {
+        WarrantManager.instance.UpdateNpcList();
+
+        m_MapRoot.SetActive(!isOpen);
+        m_NewsBannerRoot.SetActive(!isOpen);
+
+        m_UiRightRoot.SetActive(!isOpen);
+        m_UiSelectedMsgbox.SetActive(isOpen);
+
+        m_Checker.SetActive(false);
+    }
+
+    public void ForcedOpenPanel()
+    {
+        WarrantManager.instance.UpdateNpcList();
+
+        m_MapRoot.SetActive(false);
+        m_NewsBannerRoot.SetActive(false);
+
+        m_UiRightRoot.SetActive(true);
+        m_UiSelectedMsgbox.SetActive(false);
+    }
+
+    public void ForcedClosePanel()
+    {
+        WarrantManager.instance.UpdateNpcList();
+
+        m_MapRoot.SetActive(false);
+        m_NewsBannerRoot.SetActive(false);
+
+        m_UiRightRoot.SetActive(false);
+        m_UiSelectedMsgbox.SetActive(false);
+    }
+
     public void Warrant()
     {
         m_WarrantNode = JSONNode.Parse(m_WarrantTextAsset.text);
@@ -52,7 +112,6 @@ public class WarrantManager : Singleton<WarrantManager> {
         }
 
         int count = 0;
-
         for (int i = 0; i < m_EvidenceItemList.Length; i++)
         {
             if (m_EvidenceList[i] != null || m_EvidenceList[i] != "")
@@ -68,39 +127,91 @@ public class WarrantManager : Singleton<WarrantManager> {
             return;
         }
 
-        int m_CorrectCount = 0;
+        int _correctCount = 0;
         int c = 0;
         print("npc : " + m_NpcCode);
+        string warrantIndex = string.Empty;
 
         for (int i = 0; i < m_WarrantNode[m_NpcCode].Count; i++)
         {
-            c = m_WarrantNode[m_NpcCode][i]["Evidence"].Count;
-            for (int k = 0; k < m_WarrantNode[m_NpcCode][i]["Evidence"].Count; k++)
+            int _caseindex = int.Parse(m_CaseIndex);
+
+            // 엔피씨 코드가 다른 경우
+            if (m_WarrantNode[m_NpcCode][i]["Case"].AsInt != _caseindex)
+                continue;
+
+            JSONNode nowNode = m_WarrantNode[m_NpcCode][i];
+            c = nowNode["Evidence"].Count;
+
+            _correctCount = 0;
+
+            for (int k = 0; k < c; k++)
             {
+                bool _isFind = false;
                 for (int p = 0; p < m_EvidenceList.Length; p++)
                 {
-                    if (m_WarrantNode[m_NpcCode][i]["Case"].AsInt == int.Parse(m_CaseIndex))
+                    if (m_EvidenceList[p].Length == 0 || m_EvidenceList[p] == null)
+                        continue;
+
+                    string evidence = nowNode["Evidence"][k].ToString().Replace("\"", "");
+
+                    print("Case[ : " + _caseindex + "] / Answer  : (" + p + ")" + evidence + " / Evidence : " + m_EvidenceList[p]);
+                    if (evidence == m_EvidenceList[p])
                     {
-                        print("p : " + p + " / case  : " + m_WarrantNode[m_NpcCode][i]["Evidence"][k].ToString().Replace("\"", "") + " / parse : " + m_EvidenceList[p].ToString());
-                        if (m_WarrantNode[m_NpcCode][i]["Evidence"][k].ToString().Replace("\"", "") == m_EvidenceList[p].ToString())
-                        {
-                            m_CorrectCount++;
-                        }
+                        _isFind = true;
+                        _correctCount++;
+                        break;
                     }
                 }
 
-                if (m_CorrectCount == c)
-                {
-                    m_EndingIllust = m_WarrantNode[m_NpcCode][i]["Illust"];
-                    m_EndingName = m_WarrantNode[m_NpcCode][i]["Ending"];
+                if (_isFind == false)
                     break;
-                }
+            }
+
+            print("Correct : " + _correctCount);
+            // 모든 증거가 맞아 떨어질 때!
+            if (_correctCount == c)
+            {
+                print("All Correct");
+                warrantIndex = m_WarrantNode[m_NpcCode][i].Key;
+                m_EndingName = m_WarrantNode[m_NpcCode][i]["Index"];
+                break;
             }
         }
 
-        EndingManager.instance.SetEnding(m_EndingIllust, m_EndingName);
-        
+        //for (int i = 0; i < m_WarrantNode[m_NpcCode].Count; i++)
+        //{
+        //    c = m_WarrantNode[m_NpcCode][i]["Evidence"].Count;
+        //    for (int k = 0; k < m_WarrantNode[m_NpcCode][i]["Evidence"].Count; k++)
+        //    {
+        //        for (int p = 0; p < m_EvidenceList.Length; p++)
+        //        {
+        //            if (m_WarrantNode[m_NpcCode][i]["Case"].AsInt == int.Parse(m_CaseIndex))
+        //            {
+        //                print("p : " + p + " / case  : " + m_WarrantNode[m_NpcCode][i]["Evidence"][k].ToString().Replace("\"", "") + " / parse : " + m_EvidenceList[p].ToString());
+        //                if (m_WarrantNode[m_NpcCode][i]["Evidence"][k].ToString().Replace("\"", "") == m_EvidenceList[p].ToString())
+        //                {
+        //                    _correctCount++;
+        //                }
+        //            }
+        //        }
 
+        //        print(_correctCount);
+        //        if (_correctCount == c)
+        //        {
+        //            print("Wow");
+        //            warrantIndex = m_WarrantNode[m_NpcCode][i].Key;
+        //            // 모든 증거가 맞아 떨어질 때!
+        //            m_EndingName = m_WarrantNode[m_NpcCode][i]["Index"];
+        //            break;
+        //        }
+        //    }
+        //}
+
+        EventManager.instance.SetEvent("Warrant", m_EndingName);
+
+        return;
+        //EndingManager.instance.SetEnding(m_EndingIllust, m_EndingName);
     }
 
     public void DataInitialize()
@@ -126,7 +237,7 @@ public class WarrantManager : Singleton<WarrantManager> {
             {
                 m_Sort.Add(NpcDataManager.instance.m_NpcItemList[i].Name);
             }
-            
+
         }
         // 정렬
         for (int i = 0; i < m_Sort.Count; i++)
@@ -158,7 +269,7 @@ public class WarrantManager : Singleton<WarrantManager> {
                     break;
                 }
             }
-            
+
             item.transform.parent = m_NpcTable.transform;
             item.transform.localScale = Vector3.one;
 
@@ -169,12 +280,58 @@ public class WarrantManager : Singleton<WarrantManager> {
         }
     }
 
-    public void SelectNpc(NpcItem item)
+    public void UpdateNpcList()
     {
+        for (int i = 0; i < m_NpcItemList.Count; i++)
+        {
+            if (NpcDataManager.instance.IsMeet(m_NpcItemListSort[i].m_Index) == false)
+            {
+                //print(m_NpcItemList[i].ReturnNpcName() + " : Don't meet That Npc");
+                m_NpcItemList[i].gameObject.SetActive(false);
+                continue;
+            }
+
+            if (m_NpcItemList[i].GetNpcItem().NpcState == NpcState.Dead)
+            {
+                m_NpcItemList[i].gameObject.SetActive(false);
+                continue;
+            }
+
+            m_NpcItemList[i].gameObject.SetActive(true);
+        }
+
+        m_NpcTable.Reposition();
+        m_NpcScrollView.ResetPosition();
+    }
+
+    private void MoveChecker(WarrantNpcItem target)
+    {
+        if (target == null)
+        {
+            m_Checker.SetActive(false);
+        }
+        else
+        {
+            m_Checker.SetActive(true);
+            m_Checker.transform.SetParent(target.transform);
+            m_Checker.transform.localPosition = Vector3.zero;
+        }
+    }
+
+    public void SelectNpc(WarrantNpcItem warrantItem)
+    {
+        NpcItem item = warrantItem.GetNpcItem();
+
+        m_UiRightRoot.SetActive(true);
+        m_UiSelectedMsgbox.SetActive(false);
+
         m_NpcCode = item.m_Index;
 
-        m_NpcFace.atlas = NpcDataManager.instance.ReturnAtlas(item.m_AtlasIndex);
+        m_NpcFace.atlas = AtlasManager.instance.GetAtlas(AtlasManager.SpriteType.Character.ToString(),
+                                                        item.m_Index);
         m_NpcFace.spriteName = item.m_Index;
+
+        MoveChecker(warrantItem);
 
         m_InfoLabel[0].text = item.Name;
     }
@@ -185,10 +342,10 @@ public class WarrantManager : Singleton<WarrantManager> {
     }
 
     /*public void SettingEvidence(string mode, string code)
-    {
-        m_Mode = mode;
-        m_ItemIndex = code;
-    }*/
+	{
+			m_Mode = mode;
+			m_ItemIndex = code;
+	}*/
 
     public void SettingMode(string mode, string code)
     {
@@ -231,12 +388,60 @@ public class WarrantManager : Singleton<WarrantManager> {
         m_EvidenceList[i] = "";
     }
 
+    public void SubmitCase(string itemType, string itemCode)
+    {
+        m_CaseItem.Setting(itemType, itemCode);
+
+        GameManager.instance.m_NoteMode = NoteMode.None;
+        InGameUIManager.instance.ControlNotePopup();
+        InGameUIManager.instance.ControlWarrantPopup(UIPopupFlag.ForceOpen);
+    }
+
     public void SubmitCase()
     {
         m_CaseItem.Setting("Case", m_ItemIndex);
         GameManager.instance.m_NoteMode = NoteMode.None;
         InGameUIManager.instance.ControlNotePopup();
-        InGameUIManager.instance.ControlWarrantPopup();
+        InGameUIManager.instance.ControlWarrantPopup(UIPopupFlag.ForceOpen);
+    }
+
+    public void SubmitEvidence(string itemType, string itemCode)
+    {
+        for (int i = 0; i < m_EvidenceItemList.Length; i++)
+        {
+            if (m_EvidenceItemList[i].ReturnMode() == itemType
+                && m_EvidenceItemList[i].ReturnCode() == itemCode)
+            {
+                print(Localization.Get("System_Text_Already_Input_Evidence"));
+                SystemTextManager.instance.InputText(Localization.Get("System_Text_Already_Input_Evidence"));
+                return;
+            }
+        }
+
+        string itemFullCode = string.Empty;
+        switch (itemType)
+        {
+            case "Dialog":
+                itemFullCode = "Selection_" + PlayDataManager.instance.m_StageName + "_" + itemCode;
+                break;
+
+            case "Evidence":
+                itemFullCode = "Evidence_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + itemCode;
+                break;
+
+            case "News":
+                itemFullCode = "News_" + PlayDataManager.instance.m_StageName + "_" + StageDataManager.instance.m_CriminalCode + "_" + itemCode;
+                break;
+
+            default:
+                break;
+        }
+
+        m_EvidenceItemList[m_SelectEvidenceIndex].Setting(itemType, itemCode);
+        GameManager.instance.m_NoteMode = NoteMode.None;
+
+        InGameUIManager.instance.ControlNotePopup();
+        InGameUIManager.instance.ControlWarrantPopup(UIPopupFlag.ForceOpen);
     }
 
     public void SubmitEvidence()
@@ -260,7 +465,7 @@ public class WarrantManager : Singleton<WarrantManager> {
             m_EvidenceItemList[m_SelectEvidenceIndex].Setting(m_Mode, m_ItemIndex);
             switch (m_Mode)
             {
-                
+
                 case "Dialog":
                     s = "Selection_" + PlayDataManager.instance.m_StageName + "_" + m_ItemIndex;
                     break;
@@ -277,7 +482,7 @@ public class WarrantManager : Singleton<WarrantManager> {
             m_EvidenceList[m_SelectEvidenceIndex] = s;
             GameManager.instance.m_NoteMode = NoteMode.None;
             InGameUIManager.instance.ControlNotePopup();
-            InGameUIManager.instance.ControlWarrantPopup();
+            InGameUIManager.instance.ControlWarrantPopup(UIPopupFlag.ForceOpen);
         }
     }
 
@@ -286,7 +491,7 @@ public class WarrantManager : Singleton<WarrantManager> {
     {
         string str = m_SearchLabel.text;
         int count = 0;
-        for (int i = 0; i < m_NpcItemList.Count ; i++)
+        for (int i = 0; i < m_NpcItemList.Count; i++)
         {
             m_NpcItemList[i].gameObject.SetActive(false);
         }

@@ -443,13 +443,14 @@
 			"AtlasIndex": 0,
 			"IsAnalyzed": false,
 			"IsMatched": false,
-			"Swap": ["B1" ]
+			"Swap": ["B1" , "A100" ]
 		},
 		"B1":
 		{
 			"AtlasIndex": 0,
 			"IsAnalyzed": false,
-			"IsMatched": false
+			"IsMatched": false,
+			"Swap": ["A100"]
 		},
 		"B2":
 		{

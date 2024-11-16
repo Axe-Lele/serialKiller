@@ -20,7 +20,7 @@ public class WorldManager : Singleton<WorldManager>
 	public GameObject m_StageRoot;
 
 	public string m_NowSelectCityIndex;
-	public string m_NowSelectStageIndex;
+	public string m_NowSelectCaseIndex;
 
 	private void Awake()
 	{
@@ -44,6 +44,8 @@ public class WorldManager : Singleton<WorldManager>
 
 	private void Start()
 	{
+		UnlockDataManager.instance.Init();
+
 		StageInfoManager.instance.LoadData();
 		StageInfoManager.instance.Init();
 
@@ -63,31 +65,31 @@ public class WorldManager : Singleton<WorldManager>
 		//NpcDataManager.instance.ActNpc();
 		//GameStart();
 
-		DetectiveDataManager.instance.Initialized();
 		DetectiveManager.instance.Init();
+	}
+
+	public void SetSelectedCity(string index)
+	{
+		m_NowSelectCityIndex = index;
+		DetectiveManager.instance.m_StageIndex = m_NowSelectCityIndex.ToInt();
+	}
+
+	public void SetSelectedCase(string index)
+	{
+		m_NowSelectCaseIndex = index;
+		DetectiveManager.instance.m_CaseIndex = m_NowSelectCaseIndex.ToInt();
+
 	}
 
 	public void GoFly()
 	{
-		string[] _stage = new string[2];
-		_stage[0] = m_NowSelectCityIndex.ToInt().ToString();
-		_stage[1] = m_NowSelectStageIndex;
-
-		StageInfoManager.instance.SetInfo(_stage);
-
-		SceneManager.LoadScene(string.Format("Stage" + _stage[0] + "_Main"));
+		SceneManager.LoadScene(string.Format("Stage" + m_NowSelectCityIndex + "_Main"));
 	}
 
 	public void MoveScene()
 	{
 		SceneManager.LoadScene("Stage0_Main");
 	}
-
-
-
-
-
-
 
 	public void ClickStage()
 	{

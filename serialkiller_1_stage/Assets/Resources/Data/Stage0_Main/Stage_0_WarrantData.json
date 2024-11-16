@@ -114,6 +114,27 @@
 			"Index" : "D13_0"
 		},
 	},	
+	"D17" : 
+	{
+		"0" : 	
+		{
+			"Case" : 4,
+			"Evidence" : ["Evidence_Stage0_Main_0_A101" , "Evidence_Stage0_Main_0_A102" , "Evidence_Stage0_Main_0_A103" , "Evidence_Stage0_Main_0_B2", "Evidence_Stage0_Main_0_A97" , "Evidence_Stage0_Main_0_A87" ],
+			"Index" : "D17_0"
+		},
+		"1" :
+		{
+			"Case" : 4,
+			"Evidence" : [ "Evidence_Stage0_Main_0_A101" , "Evidence_Stage0_Main_0_A102", "Evidence_Stage0_Main_0_A103" , "Evidence_Stage0_Main_0_B2", "Evidence_Stage0_Main_0_A97"],
+			"Index" : "D17_0"
+		},
+		"2" :
+		{
+			"Case" : 4,
+			"Evidence" : [ "Evidence_Stage0_Main_0_A101" , "Evidence_Stage0_Main_0_A102", "Evidence_Stage0_Main_0_A103" , "Evidence_Stage0_Main_0_B2"],
+			"Index" : "D17_0"
+		}
+	},	
 	"C0" : 
 	{
 		"0" : 	

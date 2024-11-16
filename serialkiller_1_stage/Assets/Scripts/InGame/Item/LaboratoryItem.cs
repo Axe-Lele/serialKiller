@@ -70,7 +70,7 @@ public class LaboratoryItem : MonoBehaviour
 	}
 
 	private readonly static string ItemName = "Evidence_{0}_{1}_{2}_Title";
-	private static string GetItemName(LaboratoryItem item)
+	public static string GetItemName(LaboratoryItem item)
 	{
 		return Localization.Get(string.Format(ItemName, StageName, CriminalCode, item.m_ItemCode));
 	}
@@ -104,6 +104,7 @@ public class LaboratoryItem : MonoBehaviour
 
 	public void Reset()
 	{
+		//print("reset");
 		m_ItemCode = "-1";
 		if (m_ModeType == LaboratoryType.Analyzing
 				|| m_ModeType == LaboratoryType.CanAnalyzed
@@ -147,7 +148,7 @@ public class LaboratoryItem : MonoBehaviour
 			print("1 : " + index);
 		m_ItemCode = index;
 		m_CoolTime = EvidenceDataManager.instance.ReturnCoolTime(m_ItemCode, m_Mode);
-		
+
 		switch (m_ModeType)
 		{
 			case LaboratoryType.Analyzing:
@@ -157,7 +158,9 @@ public class LaboratoryItem : MonoBehaviour
 				int h = m_CoolTime / 60;
 				int m = m_CoolTime % 60;
 
-				m_Icon.spriteName = GetIconSpriteName(this);
+				EvidenceDataManager.instance.SetSprite(ref m_Icon,
+					                                   AtlasManager.SpriteType.Evidence.ToString(),
+													   m_ItemCode);
 				m_IconLabel.text = string.Format("{0:00}:{1:00}", h, m);
 				break;
 
@@ -186,7 +189,7 @@ public class LaboratoryItem : MonoBehaviour
 
 		if (!IsLaboratoryItem()) return;
 
-		
+
 	}
 
 	public void Selected(bool isSelected)
@@ -198,7 +201,7 @@ public class LaboratoryItem : MonoBehaviour
 			return;
 		}
 
-		m_ButtonLabel.text = GetItemName(this);
+		//m_ButtonLabel.text = GetItemName(this);
 	}
 
 	/// <summary>
@@ -232,9 +235,13 @@ public class LaboratoryItem : MonoBehaviour
 
 		m_ItemCode = targetItem.GetItemCode();
 
-		m_Icon.spriteName = GetIconSpriteName(targetItem);
+		EvidenceDataManager.instance.SetSprite(ref m_Icon,
+											   AtlasManager.SpriteType.Evidence.ToString(),
+											   m_ItemCode);
 		m_IconLabel.text = GetItemName(targetItem);
-		m_Desc.text = GetItemDesc(targetItem);
+
+		if (m_Desc != null)
+			m_Desc.text = GetItemDesc(targetItem);
 	}
 
 	private bool IsLaboratoryItem()
@@ -254,7 +261,7 @@ public class LaboratoryItem : MonoBehaviour
 
 	public void OnClicked_Match()
 	{
-
+		LabotoryManager.SelectedItem(this);
 	}
 
 	public void OnClickEvent()
@@ -281,7 +288,7 @@ public class LaboratoryItem : MonoBehaviour
 				break;
 			case LaboratoryType.Matching:
 				// 매칭 중일 때는 빼서는 안 되고 매칭 시작 전에는 뺄 수 있어야 함 
-				LaboratoryManager.instance.RemoveMatchedItem(m_Index);
+				LaboratoryManager.instance.ClearDescItem(m_Index);
 				print("매칭 중이니라");
 				break;
 			case LaboratoryType.CanMatched:

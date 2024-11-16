@@ -1,15 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using UnityEngine;
 
 [Serializable]
 public class LaboratoryData
 {
     // 분석
+	[SerializeField]
     public string[] m_AnalyzedIndexList;
     public int m_AnalyzedRemainTime;
 
-    // 매치
-    public string[] m_MatchedList;
+	// 매치
+	[SerializeField]
+	public string[] m_MatchedList;
     public int m_MatchedRemainTime;
     public bool m_IsStartMatched;
 

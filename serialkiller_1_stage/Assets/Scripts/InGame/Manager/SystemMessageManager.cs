@@ -6,122 +6,110 @@ using SimpleJSON;
 public class SystemMessageManager : TextManager
 {
 	public GameObject obj;
-    private string temp;
-    private UIPanel panel;
+	private string m_TypingText;
+	private UIPanel panel;
 	private bool isTurnEnd;
-    private string m_Temp;
+	private string m_Temp;
 
- 
-    private void SystemMessageInit()
-    {
-        obj.SetActive(true);
 
-        isProgress = true;
-        isReady = true;
+	private void SystemMessageInit()
+	{
+		obj.SetActive(true);
 
-        ta.to = 1f;
-        ta.from = 0f;
-        ta.ResetToBeginning();
+		isProgress = true;
+		isReady = true;
 
-        count = 1;
-        len = s.Length;
-        textLabel.text = "";
+		ta.to = 1f;
+		ta.from = 0f;
+		ta.ResetToBeginning();
 
-        ta.enabled = true;
-    }
+		count = 1;
+		len = s.Length;
+		textLabel.text = "";
 
-    /*
-    public override void ShowSearchTextMessage(int suspectIndex, int caseIndex, bool turnEnd)
-    {
-        if (isProgress)
-        {
-            if (isFinished)
-                TouchBG();
+		ta.enabled = true;
+	}
 
-            HidePanel();
-        }
-        
-        isTurnEnd = turnEnd;
-        tempStr = s = "";
-//           string.Format(Localization.Get(InGameGlobalValue.instance.StageName + "_Search_" + InGameGlobalValue.instance.CriminalCode + "_" + InGameGlobalValue.instance.CriminalCharacter + "_" + suspectIndex), (StageDataManager.instance.ReturnParameter(SuspectParameter.Name, suspectIndex)));
+	public override void ShowSystemMessage(string str)
+	{
+		Debug.Log("Show SystemMessage[" + str + "]");
+		if (EventDataManager.instance.IsFirstShowSystemMessage(str) == false)
+		{
+			Debug.Log("You have seen this SystemMessage[" + str + "].");
+			return;
+		}
 
-        SystemMessageInit();
+		if (isProgress)
+		{
+			if (m_IsPlayingFlag)
+				TouchBG();
 
-        StartCoroutine(ShowPanel());
-    }
-    */
- 
-    public override void ShowSystemMessage(string str)
-    {
-        if (isProgress)
-        {
-            if (isFinished)
-                TouchBG();
+			HidePanel();
+		}
 
-            HidePanel();
-        }
-        m_Temp = str;
-        tempStr = s = Localization.Get("System_Message_" + PlayDataManager.instance.m_StageName + "_" + str);
-        isTurnEnd = false;
-        print("str : " + str + " / s : " + s);
-        SystemMessageInit();
-        StartCoroutine(ShowPanel());
-    }
+		m_Temp = str;
+		m_TempText = s = Localization.Get("System_Message_" + PlayDataManager.instance.m_StageName + "_" + str);
+		Debug.Log(str + " : " + s);
+		isTurnEnd = false;
+		print("str : " + str + " / s : " + s);
+		SystemMessageInit();
+		StartCoroutine(ShowPanel());
+	}
 
-    public void InputSystemMessage(string str)
-    {
-        if (isProgress)
-        {
-            if (isFinished)
-                TouchBG();
+	public void InputSystemMessage(string str)
+	{
+		if (isProgress)
+		{
+			if (m_IsPlayingFlag)
+				TouchBG();
 
-            HidePanel();
-        }
-        m_Temp = str;
-        tempStr = s = Localization.Get(str);
-        isTurnEnd = false;
-        print("str : " + str + " / s : " + s);
-        SystemMessageInit();
-        StartCoroutine(ShowPanel());
-    }
+			HidePanel();
+		}
+		m_Temp = str;
+		m_TempText = s = Localization.Get(str);
+		isTurnEnd = false;
+		print("str : " + str + " / s : " + s);
+		SystemMessageInit();
+		StartCoroutine(ShowPanel());
+	}
 
-    public override void ShowSystemMessage(string str, string arg1)
-    {
-        if (isProgress)
-        {
-            if (isFinished)
-                TouchBG();
+	public override void ShowSystemMessage(string str, string arg1)
+	{
+		if (isProgress)
+		{
+			if (m_IsPlayingFlag)
+				TouchBG();
 
-            HidePanel();
-        }
-        m_Temp = str;
-        tempStr = s = string.Format(Localization.Get("System_Message_" + PlayDataManager.instance.m_StageName + "_" + str), arg1);
-        isTurnEnd = false;
-        SystemMessageInit();
+			HidePanel();
+		}
+		m_Temp = str;
+		m_TempText = s = string.Format(Localization.Get("System_Message_" + PlayDataManager.instance.m_StageName + "_" + str), arg1);
+		isTurnEnd = false;
+		SystemMessageInit();
 
-        StartCoroutine(ShowPanel());
-    }
+		StartCoroutine(ShowPanel());
+	}
 
-    protected override IEnumerator Typing()
-    {
-        print("typing");
+	protected override IEnumerator Typing()
+	{
+		print("typing");
 		int[] findStartNum;
 		int[] findEndNum;
 		int specialLen = 0;
 		int index = 0;
 
-		for(int i = 0; i < s.Length-3; i++)
+		for (int i = 0; i < s.Length - 3; i++)
 		{
-			if(s.Substring(i,3) == "[-]") 
+			if (s.Substring(i, 3) == "[-]")
 			{
 				specialLen++;
 			}
 		}
 
-		if(specialLen == 0)
+		if (specialLen == 0)
 		{
 			findStartNum = new int[1];
-			findEndNum  = new int[1];
+			findEndNum = new int[1];
 			findStartNum[0] = 0;
 			findEndNum[0] = 0;
 		}
@@ -129,13 +117,13 @@ public class SystemMessageManager : TextManager
 		{
 
 			findStartNum = new int[specialLen];
-			findEndNum  = new int[specialLen];
+			findEndNum = new int[specialLen];
 
-			for(int i = 0; i < s.Length-3; i++)
+			for (int i = 0; i < s.Length - 3; i++)
 			{
-				if(s.Substring(i,3) == "[-]") 
+				if (s.Substring(i, 3) == "[-]")
 				{
-					findEndNum[index] = i+1;
+					findEndNum[index] = i + 1;
 					index++;
 				}
 			}
@@ -144,102 +132,134 @@ public class SystemMessageManager : TextManager
 		int startIndex = 0;
 		int endIndex = 0;
 		count = 0;
-        tempStr += "[-]";
-        isFinished = true;
+		m_TempText += "[-]";
+		m_IsPlayingFlag = true;
 
 
-        while (isFinished)
+		bool isColor = false;
+		while (m_IsPlayingFlag)
 		{
-		//	print("start : " + startIndex + " [] : " + findStartNum[startIndex] + " count : " + count);
-            if (findStartNum[startIndex] != 0 && 
-                count == findStartNum[startIndex])
-            {
+			//	print("start : " + startIndex + " [] : " + findStartNum[startIndex] + " count : " + count);
+			if (findStartNum[startIndex] != 0 &&
+					count == findStartNum[startIndex])
+			{
 				startIndex++;
-				if(specialLen == startIndex)
+				if (specialLen == startIndex)
 				{
 					startIndex = specialLen - 1;
 				}
-                count += 8;
-            }
+				count += 8;
+			}
 
 			if (findEndNum[endIndex] != 0 && count == findEndNum[endIndex])
 			{
 				endIndex++;
-				if(specialLen == endIndex)
+				if (specialLen == endIndex)
 				{
 					endIndex = specialLen - 1;
 				}
 				count += 3;
-            }
+			}
 
-            temp = tempStr.Insert(count, "[55]");
-            textLabel.text = temp;// s.Substring(0, count);
 
-            count++;
-            if (count <= len)
-            {
-                yield return new WaitForSeconds(typingSpeed);
-            }
-            else
-            {
-                isFinished = false;
-                textLabel.text = s;
-            }
-        }
-     
-    }
+			if (count < len)
+			{
+				Debug.Log("[" + count + "]" + m_TempText + " / " + len);
+				if (isColor == true)
+				{
+					for (; m_TempText[count].Equals(']') == false;)
+					{
+						Debug.Log(m_TempText[count]);
+						count++;
+					}
+					count++;
+					isColor = false;
+				}
+				else if (m_TempText[count + 1].Equals('-') == false)
+				{
+					isColor = true;
+					for (; m_TempText[count].Equals(']') == false;)
+					{
+						//Debug.Log(m_TempText[count]);
+						count++;
+					}
+					count++;
+				}
+				m_TypingText = m_TempText.Insert(count, "[55]");
+				textLabel.text = m_TypingText;// s.Substring(0, count);
+				count++;
+				yield return new WaitForSeconds(typingSpeed);
+			}
+			else
+			{
+				//m_TypingText = s;
+				//m_TypingText = m_TempText.Insert(count, "[55]");
+				textLabel.text = s;
+				m_IsPlayingFlag = false;
+			}
 
-    public void TouchBG()
-    {
-        if (isReady)
-            return;
 
-        if (isFinished == false)
-        {
-            HidePanel();
-        }
-        else
-        {
-            StopAllCoroutines();
-            textLabel.text = tempStr;
-            isFinished = false;
-        }
-    }
+		}
 
-    protected override void HidePanel()
-    {
-        StopAllCoroutines();
+		SoundManager.instance.StopSFXByName("dialog_ing");
+	}
 
-        StartCoroutine(Hide());
-    }
+	public void TouchBG()
+	{
+		if (isReady)
+			return;
 
-    IEnumerator Hide()
-    {
-        ta.to = 0f;
-        ta.from = 1f;
-        ta.ResetToBeginning();
-        ta.enabled = true;
-        isReady = true;
+		if (m_IsPlayingFlag == false)
+		{
+			HidePanel();
+		}
+		else
+		{
+			StopAllCoroutines();
+			textLabel.text = m_TempText;
+			m_IsPlayingFlag = false;
+		}
+	}
 
-        yield return new WaitForSeconds(1f);
+	protected override void HidePanel()
+	{
+		StopAllCoroutines();
+		SoundManager.instance.StopSFXByName("dialog_ing");
+
+		StartCoroutine(Hide());
+	}
+
+	IEnumerator Hide()
+	{
+		SoundManager.instance.StopSFXByName("dialog_ing");
+
+		ta.to = 0f;
+		ta.from = 1f;
+		ta.ResetToBeginning();
+		ta.enabled = true;
+		isReady = true;
+
+		yield return new WaitForSeconds(1f);
 		obj.SetActive(false);
-		if(isTurnEnd)
+		if (isTurnEnd)
 		{
 			//GameManager.instance.TurnEnd();
 		}
 		isProgress = false;
-        EventManager.instance.SetEvent("SystemMessage", m_Temp);
-    }
+		if (m_Temp != null)
+			EventManager.instance.SetEvent("SystemMessage", m_Temp);
+	}
 
-    public void SystemMessagePanelHide()
-    {
-        HidePanel();
-    }
+	public void SystemMessagePanelHide()
+	{
+		SoundManager.instance.StopSFXByName("dialog_ing");
+		HidePanel();
+	}
 
-    public override bool ReturnIsProgress()
-    {
-        return isProgress;
-    }
+	public override bool ReturnIsProgress()
+	{
+		return isProgress;
+	}
 
 
 }
