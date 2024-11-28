@@ -45,22 +45,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   material: {fileID: 2100000, guid: 5f8a7063656863c49a25277fa490e5a5, type: 2}
   mSprites:
-  - name: BG_0
-    x: 0
-    y: 1327
-    width: 640
-    height: 360
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
   - name: BG_1
-    x: 0
-    y: 966
+    x: 641
+    y: 490
     width: 640
     height: 360
     borderLeft: 0
@@ -72,8 +59,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_10
-    x: 0
-    y: 605
+    x: 2456
+    y: 1537
     width: 640
     height: 360
     borderLeft: 0
@@ -86,7 +73,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: BG_11
     x: 0
-    y: 244
+    y: 490
     width: 640
     height: 360
     borderLeft: 0
@@ -98,8 +85,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_12
-    x: 641
-    y: 1688
+    x: 1815
+    y: 815
     width: 640
     height: 360
     borderLeft: 0
@@ -111,21 +98,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_13
-    x: 641
-    y: 1327
-    width: 640
-    height: 360
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: BG_14
-    x: 641
-    y: 966
+    x: 1815
+    y: 454
     width: 640
     height: 360
     borderLeft: 0
@@ -137,21 +111,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_15
-    x: 641
-    y: 605
-    width: 640
-    height: 360
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: BG_16
-    x: 641
-    y: 244
+    x: 1815
+    y: 1537
     width: 640
     height: 360
     borderLeft: 0
@@ -163,10 +124,62 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_17
+    x: 3097
+    y: 1537
+    width: 640
+    height: 360
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BG_18
+    x: 3316
+    y: 2532
+    width: 640
+    height: 360
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BG_19
+    x: 3316
+    y: 2171
+    width: 640
+    height: 360
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BG_21
+    x: 1815
+    y: 1898
+    width: 1500
+    height: 994
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BG_22
     x: 0
-    y: 1688
-    width: 640
-    height: 360
+    y: 1872
+    width: 1814
+    height: 1020
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -175,11 +188,11 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: BG_2
-    x: 1282
-    y: 1688
-    width: 640
-    height: 360
+  - name: BG_23
+    x: 0
+    y: 851
+    width: 1814
+    height: 1020
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -188,11 +201,24 @@ MonoBehaviour:
     paddingRight: 0
     paddingTop: 0
     paddingBottom: 0
-  - name: BG_20
-    x: 1282
-    y: 1327
-    width: 640
-    height: 360
+  - name: BG_24
+    x: 1815
+    y: 3076
+    width: 1814
+    height: 1020
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: BG_25
+    x: 0
+    y: 2893
+    width: 1814
+    height: 1203
     borderLeft: 0
     borderRight: 0
     borderTop: 0
@@ -202,47 +228,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_3
-    x: 1282
-    y: 966
-    width: 640
-    height: 360
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: BG_4
-    x: 1282
-    y: 605
-    width: 640
-    height: 360
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: BG_5
-    x: 1282
-    y: 244
-    width: 640
-    height: 360
-    borderLeft: 0
-    borderRight: 0
-    borderTop: 0
-    borderBottom: 0
-    paddingLeft: 0
-    paddingRight: 0
-    paddingTop: 0
-    paddingBottom: 0
-  - name: BG_6
-    x: 1923
-    y: 1688
+    x: 641
+    y: 129
     width: 640
     height: 360
     borderLeft: 0
@@ -254,8 +241,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_7
-    x: 2564
-    y: 1688
+    x: 0
+    y: 129
     width: 640
     height: 360
     borderLeft: 0
@@ -267,8 +254,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_8
-    x: 3205
-    y: 1688
+    x: 1815
+    y: 1176
     width: 640
     height: 360
     borderLeft: 0
@@ -280,8 +267,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: BG_9
-    x: 1923
-    y: 1327
+    x: 1815
+    y: 93
     width: 640
     height: 360
     borderLeft: 0
